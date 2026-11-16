@@ -1,0 +1,138 @@
+{
+  "_source": "Exported from Figma local variables and text styles of file HWnOHugM9Pc54J8aui4Hww on 2026-11-15. Figma is the source of truth.",
+  "_structure": "Two collections: 'primitives' (raw values) and 'tokens' (semantic, alias primitives). Use tokens in UI; primitives only to define tokens.",
+  "primitives": {
+    "color": {
+      "primary":   { "50": "#FFF6F9", "100": "#FFE7F0", "200": "#FECFE2", "300": "#FDB0D1", "400": "#F88CBE", "500": "#F16BAD", "600": "#E74C9D", "700": "#D72E8D", "800": "#AD2370", "900": "#871B57", "950": "#4C0D30" },
+      "secondary": { "50": "#F8F6FB", "100": "#F2F0FA", "200": "#EDE8F5", "300": "#E3DDF3", "400": "#E297D5", "500": "#D97ACA", "600": "#BB51AD", "700": "#9B298E", "800": "#7C1F71", "900": "#601757", "950": "#350A30" },
+      "success":   { "50": "#EDFDF1", "100": "#D6FADF", "200": "#A9F7BD", "300": "#75EB9A", "400": "#67D087", "500": "#5AB776", "600": "#46915E", "700": "#347049", "800": "#275638", "900": "#1F462D", "950": "#0F2818" },
+      "warning":   { "50": "#FFF5EA", "100": "#FFE9D1", "200": "#FFD6A7", "300": "#FEBB66", "400": "#F59E0B", "500": "#E39109", "600": "#C47806", "700": "#9E5904", "800": "#804402", "900": "#6B3701", "950": "#3F1F01" },
+      "danger":    { "50": "#FFF5F3", "100": "#FFE8E5", "200": "#FFD2CC", "300": "#FFAFA6", "400": "#FF8E83", "500": "#FF3535", "600": "#E40016", "700": "#BD000B", "800": "#9F0005", "900": "#880003", "950": "#530001" },
+      "black":     { "50": "#FFFFFF", "100": "#F8F8F8", "200": "#E9E9E9", "300": "#D6D6D6", "400": "#969696", "500": "#737373", "600": "#545454", "700": "#404040", "800": "#272727", "900": "#181818", "950": "#090909" },
+      "deep_slate": "#1E2939",
+      "gray": "#F3F4F6",
+      "effects/secondary-shadow": "#7241933D",
+      "effects/highlight-soft": "#FFFFFF99",
+      "effects/highlight-strong": "#FFFFFFE5"
+    },
+    "values": { "xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 20, "2xl": 24, "3xl": 32, "4xl": 40, "5xl": 60 }
+  },
+  "tokens": {
+    "backgrounds": {
+      "bg_primary": "primary/700",
+      "bg_secondary": "secondary/950",
+      "bg_success": "success/100",
+      "bg_error": "danger/100",
+      "bg_white": "black/50",
+      "bg_screen": "secondary/100",
+      "bg_gray": "gray",
+      "bg_gray_100": "black/100",
+      "bg_gray_200": "black/200",
+      "bg_gray_300": "black/300",
+      "bg_black": "deep_slate",
+      "icon_bg_primary": "primary/100",
+      "tabs_bg": "secondary/100",
+      "price_bg": "primary/100"
+    },
+    "buttons": {
+      "btn_primary": "primary/700",
+      "btn_secondary": "black/50",
+      "btn_disabled": "black/50",
+      "btn_card": "secondary/950",
+      "btn_see_all": "primary/100",
+      "btn_denger": "danger/600",
+      "btn_icon": "black/500"
+    },
+    "text": {
+      "text_black": "deep_slate",
+      "text_white": "black/50",
+      "text_primary": "primary/700",
+      "text_secondary": "secondary/950",
+      "text_secondary 2": "secondary/900",
+      "text_secondary 3": "secondary/700",
+      "text_gray_500": "black/500",
+      "text_gray_400": "black/400",
+      "text_success": "success/600",
+      "text_error": "danger/600"
+    },
+    "borders": {
+      "border_black": "black/300",
+      "border_input": "black/300",
+      "border_primary": "primary/700",
+      "border_secondary": "secondary/950",
+      "border_secondary 2": "secondary/300",
+      "border_secondary 3": "secondary/400",
+      "border_success": "success/600",
+      "border_warning": "warning/400",
+      "border_error": "danger/500",
+      "border_white": "black/50",
+      "navbar_border": "gray",
+      "close_border": "black/400",
+      "price_border": "primary/500"
+    },
+    "notifications": {
+      "success_color": "success/600",
+      "warning_color": "warning/400",
+      "error_color": "danger/500"
+    },
+    "badges": {
+      "badge_bg_black": "black/50",
+      "badge_bg_primary": "primary/100",
+      "badge_bg_success": "success/100",
+      "badge_bg_warning": "warning/50",
+      "badge_bg_error": "danger/100",
+      "badge_bg_cancelled": "black/200",
+      "badge_text_primary": "primary/700",
+      "badge_text_success": "success/600",
+      "badge_text_warning": "warning/400",
+      "badge_text_cancelled": "black/500"
+    },
+    "border_width": { "border_xs": 1, "border_sm": 2 },
+    "radius":  { "radius_xs": 4, "radius_sm": 8, "radius_md": 12, "radius_lg": 16, "radius_xl": 20, "radius_2xl": 24, "radius_3xl": 32, "radius_4xl": 40, "radius_5xl": 60 },
+    "padding": { "padding_xs": 4, "padding_sm": 8, "padding_md": 12, "padding_lg": 16, "padding_xl": 20, "padding_2xl": 24, "padding_3xl": 32, "padding_4xl": 40, "padding_5xl": 60, "padding_menu": 6 },
+    "spacing": { "spacing_xs": 4, "spacing_sm": 8, "spacing_md": 12, "spacing_lg": 16, "spacing_xl": 20, "spacing_2xl": 24, "spacing_3xl": 32, "spacing_4xl": 40, "spacing_5xl": 60 },
+    "font": {
+      "family": { "font_brand": "Tajawal", "font_content": "Cairo" },
+      "weights": { "fw_reg": "Regular", "fw_med": "Medium", "fw_bold": "Bold" },
+      "sizes": { "fs_xs": 8, "fs_sm": 10, "fs_md": 12, "fs_lg": 14, "fs_xl": 16, "fs_2xl": 18, "fs_3xl": 20, "fs_4xl": 24 },
+      "line_heights": { "lh_xs": 10, "lh_sm": 12, "lh_md": 14, "lh_lg": 16, "lh_xl": 20, "lh_2xl": 28, "lh_3xl": 32 },
+      "letter_spacing_default": 0
+    },
+    "shadows": {
+      "button-primary": [
+        { "name": "drop",            "type": "DROP_SHADOW",  "x": 0,  "y": 7,  "blur": 16, "spread": -5, "color": "#C8198F30" },
+        { "name": "inner-highlight", "type": "INNER_SHADOW", "x": 2,  "y": 3,  "blur": 5,  "spread": 0,  "color": "#FFFFFF40" },
+        { "name": "inner-shade",     "type": "INNER_SHADOW", "x": -3, "y": -4, "blur": 8,  "spread": 0,  "color": "#4A106633" }
+      ],
+      "button-secondary": {
+        "drop_color": "effects/secondary-shadow",
+        "inner_highlight_soft_color": "effects/highlight-soft",
+        "inner_highlight_strong_color": "effects/highlight-strong"
+      }
+    }
+  },
+  "text_styles": {
+    "font_xxl_bold":       { "family": "Tajawal", "weight": "Bold",    "size": 24, "lineHeight": 32 },
+    "font_xl_bold":        { "family": "Tajawal", "weight": "Bold",    "size": 18, "lineHeight": 28 },
+    "font_large_bold":     { "family": "Tajawal", "weight": "Bold",    "size": 14, "lineHeight": 20 },
+    "font_large_regular":  { "family": "Tajawal", "weight": "Medium",  "size": 14, "lineHeight": 20 },
+    "font_medium_bold":    { "family": "Tajawal", "weight": "Bold",    "size": 12, "lineHeight": 20 },
+    "font_medium_medium":  { "family": "Tajawal", "weight": "Medium",  "size": 12, "lineHeight": 14 },
+    "font_medium_regular": { "family": "Tajawal", "weight": "Regular", "size": 12, "lineHeight": 16 },
+    "font_small_regular":  { "family": "Tajawal", "weight": "Medium",  "size": 10, "lineHeight": 16 },
+    "font_small_medium":   { "family": "Tajawal", "weight": "Bold",    "size": 10, "lineHeight": 20 },
+    "font_xs_medium":      { "family": "Tajawal", "weight": "Medium",  "size": 8,  "lineHeight": 16 },
+    "font_xs_regular":     { "family": "Tajawal", "weight": "Bold",    "size": 18, "lineHeight": 20 }
+  },
+  "gradient": {
+    "brand": { "from": "primary/700", "to": "secondary/700" }
+  },
+  "layout": {
+    "frame": { "width": 393, "height": 852 },
+    "screen_margin": 16,
+    "content_width": 361,
+    "top_navbar_height": 80,
+    "content_start_y": 96,
+    "bottom_navbar": { "width": 368, "height": 64 }
+  }
+}

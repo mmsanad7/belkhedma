@@ -1,0 +1,39 @@
+{
+  "client": {
+    "name_ar": "بالخدمة",
+    "name_en": "Belkhedma",
+    "logo_wordmark": "Belkhidmah",
+    "tagline_ar": "خدمات منزلية موثوقة من شركات معتمدة، احجز بثقة وادفع بأمان"
+  },
+  "product": {
+    "type": "mobile_app",
+    "platforms": ["ios", "android"],
+    "category": "home_services_marketplace",
+    "market": "SA",
+    "language": "ar",
+    "direction": "rtl",
+    "currency": "SAR",
+    "phone_country_code": "+966",
+    "vat_rate": 0.15
+  },
+  "service_lines": [
+    { "id": "hourly",    "name_ar": "خدمات بالساعة" },
+    { "id": "monthly",   "name_ar": "خدمات الأفراد" },
+    { "id": "medical",   "name_ar": "رعاية طبية" },
+    { "id": "mediation", "name_ar": "خدمات الوساطة" }
+  ],
+  "payment_methods": ["visa", "master_card", "mada", "apple_pay"],
+  "design": {
+    "tool": "figma",
+    "file_key": "HWnOHugM9Pc54J8aui4Hww",
+    "file_url": "https://www.figma.com/design/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App",
+    "prototype_url": "https://www.figma.com/proto/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App?node-id=438-5926&starting-point-node-id=438%3A5894",
+    "methodology": "atomic_design"
+  },
+  "contacts": {
+    "_note": "Fill in owners for product, design and engineering.",
+    "product_owner": null,
+    "design_lead": null,
+    "tech_lead": null
+  }
+}

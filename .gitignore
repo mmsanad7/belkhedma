@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Local Claude settings
+.claude/settings.local.json
+
+# Temporary exports
+*.tmp
+exports/
