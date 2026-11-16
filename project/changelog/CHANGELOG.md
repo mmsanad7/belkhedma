@@ -14,6 +14,7 @@
 - section تجريبي `_iPhone Duo Adaptation – home` في صفحة `screens` (S-08).
 
 ### التوثيق
+- قرار [0001](../decisions/0001-push-every-change.md): أي تعديل يترفع على الريبو أول بأول من غير سؤال، واتضافت القاعدة في `AGENTS.md`.
 - طلب تعديل جديد: [نقل بيزنس الزيارات من Enaya](../changes/2026-11-16-enaya-visits.md)، والحالة بقت `منفّذ`.
 - تغيير الـ file key في `AGENTS.md` و`README.md` و`client.json` وكل لينكات المكوّنات والـ foundations.
 - feature جديدة: [visits.md](../product/features/visits.md)، و[audit المقارنة](../design-system/audits/2026-11-16-enaya-visits-comparison.md).

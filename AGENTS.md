@@ -40,3 +40,4 @@ Product and design-system documentation for **Belkhedma (بالخدمة)**, an A
 - `project/data/screens.json` is generated from Figma metadata. Regenerate it rather than hand-editing it, then regenerate `project/design-system/mobile/screens-index.md`.
 - Log every change in `project/changelog/` and record known inconsistencies in `project/brand/deviations.md`.
 - Mark anything inferred, not confirmed by the product team, with **(يحتاج تأكيد)**.
+- Commit and push every finished change to `main` on `mmsanad7/belkhedma` right away, without asking first ([decision 0001](project/decisions/0001-push-every-change.md)).
