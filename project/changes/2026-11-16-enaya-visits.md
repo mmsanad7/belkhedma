@@ -2,7 +2,8 @@
 
 | البند | القيمة |
 |---|---|
-| الحالة | مفتوح |
+| الحالة | منفّذ (2026-11-16) |
+| مكان التنفيذ | ملف Figma الجديد `mCPCipJETTjSW7GD8vsrzY` (نسخة من `HWnOHugM9Pc54J8aui4Hww` وبقت هي المرجع) |
 | التاريخ | 2026-11-16 |
 | مقدم الطلب | m.sanad |
 | الأولوية | متوسطة **(يحتاج تأكيد)** |
@@ -67,6 +68,12 @@
 - **نعيد توليد** `project/data/screens.json` و`screens-index.md` من metadata الفيجما.
 - **نسجّل** في `project/changelog/CHANGELOG.md`.
 - commit و push على `mmsanad7/belkhedma` بعد كل مرحلة: المقارنة ← Figma والتوثيق ← الفهارس.
+
+## نتيجة التنفيذ
+- اتنفذ كل اللي فوق ما عدا شاشة `show_visits/previous_rated`. الحالة دي بقت متغير `status=previous, state=expanded_rated` في `visit_details`.
+- كومبوننتس زيادة على الخطة: `calendar` و`worker_rating_summary`.
+- `visits_bottom_sheet` لسه موجودة، والقرار في [deviations.md](../brand/deviations.md) (S-09).
+- التفاصيل: [visits.md](../product/features/visits.md) و[audit المقارنة](../design-system/audits/2026-11-16-enaya-visits-comparison.md).
 
 ## التحقق
 - `get_screenshot` لكل شاشة وكومبوننت جديد، ونقارنها بستايل بالخدمة وبشاشات Enaya.

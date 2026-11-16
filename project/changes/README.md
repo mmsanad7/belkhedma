@@ -17,4 +17,4 @@ flowchart LR
 
 | الملف | العنوان | الحالة |
 |---|---|---|
-| [2026-11-16-enaya-visits.md](2026-11-16-enaya-visits.md) | نقل بيزنس الزيارات من Enaya | مفتوح |
+| [2026-11-16-enaya-visits.md](2026-11-16-enaya-visits.md) | نقل بيزنس الزيارات من Enaya | منفّذ |

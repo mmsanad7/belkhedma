@@ -10,7 +10,8 @@ flowchart LR
     T --> ME["orders/medical"]
     T --> MD["orders/mediation"]
     H --> HD["hourly_order_details"]
-    HD --> V["show_visits / visits_bottom_sheet"]
+    HD --> V["show_visits/upcoming · previous"]
+    HD --> VB["visits_bottom_sheet"]
     HD --> I["invoice_bottom_sheet"]
     HD --> R["service_rating_bottom_sheet"]
     HD --> C["contact_method_bottom_sheet"]
@@ -36,7 +37,8 @@ flowchart LR
 | الشاشة | الوصف |
 |---|---|
 | `orders/hourly_order_details` | تفاصيل طلب الساعة |
-| `orders/hourly_order_details/show_visits` | قائمة الزيارات |
+| `orders/hourly_order_details/show_visits/upcoming` | الزيارات القادمة (تأجيل). التفاصيل في [visits.md](visits.md) |
+| `orders/hourly_order_details/show_visits/previous` | الزيارات السابقة (تقييم العاملة، تفضيل، حظر). التفاصيل في [visits.md](visits.md) |
 | `orders/monthly_order_details` | تفاصيل الطلب الشهري |
 | `orders/medical_order_details` | تفاصيل طلب الرعاية الطبية |
 | `orders/mediation_order_details` | تفاصيل طلب الوساطة |
@@ -51,6 +53,8 @@ flowchart LR
 | `service_rating_bottom_sheet` | تقييم الخدمة بالنجوم (`rating_stars`، `state=four_stars_large`) |
 | `contact_method_bottom_sheet` | اختيار وسيلة التواصل مع الشركة |
 | `contact_form_bottom_sheet` | نموذج تواصل |
+
+الـ bottom sheets والـ popups بتوع الزيارات (`orders/visits/*`: تأجيل، تقييم العاملة، تفضيل، حظر) موجودة في [visits.md](visits.md).
 
 ## Templates
 - `orders` (`2197:26789`): `state=hourly|monthly|medical|mediation`

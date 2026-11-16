@@ -84,6 +84,7 @@ stateDiagram-v2
 | الوساطة | [mediation.md](features/mediation.md) |
 | إتمام الحجز والدفع | [checkout-and-payment.md](features/checkout-and-payment.md) |
 | الطلبات | [orders.md](features/orders.md) |
+| الزيارات (تأجيل، تقييم العاملة، تفضيل وحظر) | [visits.md](features/visits.md) |
 | العروض والبحث والمفضلة | [offers-search-favorites.md](features/offers-search-favorites.md) |
 | الحساب (الملف الشخصي، العناوين، الشركات، الإشعارات) | [account.md](features/account.md) |
 | المساعدة والدعم | [help-and-support.md](features/help-and-support.md) |

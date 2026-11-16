@@ -1,6 +1,6 @@
 # المسافات والزوايا والتخطيط
 
-صفحات Figma: [`spacing`](https://www.figma.com/design/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App?node-id=8-25) · [`radius`](https://www.figma.com/design/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App?node-id=36-135).
+صفحات Figma: [`spacing`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=8-25) · [`radius`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=36-135).
 
 > **تنبيه:** صفحتا `spacing` و`radius` في Figma قديمتان، وتعرضان `3xl = 40` و`4xl = 60`. القيم أدناه هي **المتغيرات الفعلية**. راجع [deviations.md](../../brand/deviations.md) (D-01، D-02).
 

@@ -1,6 +1,6 @@
 # الألوان
 
-صفحة Figma: [`colors`](https://www.figma.com/design/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App?node-id=0-1). القيم بصيغة JSON في [brand.json](../../brand/brand.json).
+صفحة Figma: [`colors`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=0-1). القيم بصيغة JSON في [brand.json](../../brand/brand.json).
 
 ## Primitives
 

@@ -1,6 +1,6 @@
 # الخطوط (Typography)
 
-صفحة Figma: [`typography`](https://www.figma.com/design/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App?node-id=1-3951).
+صفحة Figma: [`typography`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1-3951).
 
 ## العائلات
 

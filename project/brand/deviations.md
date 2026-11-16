@@ -30,16 +30,21 @@
 | C-02 | `text_buttons` (`state9`)، `navbar_btn_icon` (`state2`)، `logo` (`state2`)، `progress_bar` (`state3`)، `search_or_filtration` (`state2`)، `dashboard_statistics` (`state2`)، `payment_input` (`state3`)، `company_in_home` (`state2`، `state3`، `state4`) | قيم variants مرقّمة بدون معنى | أسماء وصفية |
 | C-03 | صفحات `atoms` و`molecules` و`organisms` | عناصر شاردة: `Rectangle 1`، `Rectangle 2`، `Polygon 1`، ونص اسمه `6` في molecules | حذفها أو نقلها لـ `sand_box` |
 | C-04 | `separate_back` | الاسم غير واضح، والمقصود غالباً زر الرجوع | `back_button` |
-| C-05 | `profile_header`، `ticket_item`، `help_and_support_header`، `number_of_unread`، `order_summary`، `visit_details` | مكوّنات مفردة على صفحة organisms، وبعضها حجمه حجم molecule | مراجعة التصنيف |
+| C-05 | `profile_header`، `ticket_item`، `help_and_support_header`، `number_of_unread`، `order_summary`، `worker_rating_summary`، `calendar` | مكوّنات مفردة على صفحة organisms، وبعضها حجمه حجم molecule. (`visit_details` اتحل في 2026-11-16 وبقى component set) | مراجعة التصنيف |
 
 ### الشاشات
 
 | # | المكان | المشكلة | المقترح |
 |---|---|---|---|
-| S-01 | `hourly_offers/offers_filtration_bottom_sheet` | إطاران بنفس الاسم (`585:4041` بارتفاع 744، و`7776:20728` بارتفاع 438) | تمييز الاسم، مثلاً `.../full` و`.../compact` |
+| S-01 | `hourly_offers/offers_filtration_bottom_sheet` | إطاران بنفس الاسم (`585:4041` بارتفاع 744، و`9098:22052` بارتفاع 438). الإطار `9098:22052` اتعمل من جديد في 2026-11-16 مكان `7776:20728`، والاسم لسه مكرر | تمييز الاسم، مثلاً `.../full` و`.../compact` |
 | S-02 | `_hourly_offers/default`، `_monthly_offers/default`، `_medical_offers/default` | نسخ تبدأ بـ `_`، وغير واضح إن كانت قديمة أو بديلة | نقلها لـ `draft_screens` أو حذفها |
 | S-03 | إطارات داخلية باسم `Frame 7` و`Frame 427319797` و`Frame 427319825` | أسماء افتراضية | أسماء وصفية (`actions`، `content`…) |
 | S-04 | الـ bottom sheets في `orders/order_details/*` | الإطار الداخلي اسمه `offer_details` في كلها | تسمية حسب المحتوى (`visits_list`، `invoice`…) |
+| S-05 | `visit_details` (`9081:6048`) | العنوان نص مؤقت «عنوان الزيارة يكون هنا»، والكارت بيعرض وقت البدء بس من غير التاريخ ولا «من-إلى» زي ما كانت الخطة | نص حقيقي، وإضافة التاريخ والتوقيت من-إلى **(يحتاج تأكيد)** |
+| S-06 | `reschedule_visit_bottom_sheet` (`9081:31157`) | بيانات التقويم غلط: نوفمبر 2026 فيه 31 يوم، وأول الشهر واقع يوم جمعة (الصح: 30 يوم، ويبدأ يوم أحد) | تصحيح بيانات `calendar` |
+| S-07 | `favorite_worker_result_popup` و`block_worker_result_popup` | فيه عنوان باهت فوق الأيقونة باين إنه طبقة زيادة من الـ header | مراجعة الطبقة وحذفها لو مش مقصودة |
+| S-08 | صفحة `screens`: section `_iPhone Duo Adaptation – home` (`9002:20569`) | تجربة لمقاسات iPhone Duo جوه صفحة الشاشات المعتمدة، ومعاها كومبوننت `nav_rail` (`9009:21371`) متعرّف برّه صفحات المكتبة | نقلها لـ `sand_box` أو `draft_screens`، أو اعتمادها ونقل `nav_rail` للـ organisms **(يحتاج تأكيد)** |
+| S-09 | `orders/order_details/visits_bottom_sheet` (`7239:18272`) | ممكن تكون اتكررت مع `show_visits/upcoming` بعد إضافة التبويبات | قرار من فريق المنتج: نشيلها ولا نسيبها |
 
 ## تم الحل
 _لا يوجد بعد._

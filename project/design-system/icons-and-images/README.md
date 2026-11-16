@@ -1,7 +1,7 @@
 # الأيقونات والصور
 
 ## الأيقونات
-صفحة Figma: [`icons`](https://www.figma.com/design/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App?node-id=1-4593).
+صفحة Figma: [`icons`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1-4593).
 
 > جرد الأيقونات لم يُوثَّق بعد. راجع [status.md](../../status/status.md).
 

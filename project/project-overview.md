@@ -7,7 +7,7 @@
 | **السوق** | المملكة العربية السعودية (العملة ر.س، مفتاح الجوال `+966`، ضريبة 15%) |
 | **اللغة** | العربية، RTL |
 | **مرحلة التصميم** | الشاشات الأساسية مكتملة في Figma، وفيه مسودات قيد العمل. راجع [status/status.md](status/status.md) |
-| **ملف التصميم** | [Figma: Belkhedma App](https://www.figma.com/design/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App) |
+| **ملف التصميم** | [Figma: Belkhedma App](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App) |
 
 ## المشكلة والحل
 العميل اللي محتاج عاملة منزلية (بالساعة، أو شهرياً، أو رعاية طبية، أو استقدام) بيتعامل مع شركات كثيرة، بأسعار وشروط مختلفة، وبدون وسيلة سهلة للمقارنة أو للدفع الآمن.

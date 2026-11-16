@@ -25,9 +25,9 @@
   "payment_methods": ["visa", "master_card", "mada", "apple_pay"],
   "design": {
     "tool": "figma",
-    "file_key": "HWnOHugM9Pc54J8aui4Hww",
-    "file_url": "https://www.figma.com/design/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App",
-    "prototype_url": "https://www.figma.com/proto/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App?node-id=438-5926&starting-point-node-id=438%3A5894",
+    "file_key": "mCPCipJETTjSW7GD8vsrzY",
+    "file_url": "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App",
+    "prototype_url": "https://www.figma.com/proto/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=438-5926&starting-point-node-id=438%3A5894",
     "methodology": "atomic_design"
   },
   "contacts": {

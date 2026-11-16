@@ -3,8 +3,8 @@
 توثيق المنتج ونظام التصميم لتطبيق **بالخدمة**: منصة سعودية لحجز خدمات العمالة المنزلية من شركات معتمدة، والدفع لها بأمان.
 
 > **المرجع الأساسي هو ملف Figma:**
-> [Belkhedma App](https://www.figma.com/design/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App) ·
-> [Prototype](https://www.figma.com/proto/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App?node-id=438-5926&starting-point-node-id=438%3A5894)
+> [Belkhedma App](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App) ·
+> [Prototype](https://www.figma.com/proto/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=438-5926&starting-point-node-id=438%3A5894)
 >
 > هذا الريبو يشرح الملف ولا يحل محله. لو وجدت اختلافاً بينهما فـ Figma هو الصح، ويُحدَّث التوثيق.
 

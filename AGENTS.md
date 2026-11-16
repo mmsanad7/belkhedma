@@ -6,12 +6,14 @@ Instructions for AI coding/design agents working in this repository.
 Product and design-system documentation for **Belkhedma (بالخدمة)**, an Arabic RTL mobile app for booking home-service workers from licensed Saudi companies. There is no application code here, only documentation of the Figma file.
 
 ## Source of truth
-- Figma file key: `HWnOHugM9Pc54J8aui4Hww` ("Belkhedma App").
-- Node link format: `https://www.figma.com/design/HWnOHugM9Pc54J8aui4Hww/Belkhedma-App?node-id=<id with - instead of :>`
+- Figma file key: `mCPCipJETTjSW7GD8vsrzY` ("Belkhedma App").
+- Node link format: `https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=<id with - instead of :>`
 - If the docs and Figma disagree, Figma wins. Update the docs and log the change.
+- Since 2026-11-16 this file replaces the original `HWnOHugM9Pc54J8aui4Hww`. It is a copy with the same node IDs, so old node links still map 1:1. Do not edit the old file.
 
 | Figma page | ID |
 |---|---|
+| cover | `8:114` |
 | colors | `0:1` |
 | typography | `1:3951` |
 | spacing | `8:25` |
