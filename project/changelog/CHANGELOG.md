@@ -11,6 +11,10 @@
 - [visits.md](../product/features/visits.md): الحظر اتشال من الرحلة والجداول والقواعد، واتحط في قسم «مؤجل».
 - تحديث `orders.md` و`organisms.md` و`glossary.md` و`overview.md` و`status.md` و`deviations.md` (S-07)، والـ audit بتاع المقارنة.
 - `screens.json` متغيرش، لأن الفريمات زي ما هي (102).
+- قرار [0003](../decisions/0003-underscore-ignored.md): أي حاجة في Figma اسمها بيبدأ بـ `_` يتم تجاهلها. اتضافت القاعدة في `AGENTS.md`.
+- سكريبت جديد [`shared/scripts/generate-screens.ps1`](../../shared/scripts/generate-screens.ps1) بيولّد `screens.json` و`screens-index.md`، وبيستبعد فريمات الـ `_` لوحده. اتشال حقل `unused_copy`، واتضاف `ignored_prefix` و`ignored_count`.
+- إعادة توليد [screens.json](../data/screens.json) و[screens-index.md](../design-system/mobile/screens-index.md): بقوا 99 إطار بدل 102، لأن 3 فريمات `_*_offers/default` اتشالوا.
+- [deviations.md](../brand/deviations.md): S-02 وS-08 اتقفلوا، وQ-12 في `status.md` اتحل.
 
 ## 2026-11-16
 ### Figma

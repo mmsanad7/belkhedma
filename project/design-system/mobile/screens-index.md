@@ -1,10 +1,10 @@
 # فهرس الشاشات (Mobile)
 
-كل الإطارات في صفحة `screens` في Figma (102 إطاراً). الملف مولَّد من [`project/data/screens.json`](../../data/screens.json)، فلو تغيّرت الشاشات حدّث الـ JSON أولاً.
+كل الإطارات في صفحة `screens` في Figma (99 إطاراً). الملف مولَّد من [`project/data/screens.json`](../../data/screens.json) بالسكريبت [`generate-screens.ps1`](../../../shared/scripts/generate-screens.ps1)، فلو تغيّرت الشاشات شغّل السكريبت تاني.
 
 - **شاشة:** إطار كامل `393×852`.
 - **Bottom sheet:** إطار أقصر يمثّل نافذة منبثقة من الأسفل فوق شاشة أخرى.
-- الأسماء اللي تبدأ بـ `_` نسخ قديمة أو بديلة. راجع [deviations.md](../../brand/deviations.md).
+- أي إطار اسمه بيبدأ بـ `_` مش داخل في الفهرس (عددهم حالياً: 3). راجع [قرار 0003](../../decisions/0003-underscore-ignored.md).
 
 ## البداية
 
@@ -39,7 +39,6 @@
 
 | الإطار | النوع | المقاس | Figma |
 |---|---|---|---|
-| `_hourly_offers/default` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=437-934) |
 | `hourly_offers/company_selection_bottom_sheet` | Bottom sheet | 393×711 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7471-25928) |
 | `hourly_offers/default` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=852-7042) |
 | `hourly_offers/filters_applied` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=852-7024) |
@@ -60,7 +59,6 @@
 
 | الإطار | النوع | المقاس | Figma |
 |---|---|---|---|
-| `_monthly_offers/default` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6313-40772) |
 | `monthly_offers/default` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-10966) |
 | `monthly_offers/filtered` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-10985) |
 | `monthly_offers/offer_details` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11054) |
@@ -74,7 +72,6 @@
 
 | الإطار | النوع | المقاس | Figma |
 |---|---|---|---|
-| `_medical_offers/default` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6313-41001) |
 | `medical_offers/default` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11003) |
 | `medical_offers/filtered` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6313-41019) |
 | `medical_offers/offers_filtration_bottom_sheet` | Bottom sheet | 393×308 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6313-41337) |

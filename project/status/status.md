@@ -52,4 +52,4 @@
 | Q-09 | استخدام خط Cairo (`font_content`) | [typography](../design-system/foundations/typography.md) |
 | Q-10 | حدود التأجيل، ونطاق التفضيل (الطلب ولا كل الطلبات) | [visits](../product/features/visits.md) |
 | Q-11 | مصير `visits_bottom_sheet` بعد تبويبات الزيارات | [visits](../product/features/visits.md) |
-| Q-12 | section الـ iPhone Duo في صفحة `screens`: معتمد ولا تجربة؟ | [deviations](../brand/deviations.md) |
+| ~~Q-12~~ | ~~section الـ iPhone Duo في صفحة `screens`: معتمد ولا تجربة؟~~ اتحل: اسمه بيبدأ بـ `_`، فبيتجاهل ([قرار 0003](../decisions/0003-underscore-ignored.md)) | [deviations](../brand/deviations.md) |

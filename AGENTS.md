@@ -32,12 +32,13 @@ Product and design-system documentation for **Belkhedma (بالخدمة)**, an A
 - Component variant properties use `state=`, `type=`, `status=`, `size=`. Values are `snake_case`.
 - Screen frames are `393×852` and named `section/sub_section/state` in `snake_case` (e.g. `hourly_offers/offer_details`).
 - Bottom sheets are separate, shorter frames named `..._bottom_sheet` or `..._popup`.
+- Any frame, section or component whose name starts with `_` is not approved and must be ignored: leave it out of `screens.json`, the screens index, feature docs, component docs and deviations ([decision 0003](project/decisions/0003-underscore-ignored.md)).
 - Layout: 16px side margin, `top_navbar` at the top (80px), content starts at y=96, floating `bottom_navbar` (368×64) on tab-level screens.
 - All UI copy is Arabic, RTL.
 
 ## Rules when editing docs
 - Docs prose is Arabic; identifiers, token names and Figma names stay in English exactly as in Figma.
-- `project/data/screens.json` is generated from Figma metadata. Regenerate it rather than hand-editing it, then regenerate `project/design-system/mobile/screens-index.md`.
+- `project/data/screens.json` and `project/design-system/mobile/screens-index.md` are generated from Figma metadata. Never hand-edit them: run `shared/scripts/generate-screens.ps1 -Metadata <get_metadata output of node 13:7>`.
 - Log every change in `project/changelog/` and record known inconsistencies in `project/brand/deviations.md`.
 - Mark anything inferred, not confirmed by the product team, with **(يحتاج تأكيد)**.
 - Commit and push every finished change to `main` on `mmsanad7/belkhedma` right away, without asking first ([decision 0001](project/decisions/0001-push-every-change.md)).
