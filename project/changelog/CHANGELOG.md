@@ -2,6 +2,16 @@
 
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
+## 2026-11-18
+### Figma
+- `visit_details` (`9081:6048`): اتضافت boolean property اسمها `show_block_worker`، وقيمتها الافتراضية off. اتربطت بزرار «حظر العاملة» في `previous/expanded` و`previous/expanded_rated`، فالزرار اختفى وزرار «تفضيل العاملة» بقى بعرض الكارت. الـ popups بتوع الحظر فضلوا مكانهم من غير تعديل.
+
+### التوثيق
+- قرار [0002](../decisions/0002-defer-block-worker.md): تأجيل «حظر العاملة» بمفتاح on/off.
+- [visits.md](../product/features/visits.md): الحظر اتشال من الرحلة والجداول والقواعد، واتحط في قسم «مؤجل».
+- تحديث `orders.md` و`organisms.md` و`glossary.md` و`overview.md` و`status.md` و`deviations.md` (S-07)، والـ audit بتاع المقارنة.
+- `screens.json` متغيرش، لأن الفريمات زي ما هي (102).
+
 ## 2026-11-16
 ### Figma
 - **ملف جديد هو المرجع:** [`mCPCipJETTjSW7GD8vsrzY`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App) بدل `HWnOHugM9Pc54J8aui4Hww`. نسخة بنفس الـ node IDs، وفيها صفحة `cover` جديدة (`8:114`).

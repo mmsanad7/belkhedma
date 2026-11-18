@@ -38,7 +38,7 @@ flowchart LR
 |---|---|
 | `orders/hourly_order_details` | تفاصيل طلب الساعة |
 | `orders/hourly_order_details/show_visits/upcoming` | الزيارات القادمة (تأجيل). التفاصيل في [visits.md](visits.md) |
-| `orders/hourly_order_details/show_visits/previous` | الزيارات السابقة (تقييم العاملة، تفضيل، حظر). التفاصيل في [visits.md](visits.md) |
+| `orders/hourly_order_details/show_visits/previous` | الزيارات السابقة (تقييم العاملة، تفضيل). التفاصيل في [visits.md](visits.md) |
 | `orders/monthly_order_details` | تفاصيل الطلب الشهري |
 | `orders/medical_order_details` | تفاصيل طلب الرعاية الطبية |
 | `orders/mediation_order_details` | تفاصيل طلب الوساطة |
@@ -54,7 +54,7 @@ flowchart LR
 | `contact_method_bottom_sheet` | اختيار وسيلة التواصل مع الشركة |
 | `contact_form_bottom_sheet` | نموذج تواصل |
 
-الـ bottom sheets والـ popups بتوع الزيارات (`orders/visits/*`: تأجيل، تقييم العاملة، تفضيل، حظر) موجودة في [visits.md](visits.md).
+الـ bottom sheets والـ popups بتوع الزيارات (`orders/visits/*`: تأجيل، تقييم العاملة، تفضيل) موجودة في [visits.md](visits.md). أما popups الحظر فمؤجلة.
 
 ## Templates
 - `orders` (`2197:26789`): `state=hourly|monthly|medical|mediation`
