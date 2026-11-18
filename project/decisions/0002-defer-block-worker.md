@@ -19,9 +19,16 @@
 - `status=previous, state=expanded`
 - `status=previous, state=expanded_rated`
 
-لما المفتاح يبقى off، زرار «تفضيل العاملة» بياخد عرض الكارت كله. الـ popups `block_worker_popup` (`9081:31455`) و`block_worker_result_popup` (`9081:31542`) فضلوا مكانهم من غير تعديل.
+لما المفتاح يبقى off، زرار «تفضيل العاملة» بياخد عرض الكارت كله.
 
-**علشان نرجّعه:** نخلّي `show_block_worker` تبقى on، ونرجّع الحظر للقواعد في [visits.md](../product/features/visits.md).
+**تحديث 2026-11-18:** الـ popups بقوا ملهمش لازمة بعد ما الزرار اختفى، فاتضاف قبل اسمهم `_` علشان يتجاهلوا ([قرار 0003](0003-underscore-ignored.md)). هما فضلوا مكانهم في صفحة `screens`:
+- `_orders/visits/block_worker_popup` (`9081:31455`): تأكيد الحظر
+- `_orders/visits/block_worker_result_popup` (`9081:31542`): نتيجة الحظر
+
+**علشان نرجّعه:**
+1. نخلّي `show_block_worker` تبقى on.
+2. نشيل الـ `_` من اسم الـ popups الاتنين، ونشغّل `generate-screens.ps1`.
+3. نرجّع الحظر للرحلة والقواعد في [visits.md](../product/features/visits.md).
 
 ## الأثر
 - الشاشات أو المكوّنات المتأثرة: `visit_details`، و`orders/hourly_order_details/show_visits/previous`.

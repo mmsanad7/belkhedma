@@ -4,6 +4,7 @@
 
 ## 2026-11-18
 ### Figma
+- popups الحظر اتضاف قبل اسمهم `_`، فبقوا `_orders/visits/block_worker_popup` و`_orders/visits/block_worker_result_popup`، وبيتجاهلوا بقرار 0003. الفهرس بقى 97 إطار.
 - `visit_details` (`9081:6048`): اتضافت boolean property اسمها `show_block_worker`، وقيمتها الافتراضية off. اتربطت بزرار «حظر العاملة» في `previous/expanded` و`previous/expanded_rated`، فالزرار اختفى وزرار «تفضيل العاملة» بقى بعرض الكارت. الـ popups بتوع الحظر فضلوا مكانهم من غير تعديل.
 
 ### التوثيق

@@ -1,10 +1,10 @@
 # فهرس الشاشات (Mobile)
 
-كل الإطارات في صفحة `screens` في Figma (99 إطاراً). الملف مولَّد من [`project/data/screens.json`](../../data/screens.json) بالسكريبت [`generate-screens.ps1`](../../../shared/scripts/generate-screens.ps1)، فلو تغيّرت الشاشات شغّل السكريبت تاني.
+كل الإطارات في صفحة `screens` في Figma (97 إطاراً). الملف مولَّد من [`project/data/screens.json`](../../data/screens.json) بالسكريبت [`generate-screens.ps1`](../../../shared/scripts/generate-screens.ps1)، فلو تغيّرت الشاشات شغّل السكريبت تاني.
 
 - **شاشة:** إطار كامل `393×852`.
 - **Bottom sheet:** إطار أقصر يمثّل نافذة منبثقة من الأسفل فوق شاشة أخرى.
-- أي إطار اسمه بيبدأ بـ `_` مش داخل في الفهرس (عددهم حالياً: 3). راجع [قرار 0003](../../decisions/0003-underscore-ignored.md).
+- أي إطار اسمه بيبدأ بـ `_` مش داخل في الفهرس (عددهم حالياً: 5). راجع [قرار 0003](../../decisions/0003-underscore-ignored.md).
 
 ## البداية
 
@@ -135,8 +135,6 @@
 | `orders/order_details/invoice_bottom_sheet` | Bottom sheet | 393×567 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18283) |
 | `orders/order_details/service_rating_bottom_sheet` | Bottom sheet | 393×439 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18290) |
 | `orders/order_details/visits_bottom_sheet` | Bottom sheet | 393×532 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18272) |
-| `orders/visits/block_worker_popup` | Bottom sheet | 393×184 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31455) |
-| `orders/visits/block_worker_result_popup` | Bottom sheet | 393×276 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31542) |
 | `orders/visits/favorite_worker_popup` | Bottom sheet | 393×184 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31414) |
 | `orders/visits/favorite_worker_result_popup` | Bottom sheet | 393×276 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) |
 | `orders/visits/reschedule_visit_bottom_sheet` | Bottom sheet | 393×488 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157) |

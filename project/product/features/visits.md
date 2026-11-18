@@ -12,7 +12,6 @@ flowchart LR
     U --> RS["reschedule_visit_bottom_sheet"]
     P --> WR["worker_rating_bottom_sheet"]
     P --> FW["favorite_worker_popup"] --> FWR["favorite_worker_result_popup"]
-    P -.->|"مؤجل: show_block_worker = off"| BW["block_worker_popup"]
 ```
 
 ## الشاشات
@@ -59,10 +58,8 @@ flowchart LR
 ## مؤجل
 **حظر العاملة:** العميل مش عايزه حاليًا، بس ممكن يرجع بعدين. القرار في [0002](../../decisions/0002-defer-block-worker.md).
 - **في Figma:** زرار «حظر العاملة» مربوط بـ boolean property اسمها `show_block_worker` في `visit_details`، وقيمتها الافتراضية **off**. لما تبقى off، زرار «تفضيل العاملة» بياخد عرض الكارت كله.
-- **الـ popups:** موجودة زي ما هي، بس مفيش طريق يوصّل لها طول ما المفتاح off:
-  - [`orders/visits/block_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31455): تأكيد الحظر
-  - [`orders/visits/block_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31542): نتيجة الحظر، بنفس شكل نتيجة التفضيل
-- **علشان نرجّعه:** نخلّي `show_block_worker` تبقى on في الـ component set، أو في الـ instances اللي محتاجاه، ونرجّع الحظر للقواعد والجداول اللي فوق.
+- **الـ popups:** popups تأكيد الحظر ونتيجته اتضاف قبل اسمهم `_`، فبيتجاهلوا ([قرار 0003](../../decisions/0003-underscore-ignored.md)).
+- **علشان نرجّعه:** الخطوات والـ node IDs موجودة في [قرار 0002](../../decisions/0002-defer-block-worker.md).
 
 ## يحتاج تأكيد
 - [ ] فيه حد أقصى لعدد مرات التأجيل، أو نافذة زمنية قبل الزيارة؟

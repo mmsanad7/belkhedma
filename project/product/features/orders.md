@@ -54,7 +54,7 @@ flowchart LR
 | `contact_method_bottom_sheet` | اختيار وسيلة التواصل مع الشركة |
 | `contact_form_bottom_sheet` | نموذج تواصل |
 
-الـ bottom sheets والـ popups بتوع الزيارات (`orders/visits/*`: تأجيل، تقييم العاملة، تفضيل) موجودة في [visits.md](visits.md). أما popups الحظر فمؤجلة.
+الـ bottom sheets والـ popups بتوع الزيارات (`orders/visits/*`: تأجيل، تقييم العاملة، تفضيل) موجودة في [visits.md](visits.md).
 
 ## Templates
 - `orders` (`2197:26789`): `state=hourly|monthly|medical|mediation`
