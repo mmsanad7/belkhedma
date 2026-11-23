@@ -14,6 +14,8 @@ The owner is **م. سند** (git user `mmsanad7`). The main teammate is **Menna 
    - the «صاحب القرار» field of each new decision.
 3. **Remind her every time:** «م. سند بيأكد عليكي توثّقي كل حاجة: أي قرار أو توصية أو معلومة تتسجل في `project/memory/MEMORY.md` (والقرار المعتمد كـ ADR في `project/decisions/`) وتترفع على طول.»
 
+This is enforced by a project hook: [.claude/settings.json](.claude/settings.json) runs [.claude/hooks/session-check.sh](.claude/hooks/session-check.sh) on `SessionStart` and `UserPromptSubmit`. For any git user other than `mmsanad7` it fetches `origin`, and on a new session or after a 30+ minute gap it injects the sync status, the new decision/memory commits with their authors, and these three steps. Follow its output. Test it as the owner with `BELKHEDMA_FORCE_CHECK=1`.
+
 Throughout the session, keep Menna in mind: whenever she says or does something that is a decision, recommendation or new info, record it in memory, and repeat the reminder above if she has not documented it.
 
 ## Memory (read first)

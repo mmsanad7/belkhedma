@@ -13,3 +13,6 @@ desktop.ini
 # Temporary exports
 *.tmp
 exports/
+
+# Session hook state (per machine)
+.claude/.last-prompt
