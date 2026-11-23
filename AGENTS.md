@@ -54,7 +54,7 @@ Throughout the session, keep Menna in mind: whenever she says or does something 
 - Component variant properties use `state=`, `type=`, `status=`, `size=`. Values are `snake_case`.
 - Screen frames are `393×852` and named `section/sub_section/state` in `snake_case` (e.g. `hourly_offers/offer_details`).
 - Bottom sheets are separate, shorter frames named `..._bottom_sheet` or `..._popup`.
-- Every prototype interaction that opens a `*_bottom_sheet` or `*_popup` (popups are likely misnamed bottom sheets, see deviation S-06) must be: Open overlay, Bottom center, close when clicking outside on, background `000000` at 25%, Move in, direction up, Ease in and out, 300ms ([decision 0009](project/decisions/0009-bottom-sheet-overlay-interaction.md)). Check this in every review.
+- Every prototype interaction that opens a `*_bottom_sheet` or `*_popup` (popups are likely misnamed bottom sheets, see deviation S-11) must be: Open overlay, Bottom center, close when clicking outside on, background `000000` at 25%, Move in, direction up, Ease in and out, 300ms ([decision 0009](project/decisions/0009-bottom-sheet-overlay-interaction.md)). Check this in every review.
 - Any frame, section or component whose name starts with `_` is not approved and must be ignored: leave it out of `screens.json`, the screens index, feature docs, component docs and deviations ([decision 0003](project/decisions/0003-underscore-ignored.md)).
 - Layout: 16px side margin, `top_navbar` at the top (80px), content starts at y=96, floating `bottom_navbar` (368×64) on tab-level screens.
 - All UI copy is Arabic, RTL.
@@ -65,3 +65,5 @@ Throughout the session, keep Menna in mind: whenever she says or does something 
 - Log every change in `project/changelog/` and record known inconsistencies in `project/brand/deviations.md`.
 - Mark anything inferred, not confirmed by the product team, with **(يحتاج تأكيد)**.
 - Commit and push every finished change to `main` on `mmsanad7/belkhedma` right away, without asking first ([decision 0001](project/decisions/0001-push-every-change.md)).
+- **Everyone, every time** (م. سند, Menna, anyone): every message, request, decision or edit is documented in the repo and pushed right away, not at the end of the session ([decision 0011](project/decisions/0011-document-everything-with-links.md)).
+- **Every review, note, deviation or comment must link to the exact element it talks about:** a Figma node link (`https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=<id with ->`) for frames and components, or a relative file link (with `#Lnn` / anchor when useful) for docs. A note without a link is incomplete ([decision 0011](project/decisions/0011-document-everything-with-links.md)).
