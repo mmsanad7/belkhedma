@@ -12,6 +12,7 @@ flowchart LR
     U --> RS["reschedule_visit_bottom_sheet"]
     P --> WR["worker_rating_bottom_sheet"]
     P --> FW["favorite_worker_popup"] --> FWR["favorite_worker_result_popup"]
+    P -.->|"يحتاج تأكيد"| UFR["unfavorite_worker_result_popup"]
 ```
 
 ## الشاشات
@@ -24,6 +25,7 @@ flowchart LR
 | [`orders/visits/worker_rating_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31316) | «تقييم العاملة»: اسم العاملة، 4 معايير بالنجوم، «ملاحظاتك على العاملة» (اختياري)، و«إرسال التقييم» |
 | [`orders/visits/favorite_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31414) | تأكيد تفضيل العاملة |
 | [`orders/visits/favorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) | «تم تفضيل العاملة في 4 زيارات من أصل 50 زيارة، لعدم توفر إتاحيتها في باقي الزيارات» + «تم» / «تواصل عبر واتساب» |
+| [`orders/visits/unfavorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9308-24382) | نجاح إلغاء التفضيل: رسمة العاملة بقلب مكسور (`process_result_vectors` `state=unfavorite_worker`)، «تم إلغاء تفضيل العاملة» + «تم». النص ومكان الدخول عليها **(يحتاج تأكيد)** |
 
 حالة «سابقة بعد التقييم» مش شاشة لوحدها. هي متغير `status=previous, state=expanded_rated` في `visit_details`.
 
@@ -64,7 +66,7 @@ flowchart LR
 ## يحتاج تأكيد
 - [ ] فيه حد أقصى لعدد مرات التأجيل، أو نافذة زمنية قبل الزيارة؟
 - [ ] التفضيل بيتطبق على الطلب ده بس ولا على كل طلبات العميل؟
-- [ ] ينفع العميل يلغي التفضيل بعد كده؟ ومن فين؟
+- [ ] ينفع العميل يلغي التفضيل بعد كده؟ ومن فين؟ (حالة النجاح اترسمت في `unfavorite_worker_result_popup`، بس زرار الإلغاء وpopup التأكيد لسه مش مرسومين)
 - [ ] ينفع العميل يعدّل التقييم بعد ما يبعته؟
 - [ ] هل `visits_bottom_sheet` القديمة لسه مطلوبة، ولا الشاشة الجديدة بقت مكانها؟
 - [ ] الوصول للزيارات من تفاصيل الطلب بس، ولا هيبقى فيه «زياراتي» عامة زي Enaya؟

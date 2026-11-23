@@ -3,7 +3,7 @@
     "page":  "screens",
     "page_id":  "13:7",
     "generated":  "2026-11-23",
-    "count":  104,
+    "count":  105,
     "ignored_prefix":  "_",
     "ignored_count":  5,
     "screens":  [
@@ -852,6 +852,15 @@
                         "height":  488,
                         "type":  "bottom_sheet",
                         "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157"
+                    },
+                    {
+                        "name":  "orders/visits/unfavorite_worker_result_popup",
+                        "section":  "orders",
+                        "node_id":  "9308:24382",
+                        "width":  393,
+                        "height":  276,
+                        "type":  "bottom_sheet",
+                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9308-24382"
                     },
                     {
                         "name":  "orders/visits/worker_rating_bottom_sheet",

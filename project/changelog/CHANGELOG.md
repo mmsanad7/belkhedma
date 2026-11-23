@@ -13,8 +13,12 @@
 - اختيار العاملة في خدمات الأفراد ([قرار 0008](../decisions/0008-monthly-worker-selection-flow.md)):
   - 5 فريمات جديدة: `monthly_offers/worker_selection_method_bottom_sheet` و`choose_worker` و`workers_filtration_bottom_sheet` و`worker_profile_bottom_sheet` و`offer_details/worker_selected`.
   - البروتوتايب: «الحصول على العرض» في `monthly_offers/offers_summary_popup` بقى بيفتح سؤال طريقة الاختيار (كان بيروح لـ `offer_details`)، والرحلة كلها مربوطة لحد «تغيير العاملة».
+- إلغاء تفضيل العاملة:
+  - variant جديد `state=unfavorite_worker` (`9308:22869`) في `process_result_vectors` على صفحة atoms: رسمة العاملة نفسها بقلب رمادي مكسور بدل القلب الوردي.
+  - فريم جديد `orders/visits/unfavorite_worker_result_popup` (`9308:24382`): «تم إلغاء تفضيل العاملة» + زرار «تم» بس. النص **(يحتاج تأكيد)**.
 
 ### التوثيق
+- `visits.md` و`atoms.md`: إضافة popup نجاح إلغاء التفضيل والـ variant الجديد. إعادة توليد `screens.json` و`screens-index.md` (105 إطار).
 - قرار [0007](../decisions/0007-worker-selection-from-offer-company.md): اختيار العاملة بيبقى من عاملات الشركة صاحبة العرض بس.
 - قرار [0008](../decisions/0008-monthly-worker-selection-flow.md): رحلة اختيار العاملة في خدمات الأفراد. تحديث `workers.md` و`monthly-and-medical.md` و`status.md` والـ audit، وإعادة توليد `screens.json` و`screens-index.md` (104 إطار).
 - قرارات: [0004](../decisions/0004-favorite-is-pinning.md) (التفضيل = التثبيت)، و[0005](../decisions/0005-workers-plan-excludes-mediation.md) (الوساطة برا الخطة)، و[0006](../decisions/0006-worker-entity.md) (كيان العاملة).
