@@ -2,8 +2,8 @@
     "figma_file_key":  "mCPCipJETTjSW7GD8vsrzY",
     "page":  "screens",
     "page_id":  "13:7",
-    "generated":  "2026-11-18",
-    "count":  97,
+    "generated":  "2026-11-23",
+    "count":  99,
     "ignored_prefix":  "_",
     "ignored_count":  5,
     "screens":  [
@@ -879,6 +879,24 @@
                         "height":  852,
                         "type":  "screen",
                         "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=438-5894"
+                    },
+                    {
+                        "name":  "workers/worker_profile_bottom_sheet",
+                        "section":  "workers",
+                        "node_id":  "9298:23032",
+                        "width":  393,
+                        "height":  497,
+                        "type":  "bottom_sheet",
+                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032"
+                    },
+                    {
+                        "name":  "workers/worker_video_bottom_sheet",
+                        "section":  "workers",
+                        "node_id":  "9298:23100",
+                        "width":  393,
+                        "height":  624,
+                        "type":  "bottom_sheet",
+                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23100"
                     }
                 ]
 }

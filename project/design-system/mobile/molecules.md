@@ -53,6 +53,7 @@
 | [`process_result_container`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6311-30180) | `state=` default · with_progress · without_bg | صندوق نتيجة العملية |
 | [`select_employee_from_branch_note`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11972) | `state=` default | ملاحظة اختيار عاملة من فرع |
 | [`dashboard_statistics`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1926-18245) | `state=` default · state2 | رقم إحصائي في لوحة الحساب |
+| [`worker_info_chip`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9297-1087) | — . Boolean: `show_flag`، Instance swap: `flag` | معلومة عن العاملة كشارة: الجنسية (بالعلم)، الديانة، الخبرة |
 | [`worker_rating_criterion`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9080-1124) | `state=` rateable · rated | معيار واحد من تقييم العاملة: نجوم قابلة للاختيار، أو الرقم بعد التقييم |
 
 ## الحساب والمحتوى

@@ -1,6 +1,6 @@
 # فهرس الشاشات (Mobile)
 
-كل الإطارات في صفحة `screens` في Figma (97 إطاراً). الملف مولَّد من [`project/data/screens.json`](../../data/screens.json) بالسكريبت [`generate-screens.ps1`](../../../shared/scripts/generate-screens.ps1)، فلو تغيّرت الشاشات شغّل السكريبت تاني.
+كل الإطارات في صفحة `screens` في Figma (99 إطاراً). الملف مولَّد من [`project/data/screens.json`](../../data/screens.json) بالسكريبت [`generate-screens.ps1`](../../../shared/scripts/generate-screens.ps1)، فلو تغيّرت الشاشات شغّل السكريبت تاني.
 
 - **شاشة:** إطار كامل `393×852`.
 - **Bottom sheet:** إطار أقصر يمثّل نافذة منبثقة من الأسفل فوق شاشة أخرى.
@@ -187,3 +187,10 @@
 | `help_and_support/empty` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1818-18417) |
 | `help_and_support/faqs` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1831-15200) |
 | `help_and_support/tickets_history` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1831-18208) |
+
+## العاملات
+
+| الإطار | النوع | المقاس | Figma |
+|---|---|---|---|
+| `workers/worker_profile_bottom_sheet` | Bottom sheet | 393×497 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) |
+| `workers/worker_video_bottom_sheet` | Bottom sheet | 393×624 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23100) |

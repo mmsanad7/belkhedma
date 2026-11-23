@@ -30,6 +30,7 @@
 | C-02 | `text_buttons` (`state9`)، `navbar_btn_icon` (`state2`)، `logo` (`state2`)، `progress_bar` (`state3`)، `search_or_filtration` (`state2`)، `dashboard_statistics` (`state2`)، `payment_input` (`state3`)، `company_in_home` (`state2`، `state3`، `state4`) | قيم variants مرقّمة بدون معنى | أسماء وصفية |
 | C-03 | صفحات `atoms` و`molecules` و`organisms` | عناصر شاردة: `Rectangle 1`، `Rectangle 2`، `Polygon 1`، ونص اسمه `6` في molecules | حذفها أو نقلها لـ `sand_box` |
 | C-04 | `separate_back` | الاسم غير واضح، والمقصود غالباً زر الرجوع | `back_button` |
+| C-06 | `ic_play` (`9297:5`) | أيقونة flat بلون واحد، وباقي أيقونات صفحة `icons` ثلاثية الأبعاد | أيقونة تشغيل بنفس ستايل الأيقونات **(يحتاج تأكيد)** |
 | C-05 | `profile_header`، `ticket_item`، `help_and_support_header`، `number_of_unread`، `order_summary`، `worker_rating_summary`، `calendar` | مكوّنات مفردة على صفحة organisms، وبعضها حجمه حجم molecule. (`visit_details` اتحل في 2026-11-16 وبقى component set) | مراجعة التصنيف |
 
 ### الشاشات
@@ -42,6 +43,7 @@
 | S-05 | `visit_details` (`9081:6048`) | العنوان نص مؤقت «عنوان الزيارة يكون هنا»، والكارت بيعرض وقت البدء بس من غير التاريخ ولا «من-إلى» زي ما كانت الخطة | نص حقيقي، وإضافة التاريخ والتوقيت من-إلى **(يحتاج تأكيد)** |
 | S-06 | `reschedule_visit_bottom_sheet` (`9081:31157`) | بيانات التقويم غلط: نوفمبر 2026 فيه 31 يوم، وأول الشهر واقع يوم جمعة (الصح: 30 يوم، ويبدأ يوم أحد) | تصحيح بيانات `calendar` |
 | S-07 | `favorite_worker_result_popup` | فيه عنوان باهت فوق الأيقونة باين إنه طبقة زيادة من الـ header | مراجعة الطبقة وحذفها لو مش مقصودة |
+| S-10 | `worker_card`، `worker_profile` | صورة العاملة جاية من الصورة الافتراضية في `profile_avatar_photo`، وهي صورة راجل | صورة عاملة حقيقية أو placeholder محايد |
 | S-09 | `orders/order_details/visits_bottom_sheet` (`7239:18272`) | ممكن تكون اتكررت مع `show_visits/upcoming` بعد إضافة التبويبات | قرار من فريق المنتج: نشيلها ولا نسيبها |
 
 ## تم الحل

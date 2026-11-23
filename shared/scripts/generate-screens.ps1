@@ -48,7 +48,7 @@ $groups = [ordered]@{
   "خدمات بالساعة" = @("hourly_offers","hourly_service_selection"); "خدمات الأفراد (شهري)" = @("monthly_offers")
   "رعاية طبية" = @("medical_offers"); "الوساطة" = @("mediation"); "العروض" = @("offers"); "البحث" = @("search")
   "المفضلة" = @("favorites"); "الطلبات" = @("orders"); "المزيد" = @("more"); "الملف الشخصي" = @("profile")
-  "العناوين" = @("addresses"); "الشركات" = @("companies"); "الإشعارات" = @("notifications"); "المساعدة والدعم" = @("help_and_support")
+  "العناوين" = @("addresses"); "الشركات" = @("companies"); "الإشعارات" = @("notifications"); "المساعدة والدعم" = @("help_and_support"); "العاملات" = @("workers")
 }
 $covered = $groups.Values | ForEach-Object { $_ }
 $missing = @($items | Where-Object { $covered -notcontains $_.section })

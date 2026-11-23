@@ -77,6 +77,13 @@
 | [`worker_rating_summary`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9084-6930) | — | ملخص تقييم العاملة: المتوسط والمعايير الأربعة والملاحظات |
 | [`calendar`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9080-6534) | — | تقويم شهري لاختيار تاريخ (تأجيل الزيارة) |
 
+## العاملات
+
+| المكوّن | الـ Variants | الاستخدام |
+|---|---|---|
+| [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9297-6771) | — . Boolean: `show_skills`، `show_profile_button` | كارت العاملة في القوائم والملخصات: الصورة، الاسم، التقييم، الديانة، الخبرة، الجنسية، المهارات، و«عرض الملف». راجع [workers.md](../../product/features/workers.md) |
+| [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-6111) | — . Boolean: `show_video` | محتوى الملف الشخصي للعاملة: البيانات، «فيديو تعريفي»، النبذة، المهارات المعتمدة |
+
 ## الحساب والدعم
 
 | المكوّن | الـ Variants | الاستخدام |

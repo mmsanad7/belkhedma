@@ -85,6 +85,7 @@ stateDiagram-v2
 | إتمام الحجز والدفع | [checkout-and-payment.md](features/checkout-and-payment.md) |
 | الطلبات | [orders.md](features/orders.md) |
 | الزيارات (تأجيل، تقييم العاملة، تفضيل) | [visits.md](features/visits.md) |
+| العاملات (الكارت، الملف الشخصي، خطة الإضافة) | [workers.md](features/workers.md) |
 | العروض والبحث والمفضلة | [offers-search-favorites.md](features/offers-search-favorites.md) |
 | الحساب (الملف الشخصي، العناوين، الشركات، الإشعارات) | [account.md](features/account.md) |
 | المساعدة والدعم | [help-and-support.md](features/help-and-support.md) |

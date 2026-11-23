@@ -3,7 +3,19 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-23
+### Figma
+- نسخة في Version History اسمها «قبل اضافة اي شيء يخص العاملة» (عملتها Menna)، وفي الريبو tag اسمه `before-workers-2026-11-23`.
+- كيان العاملة ([قرار 0006](../decisions/0006-worker-entity.md)):
+  - `ic_play` (`9297:5`) على صفحة icons.
+  - `worker_info_chip` (`9297:1087`) على صفحة molecules.
+  - `worker_card` (`9297:6771`) و`worker_profile` (`9298:6111`) على صفحة organisms.
+  - شاشات جديدة: `workers/worker_profile_bottom_sheet` (`9298:23032`) و`workers/worker_video_bottom_sheet` (`9298:23100`)، و«فيديو تعريفي» مربوط بشيت الفيديو.
+
 ### التوثيق
+- قرارات: [0004](../decisions/0004-favorite-is-pinning.md) (التفضيل = التثبيت)، و[0005](../decisions/0005-workers-plan-excludes-mediation.md) (الوساطة برا الخطة)، و[0006](../decisions/0006-worker-entity.md) (كيان العاملة).
+- feature جديدة: [workers.md](../product/features/workers.md).
+- تحديث `organisms.md` و`molecules.md` و`glossary.md` و`overview.md` و`status.md`، و`deviations.md` (C-06، S-10).
+- `generate-screens.ps1`: اتضافت مجموعة «العاملات» (`workers`). إعادة توليد `screens.json` و`screens-index.md`: بقوا 99 إطار بدل 97.
 - مرجع جديد [mueen-workers.md](../product/references/mueen-workers.md): بيزنس العاملات في تطبيق معين (`Q0mFJNHw2R1hB37rQDVhAV`)، في مسار الساعة والمقيمة والإدارة بعد التعاقد.
 - [audit مقارنة العاملات](../design-system/audits/2026-11-23-mueen-workers-comparison.md): معين ← بالخدمة، وقائمة بالحاجات المرشحة للنقل. كل بند هيتاخد فيه قرار لوحده.
 
