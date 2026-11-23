@@ -10,9 +10,13 @@
   - `worker_info_chip` (`9297:1087`) على صفحة molecules.
   - `worker_card` (`9297:6771`) و`worker_profile` (`9298:6111`) على صفحة organisms.
   - شاشات جديدة: `workers/worker_profile_bottom_sheet` (`9298:23032`) و`workers/worker_video_bottom_sheet` (`9298:23100`)، و«فيديو تعريفي» مربوط بشيت الفيديو.
+- اختيار العاملة في خدمات الأفراد ([قرار 0008](../decisions/0008-monthly-worker-selection-flow.md)):
+  - 5 فريمات جديدة: `monthly_offers/worker_selection_method_bottom_sheet` و`choose_worker` و`workers_filtration_bottom_sheet` و`worker_profile_bottom_sheet` و`offer_details/worker_selected`.
+  - البروتوتايب: «الحصول على العرض» في `monthly_offers/offers_summary_popup` بقى بيفتح سؤال طريقة الاختيار (كان بيروح لـ `offer_details`)، والرحلة كلها مربوطة لحد «تغيير العاملة».
 
 ### التوثيق
 - قرار [0007](../decisions/0007-worker-selection-from-offer-company.md): اختيار العاملة بيبقى من عاملات الشركة صاحبة العرض بس.
+- قرار [0008](../decisions/0008-monthly-worker-selection-flow.md): رحلة اختيار العاملة في خدمات الأفراد. تحديث `workers.md` و`monthly-and-medical.md` و`status.md` والـ audit، وإعادة توليد `screens.json` و`screens-index.md` (104 إطار).
 - قرارات: [0004](../decisions/0004-favorite-is-pinning.md) (التفضيل = التثبيت)، و[0005](../decisions/0005-workers-plan-excludes-mediation.md) (الوساطة برا الخطة)، و[0006](../decisions/0006-worker-entity.md) (كيان العاملة).
 - feature جديدة: [workers.md](../product/features/workers.md).
 - تحديث `organisms.md` و`molecules.md` و`glossary.md` و`overview.md` و`status.md`، و`deviations.md` (C-06، S-10).
