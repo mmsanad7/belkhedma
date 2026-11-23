@@ -5,6 +5,10 @@ Instructions for AI coding/design agents working in this repository.
 ## What this repo is
 Product and design-system documentation for **Belkhedma (بالخدمة)**, an Arabic RTL mobile app for booking home-service workers from licensed Saudi companies. There is no application code here, only documentation of the Figma file.
 
+## Memory (read first)
+- At the start of every session, read [project/memory/MEMORY.md](project/memory/MEMORY.md) before doing anything else.
+- Whenever the owner states a fact, business rule, preference, correction or decision, write it to that file immediately, then commit and push it like any other change. Keep memory in the repo, not in tool-local memory, so work can continue from any machine.
+
 ## Source of truth
 - Figma file key: `mCPCipJETTjSW7GD8vsrzY` ("Belkhedma App").
 - Node link format: `https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=<id with - instead of :>`

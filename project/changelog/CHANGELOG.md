@@ -3,6 +3,9 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-23
+### التوثيق: ذاكرة الشغل في الريبو
+- ملف جديد [memory/MEMORY.md](../memory/MEMORY.md) لحفظ أي معلومة أو قرار أو تفضيل أول بأول، و`AGENTS.md` بقى بيطلب قراءته أول كل جلسة وتحديثه على طول.
+
 ### Figma: تظبيط كيان العاملة والأفراد على نظام الـ atomic design
 - `worker_info_chip` اتمسح (كان molecule جديد). مكانه `contract_information_chip` `state=with_bg` الموجود: `label` «الديانة / الخبرة / الجنسية» و`value`.
 - `worker_card` و`worker_profile` بقوا component sets بـ `state=default` (`9311:24185`، `9311:24186`) زي باقي المكوّنات، وبنفس ستايل الـ set بتاع `offers_card`.
