@@ -33,10 +33,11 @@ Product and design-system documentation for **Belkhedma (بالخدمة)**, an A
 
 ## Rules when adding to the Figma file
 - Build from existing components and variables. Never hard-code a color, spacing, radius or font value that has a variable.
+- Reuse first: search `atoms`, `molecules`, `organisms`, `templates` and `icons` before building anything. Only if nothing fits, create a new component following Atomic Design (right level, built from lower-level instances, placed on its page, a component set with `state=default`), and document why the existing ones did not fit ([decision 0010](project/decisions/0010-reuse-components-first.md)). Check this in every review.
 - Component variant properties use `state=`, `type=`, `status=`, `size=`. Values are `snake_case`.
 - Screen frames are `393×852` and named `section/sub_section/state` in `snake_case` (e.g. `hourly_offers/offer_details`).
 - Bottom sheets are separate, shorter frames named `..._bottom_sheet` or `..._popup`.
-- Every prototype interaction that opens a `*_bottom_sheet` must be: Open overlay, Bottom center, close when clicking outside on, background `000000` at 25%, Move in, direction up, Ease in and out, 300ms ([decision 0009](project/decisions/0009-bottom-sheet-overlay-interaction.md)). Check this in every review.
+- Every prototype interaction that opens a `*_bottom_sheet` or `*_popup` (popups are likely misnamed bottom sheets, see deviation S-06) must be: Open overlay, Bottom center, close when clicking outside on, background `000000` at 25%, Move in, direction up, Ease in and out, 300ms ([decision 0009](project/decisions/0009-bottom-sheet-overlay-interaction.md)). Check this in every review.
 - Any frame, section or component whose name starts with `_` is not approved and must be ignored: leave it out of `screens.json`, the screens index, feature docs, component docs and deviations ([decision 0003](project/decisions/0003-underscore-ignored.md)).
 - Layout: 16px side margin, `top_navbar` at the top (80px), content starts at y=96, floating `bottom_navbar` (368×64) on tab-level screens.
 - All UI copy is Arabic, RTL.
