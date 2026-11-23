@@ -20,6 +20,17 @@ now=$(date +%s)
 last=$(cat "$stamp" 2>/dev/null || echo 0)
 echo "$now" > "$stamp"
 
+# Pending messages from the owner: delivered on her first prompt, repeated until marked [x].
+msgfile="project/memory/messages-to-menna.md"
+if [ "$mode" = "prompt" ] && grep -q '^- \[ \]' "$msgfile" 2>/dev/null; then
+  cat <<EOF
+[رسالة من م. سند لمنة: لازم تتوصّل دلوقتي]
+في $msgfile رسالة أو أكتر لسه ما اتوصّلتش (البنود اللي بتبدأ بـ "- [ ]"). اقرا الملف، وابدأ ردك بالرسالة بالنص وبالإحساس المكتوب جنبها (الإيموجي)، وبعدها رد على طلبها.
+بعد التوصيل: غيّر البند لـ "- [x]" واكتب تاريخ التوصيل، واعمل commit وpush على طول.
+
+EOF
+fi
+
 if [ "$mode" = "start" ]; then
   reason="جلسة جديدة"
 else

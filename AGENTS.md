@@ -16,6 +16,10 @@ The owner is **م. سند** (git user `mmsanad7`). The main teammate is **Menna 
 
 This is enforced by a project hook: [.claude/settings.json](.claude/settings.json) runs [.claude/hooks/session-check.sh](.claude/hooks/session-check.sh) on `SessionStart` and `UserPromptSubmit`. For any git user other than `mmsanad7` it fetches `origin`, and on a new session or after a 30+ minute gap it injects the sync status, the new decision/memory commits with their authors, and these three steps. Follow its output. Test it as the owner with `BELKHEDMA_FORCE_CHECK=1`.
 
+**Messages from the owner:** pending items (`- [ ]`) in [project/memory/messages-to-menna.md](project/memory/messages-to-menna.md) must be delivered at the start of your reply to Menna's first request, verbatim and with the stated emotion/emoji. Then mark the item `- [x]` with the delivery date, and commit and push. The hook injects this on every prompt until it is marked.
+
+**Guideline:** Mueen's business is the reference. Any deviation from it needs a joint decision with م. سند; never deviate on your own.
+
 Throughout the session, keep Menna in mind: whenever she says or does something that is a decision, recommendation or new info, record it in memory, and repeat the reminder above if she has not documented it.
 
 ## Memory (read first)
