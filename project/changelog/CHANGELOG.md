@@ -3,6 +3,19 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-23
+### Figma: تظبيط كيان العاملة والأفراد على نظام الـ atomic design
+- `worker_info_chip` اتمسح (كان molecule جديد). مكانه `contract_information_chip` `state=with_bg` الموجود: `label` «الديانة / الخبرة / الجنسية» و`value`.
+- `worker_card` و`worker_profile` بقوا component sets بـ `state=default` (`9311:24185`، `9311:24186`) زي باقي المكوّنات، وبنفس ستايل الـ set بتاع `offers_card`.
+- `worker_profile`:
+  - زرار الفيديو بقى `text_buttons` `state=see_all` بدل frame.
+  - «نبذة عن العاملة» و«المهارات المعتمدة» بقوا `default_card` بالـ slot.
+  - خاصية `bio` اتشالت، لأن النص جوه slot وبيتعدل في الـ instance.
+- الـ bottom sheets الأربعة اتبنوا على organism `bottom_sheet` (`585:3350`) بنفس الـ IDs بتاعتهم: الملف الشخصي، الفيديو، طريقة الاختيار، فلترة العاملات.
+- فلترة العاملات: عناوين الأقسام بقت `section_header`.
+- `choose_worker`: جملة الشركة بقت `section_header`.
+- شيت الفيديو: `ic_play` بقى جوه `icon_placeholder` `state=size_24`.
+- `monthly_offers/worker_profile_bottom_sheet` اتمسح لأنه كان مكرر. `workers/worker_profile_bottom_sheet` بقى فيه زرار «اختيار العاملة»، والبروتوتايب اتربط من جديد.
+
 ### Figma
 - نسخة في Version History اسمها «قبل اضافة اي شيء يخص العاملة» (عملتها Menna)، وفي الريبو tag اسمه `before-workers-2026-11-23`.
 - كيان العاملة ([قرار 0006](../decisions/0006-worker-entity.md)):
@@ -18,6 +31,7 @@
   - فريم جديد `orders/visits/unfavorite_worker_result_popup` (`9308:24382`): «تم إلغاء تفضيل العاملة» + زرار «تم» بس. النص **(يحتاج تأكيد)**.
 
 ### التوثيق
+- التظبيط: تحديث `workers.md` و`organisms.md` و`molecules.md` و`monthly-and-medical.md` وقرارات 0006 و0008، و`deviations.md` (C-07: `section_header` مش بيخبي «مشاهدة الكل»). إعادة توليد `screens.json` و`screens-index.md` (104 إطار بعد ما الملف الشخصي المكرر اتشال).
 - `visits.md` و`atoms.md`: إضافة popup نجاح إلغاء التفضيل والـ variant الجديد. إعادة توليد `screens.json` و`screens-index.md` (105 إطار).
 - قرار [0007](../decisions/0007-worker-selection-from-offer-company.md): اختيار العاملة بيبقى من عاملات الشركة صاحبة العرض بس.
 - قرار [0008](../decisions/0008-monthly-worker-selection-flow.md): رحلة اختيار العاملة في خدمات الأفراد. تحديث `workers.md` و`monthly-and-medical.md` و`status.md` والـ audit، وإعادة توليد `screens.json` و`screens-index.md` (104 إطار).

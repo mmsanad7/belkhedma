@@ -27,12 +27,12 @@ flowchart LR
     M -->|"تختارها الشركة"| OD["offer_details"]
     M -->|"أختارها بنفسي / متابعة"| CW["choose_worker"]
     CW -->|"تصفية"| F["workers_filtration_bottom_sheet"]
-    CW -->|"عرض الملف"| PR["worker_profile_bottom_sheet"]
+    CW -->|"عرض الملف"| PR["workers/worker_profile_bottom_sheet"]
     PR -->|"فيديو تعريفي"| VID["workers/worker_video_bottom_sheet"]
     PR -->|"اختيار العاملة"| ODS["offer_details/worker_selected"]
     ODS -->|"تغيير العاملة"| CW
 ```
 
 ## الأثر
-- **Figma:** 5 فريمات جديدة في `monthly_offers/*` (التفاصيل في [workers.md](../product/features/workers.md#الشاشات))، و«الحصول على العرض» في `monthly_offers/offers_summary_popup` بقى بيفتح سؤال طريقة الاختيار بدل ما يروح لتفاصيل التعاقد على طول.
+- **Figma:** 4 فريمات جديدة في `monthly_offers/*`، والملف الشخصي بيستخدم `workers/worker_profile_bottom_sheet` (التفاصيل في [workers.md](../product/features/workers.md#الشاشات))، و«الحصول على العرض» في `monthly_offers/offers_summary_popup` بقى بيفتح سؤال طريقة الاختيار بدل ما يروح لتفاصيل التعاقد على طول.
 - **ملفات التوثيق:** `workers.md`، `monthly-and-medical.md`، `status.md`، الـ audit، `screens.json`، `screens-index.md`، والـ changelog.

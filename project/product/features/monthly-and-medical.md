@@ -27,7 +27,7 @@ flowchart LR
 | `monthly_offers/offers_filtration_bottom_sheet` | خيارات الفلترة |
 | `monthly_offers/offers_summary_popup` | ملخص العرض |
 | `monthly_offers/worker_selection_method_bottom_sheet` | «أختارها بنفسي / تختارها الشركة». راجع [workers.md](workers.md) |
-| `monthly_offers/choose_worker` · `workers_filtration_bottom_sheet` · `worker_profile_bottom_sheet` | قائمة عاملات الشركة صاحبة العرض، والفلتر، والملف الشخصي بزرار «اختيار العاملة» |
+| `monthly_offers/choose_worker` · `workers_filtration_bottom_sheet` | قائمة عاملات الشركة صاحبة العرض والفلتر. «عرض الملف» بيفتح `workers/worker_profile_bottom_sheet` بزرار «اختيار العاملة» |
 | `monthly_offers/offer_details` | تفاصيل الطلب والدفع لما الشركة هي اللي تختار العاملة. راجع [checkout-and-payment.md](checkout-and-payment.md) |
 | `monthly_offers/offer_details/worker_selected` | نفس الشاشة، بكارت العاملة المختارة و«تغيير العاملة» |
 | `monthly_offers/payment_successfully` | تأكيد الدفع |

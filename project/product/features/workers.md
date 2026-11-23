@@ -18,17 +18,18 @@
 
 | الشاشة (اسم الإطار في Figma) | الوصف |
 |---|---|
-| [`workers/worker_profile_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) | «الملف الشخصي للعاملة»: `bottom_sheet_header` + `worker_profile`. زرار «فيديو تعريفي» بيفتح شيت الفيديو (overlay) |
-| [`workers/worker_video_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23100) | «الفيديو التعريفي»: مساحة الفيديو بزرار تشغيل، وزرار «تم» |
+| [`workers/worker_profile_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) | «الملف الشخصي للعاملة»: `bottom_sheet` + `worker_profile` في الـ slot + زرار «اختيار العاملة». «فيديو تعريفي» بيفتح شيت الفيديو (overlay) |
+| [`workers/worker_video_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23100) | «الفيديو التعريفي»: `bottom_sheet` فيه مساحة الفيديو و`icon_placeholder` (`ic_play`)، وزرار «تم» |
+
+كل الـ bottom sheets هنا متبنية على organism `bottom_sheet` (`585:3350`)، والمحتوى في الـ slot بتاعه، زي `monthly_offers/offers_filtration_bottom_sheet`.
 
 ### اختيار العاملة في خدمات الأفراد ([قرار 0008](../../decisions/0008-monthly-worker-selection-flow.md))
 
 | الشاشة | الوصف |
 |---|---|
 | [`monthly_offers/worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22310) | «اختيار العاملة»: «تحب تختار العاملة إزاي؟» + كارتين `filtration_elements`: «أختارها بنفسي» (مختار) و«تختارها الشركة»، وزرار «متابعة» |
-| [`monthly_offers/choose_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22500) | «اختيار العاملة»: فلاتر مختارة + «تصفية» و«رتب بـ»، و«عاملات «اسم الشركة» المتاحة لهذا العرض»، وقائمة `worker_card`، و«اعرض المزيد من العاملات» |
-| [`monthly_offers/workers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22376) | «فلترة العاملات»: النوع، الخبرة، الديانة، المهارات بـ `chips`، و«مسح الكل» / «تطبيق الفلتر» |
-| [`monthly_offers/worker_profile_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22426) | الملف الشخصي + زرار «اختيار العاملة» |
+| [`monthly_offers/choose_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22500) | «اختيار العاملة»: فلاتر مختارة (`filtered_chip`) + «تصفية» و«رتب بـ» (`sorting_dropdown`)، و`section_header` «عاملات «اسم الشركة»»، وقائمة `worker_card`، و«اعرض المزيد من العاملات». «عرض الملف» بيفتح `workers/worker_profile_bottom_sheet` |
+| [`monthly_offers/workers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22376) | «فلترة العاملات»: 4 أقسام، كل قسم `section_header` + `chips`: النوع، الخبرة، الديانة، المهارات. و«مسح الكل» / «تطبيق الفلتر» |
 | [`monthly_offers/offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392) | تفاصيل التعاقد: `worker_card` للعاملة المختارة (من غير مهارات) بزرار «تغيير العاملة»، مكان ملاحظة «سيتم اختيار العاملة من فرع الشركة» |
 
 حالة «تختارها الشركة» هي [`monthly_offers/offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11054) زي ما هي.
@@ -37,10 +38,21 @@
 
 | المكوّن | الصفحة | الخصائص |
 |---|---|---|
-| [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9297-6771) | organisms | نصوص: `worker_name`، `rating_value`، `rating_count`. Boolean: `show_skills`، `show_profile_button`. الشارات (الديانة، الخبرة، الجنسية، المهارات) instances مكشوفة |
-| [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-6111) | organisms | نصوص: `worker_name`، `rating_value`، `rating_count`، `bio`. Boolean: `show_video`. الشارات والمهارات instances مكشوفة |
-| [`worker_info_chip`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9297-1087) | molecules | نص: `label`. Boolean: `show_flag`. Instance swap: `flag` (أيقونات `ic_flag_*`) |
-| `ic_play` (`9297:5`) | icons | أيقونة تشغيل، لونها `text/text_primary` |
+| [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) | organisms | `state=default`. نصوص: `worker_name`، `rating_value`، `rating_count`. Boolean: `show_skills`، `show_profile_button` |
+| [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186) | organisms | `state=default`. نصوص: `worker_name`، `rating_value`، `rating_count`. Boolean: `show_video`. النبذة والمهارات جوه slot الـ `default_card`، وبتتعدل في كل instance |
+| `ic_play` (`9297:5`) | icons | أيقونة تشغيل، لونها `text/text_primary`. بتستخدم جوه `icon_placeholder` |
+
+**المكوّنات الموجودة اللي اتبنوا منها:**
+
+| الجزء | المكوّن |
+|---|---|
+| الصورة | `profile_avatar_photo` (atom) |
+| نجمة التقييم | `rating_stars` `state=only_1_star` (atom) |
+| الديانة، الخبرة، الجنسية | `contract_information_chip` `state=with_bg` (molecule): `label` = «الديانة» و`value` = «مسلمة» |
+| المهارات | `badges` `state=primary` (molecule) |
+| «عرض الملف»، «فيديو تعريفي» | `text_buttons` `state=card_button` / `see_all` (atom) |
+| «نبذة عن العاملة»، «المهارات المعتمدة» | `default_card` (organism) بعنوان + slot |
+| خلفية الكارت | نفس fills وeffects بتوع `offers_card` |
 
 ## بيانات العاملة
 
@@ -51,7 +63,7 @@
 | التقييم وعدد التقييمات | 4.5 (85) | ✓ | ✓ |
 | الديانة | مسلمة | ✓ | ✓ |
 | الخبرة | +5 سنوات خبرة | ✓ | ✓ |
-| الجنسية | الفلبين + العلم | ✓ | ✓ |
+| الجنسية | الفلبين | ✓ | ✓ |
 | المهارات | غسيل وكي (+2) | أول مهارة + العدد الباقي | كلها، تحت «المهارات المعتمدة» |
 | النبذة | نص حر | — | ✓ |
 | الفيديو التعريفي | — | — | زرار ← شيت |
