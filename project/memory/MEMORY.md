@@ -25,7 +25,7 @@
 | [0004](../decisions/0004-favorite-is-pinning.md) | «التفضيل» = «التثبيت». بنقول «تفضيل» بس، والنتيجة ممكن تبقى جزئية (X من Y زيارة) | العميل عن طريق Menna | Menna · 2026-11-23 |
 | [0005](../decisions/0005-workers-plan-excludes-mediation.md) | الوساطة برا خطة العاملات | العميل عن طريق Menna | Menna · 2026-11-23 |
 | [0006](../decisions/0006-worker-entity.md) | كيان العاملة: `worker_card` + `worker_profile` + شيت فيديو، بنفس بيانات معين | العميل عن طريق Menna | Menna · 2026-11-23 |
-| [0007](../decisions/0007-worker-selection-from-offer-company.md) | العاملة من الشركة صاحبة العرض بس (لأن بالخدمة marketplace). ⚠️ **محل مراجعة:** م. سند شايف إنه بيخالف التوجيهات | العميل عن طريق Menna | Menna · 2026-11-23 |
+| [0007](../decisions/0007-worker-selection-from-offer-company.md) | العاملة من الشركة صاحبة العرض بس (لأن بالخدمة marketplace). ⚠️ **محل مراجعة:** م. سند شايف إنه مختلف عن طلب الشباب | العميل عن طريق Menna | Menna · 2026-11-23 |
 | [0008](../decisions/0008-monthly-worker-selection-flow.md) | في الأفراد: بعد ملخص العرض، «أختارها بنفسي / تختارها الشركة»، وفلتر من 4 أقسام | العميل عن طريق Menna | Menna · 2026-11-23 |
 | [0009](../decisions/0009-bottom-sheet-overlay-interaction.md) | أي bottom sheet (و`_popup`): Open overlay، Bottom center، خلفية 25%، Move in ↑، Ease in and out، 300ms | م. سند | م. سند · 2026-11-23 |
 | [0010](../decisions/0010-reuse-components-first.md) | المكوّنات الموجودة الأول، والجديد يتبني بمبادئ Atomic Design | م. سند | م. سند · 2026-11-23 |
@@ -55,7 +55,7 @@
 ## قواعد البيزنس
 > القواعد اللي اتقالت في الكلام ولسه مش في التوثيق. لما تتوثق في `product/` أو `decisions/`، اكتب جنبها الرابط.
 
-- **2026-11-23 (م. سند):** **التوجيه: بيزنس معين هو المرجع.** أي اختلاف عن معين بيخالف التوجيهات، وما يتعملش لوحده ولا "بقصد". لازم قرار مشترك مع م. سند. أول حالة هي [قرار 0007](../decisions/0007-worker-selection-from-offer-company.md)، وبقى «محل مراجعة»، ووصلت رسالة لمنة بيه ([messages-to-menna.md](messages-to-menna.md)).
+- **2026-11-23 (م. سند):** **طلب الشباب: بيزنس معين هو المرجع.** أي اختلاف عن معين مختلف عن طلب الشباب، وما يتعملش لوحده ولا "بقصد". لازم قرار مشترك مع م. سند. أول حالة هي [قرار 0007](../decisions/0007-worker-selection-from-offer-company.md)، وبقى «محل مراجعة»، واتبعتت رسالة لمنة بيه ([messages-to-menna.md](messages-to-menna.md)).
 - **2026-11-23:** «ببزنس معين» يعني **بزنس تطبيق معين (Mueen)**، مش «بزنس مُعيّن». أي شرح أو تصميم لاختيار العاملة لازم يتقارن بمسار المقيمة في معين ([mueen-workers.md](../product/references/mueen-workers.md#مسار-المقيمة)). والفروق بين الاتنين محتاجة قرار (شوف «أسئلة مفتوحة»).
 
 ## الشغل الجاي (Backlog)
