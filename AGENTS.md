@@ -5,6 +5,17 @@ Instructions for AI coding/design agents working in this repository.
 ## What this repo is
 Product and design-system documentation for **Belkhedma (بالخدمة)**, an Arabic RTL mobile app for booking home-service workers from licensed Saudi companies. There is no application code here, only documentation of the Figma file.
 
+## Session start protocol (for Menna, and any teammate other than the owner)
+The owner is **م. سند** (git user `mmsanad7`). The main teammate is **Menna Elsayed**. Run this when a teammate opens a new session, **or** resumes after more than 30 minutes since the last message (if you can't tell the gap, ask):
+
+1. **Ask before any work:** «قبل ما نبدأ: عملتي sync للريبو؟ (`git pull`)». If not, run `git pull` (with her OK) and confirm it is up to date.
+2. **Tell her what's new:** list the decisions and memory entries added since her last commit, with who added each one. Use:
+   - `git log --format='%h %ad %an | %s' --date=short <her last commit>..HEAD -- project/decisions project/memory`
+   - the «صاحب القرار» field of each new decision.
+3. **Remind her every time:** «م. سند بيأكد عليكي توثّقي كل حاجة: أي قرار أو توصية أو معلومة تتسجل في `project/memory/MEMORY.md` (والقرار المعتمد كـ ADR في `project/decisions/`) وتترفع على طول.»
+
+Throughout the session, keep Menna in mind: whenever she says or does something that is a decision, recommendation or new info, record it in memory, and repeat the reminder above if she has not documented it.
+
 ## Memory (read first)
 - At the start of every session, read [project/memory/MEMORY.md](project/memory/MEMORY.md) before doing anything else.
 - Whenever the owner states a fact, business rule, preference, correction or decision, write it to that file immediately, then commit and push it like any other change. Keep memory in the repo, not in tool-local memory, so work can continue from any machine.
