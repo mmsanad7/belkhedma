@@ -36,6 +36,7 @@ Product and design-system documentation for **Belkhedma (بالخدمة)**, an A
 - Component variant properties use `state=`, `type=`, `status=`, `size=`. Values are `snake_case`.
 - Screen frames are `393×852` and named `section/sub_section/state` in `snake_case` (e.g. `hourly_offers/offer_details`).
 - Bottom sheets are separate, shorter frames named `..._bottom_sheet` or `..._popup`.
+- Every prototype interaction that opens a `*_bottom_sheet` must be: Open overlay, Bottom center, close when clicking outside on, background `000000` at 25%, Move in, direction up, Ease in and out, 300ms ([decision 0009](project/decisions/0009-bottom-sheet-overlay-interaction.md)). Check this in every review.
 - Any frame, section or component whose name starts with `_` is not approved and must be ignored: leave it out of `screens.json`, the screens index, feature docs, component docs and deviations ([decision 0003](project/decisions/0003-underscore-ignored.md)).
 - Layout: 16px side margin, `top_navbar` at the top (80px), content starts at y=96, floating `bottom_navbar` (368×64) on tab-level screens.
 - All UI copy is Arabic, RTL.

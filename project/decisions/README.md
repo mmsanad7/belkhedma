@@ -23,3 +23,4 @@
 | [0006](0006-worker-entity.md) | كيان «العاملة»: كارت + ملف شخصي بنفس بيانات معين | معتمد | 2026-11-23 |
 | [0007](0007-worker-selection-from-offer-company.md) | اختيار العاملة من عاملات الشركة صاحبة العرض بس | معتمد | 2026-11-23 |
 | [0008](0008-monthly-worker-selection-flow.md) | رحلة اختيار العاملة في خدمات الأفراد: بعد ملخص العرض، بالاختيارين، وبفلتر من 4 أقسام | معتمد | 2026-11-23 |
+| [0009](0009-bottom-sheet-overlay-interaction.md) | أي bottom sheet بيتفتح كـ overlay من تحت: Bottom center، خلفية 25%، Move in ↑، Ease in and out، 300ms | معتمد | 2026-11-23 |
