@@ -11,6 +11,7 @@
 | [0004](../../decisions/0004-favorite-is-pinning.md) | «التفضيل» هو «التثبيت». بنستخدم لفظ التفضيل وبيزنسه | معتمد |
 | [0005](../../decisions/0005-workers-plan-excludes-mediation.md) | الوساطة برا الخطة حاليًا | معتمد |
 | [0006](../../decisions/0006-worker-entity.md) | كيان العاملة: كارت + ملف شخصي بنفس بيانات معين | معتمد ومنفّذ |
+| [0007](../../decisions/0007-worker-selection-from-offer-company.md) | اختيار العاملة من عاملات الشركة صاحبة العرض بس | معتمد |
 
 ## الشاشات
 
