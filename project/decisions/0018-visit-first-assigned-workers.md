@@ -25,3 +25,6 @@
 
 ## الأثر
 - ملفات التوثيق: `hourly-services.md`، `workers.md`، `organisms.md`، الذاكرة، والـ changelog، وفهرس الشاشات.
+
+## تحديث 2026-11-24 (منة)
+القسم `assigned_workers` اتنقل من تفاصيل الطلب لصفحة [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) (بعد «تأكيد الحجز» وقبل الدفع). اتحط في slot جديد `extra_content` في template [`reservation_success`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=2485-23331)، ومعاه Boolean `has_extra_content` (افتراضي off، فباقي صفحات التأكيد زي ما هي). الفريم القديم اتغير اسمه لـ `hourly_offers/offer_details/days_selected`.

@@ -61,7 +61,7 @@
 | [`price_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=683-4537) | — | ملخص السعر |
 | [`order_pricing_summary`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11513) | `state=` default | ملخص سعر مختصر |
 | [`bottom_price`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6068-45715) | `Property 1=` Default | سطر السعر أسفل الشيت |
-| [`payment_methods`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=819-4024) | — | اختيار وسيلة الدفع |
+| [`payment_methods`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=819-4024) | — | اختيار وسيلة الدفع  **حالياً بيانات الكارت (`card_container`) وتنبيه الأمان (`security_notice`) مخفيين بطلب منة (2026-11-24).** |
 | [`payment_input`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=819-4262) | `state=` one_field · state3 · two_fields | حقول بيانات البطاقة |
 | [`reservation_steps`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6744-19150) | `state=` default | خطوات تأكيد الحجز الأربع |
 | [`reservation_status`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1702-15405) | `state=` success · failed · lead | محتوى شاشة نتيجة الحجز |

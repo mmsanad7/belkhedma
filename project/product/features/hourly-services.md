@@ -59,7 +59,7 @@ flowchart TD
 ### تفاصيل الطلب: `hourly_offers/offer_details`
 راجع [checkout-and-payment.md](checkout-and-payment.md).
 
-بعد اختيار الأيام وتاريخ البدء بتظهر الحالة [`hourly_offers/offer_details/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395). فيها قسم «العاملات على زيارات العقد» ([قرار 0018](../../decisions/0018-visit-first-assigned-workers.md)):
+بعد اختيار الأيام وتاريخ البدء بتظهر الحالة [`hourly_offers/offer_details/days_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395) (كان اسمها `assigned_workers`). وبعد «تأكيد الحجز»، صفحة [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) فيها قسم «العاملات على زيارات العقد» ([قرار 0018](../../decisions/0018-visit-first-assigned-workers.md)، واتنقل هنا بطلب منة 2026-11-24):
 - لكل زيارة كارت [`visit_worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9425-7013): مربع التاريخ، ورقم الزيارة والوقت، والعاملة اللي الشركة عيّنتها. الضغط على الكارت بيفتح ملف العاملة بزرار «استبدال العاملة» ([قرار 0019](../../decisions/0019-replace-worker-before-payment.md)).
 - تنبيه: «يتم تحديد العاملة حسب الإتاحة، ويمكنك استبدالها على أي زيارة بالضغط عليها».
 
@@ -74,7 +74,7 @@ flowchart TD
 
 ورسالة «يقوم مقدم الخدمة بإعداد عقدك الآن...» وزر «العودة للرئيسية». العميل يقدر يخرج من الشاشة، والحجز يكمل في الخلفية («ما يحتاج تنتظر هنا، حجزك بيكمل»).
 
-**في البروتوتايب (طلب منة 2026-11-24):** «تأكيد الحجز» في [`offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=669-3049) و[`offer_details/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395) بيودّي على [`reservation_in_progress`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6744-18214). بعد 0.8 ثانية بتنتقل لوحدها (Smart animate) للحالة التانية [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094): «تم تأكيد حجزك بنجاح» والدفع. «ادفع» بيفتح [`payment_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=851-5135) كـ overlay ([قرار 0009](../../decisions/0009-bottom-sheet-overlay-interaction.md)).
+**في البروتوتايب (طلب منة 2026-11-24):** «تأكيد الحجز» في [`offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=669-3049) و[`offer_details/days_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395) بيودّي على [`reservation_in_progress`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6744-18214). بعد 0.8 ثانية بتنتقل لوحدها (Smart animate) للحالة التانية [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094): «تم تأكيد حجزك بنجاح» والدفع. «ادفع» بيفتح [`payment_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=851-5135) كـ overlay ([قرار 0009](../../decisions/0009-bottom-sheet-overlay-interaction.md)).
 
 ### النتيجة
 `reservation_successfully` · `reservation_successfully_lead` · `reservation_failed`، من templates `reservation_success` و`reservation_failed`.

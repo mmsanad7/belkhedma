@@ -19,7 +19,7 @@
 
 ```mermaid
 flowchart LR
-    OD["hourly_offers/offer_details/assigned_workers"] -->|"عرض الملف"| PV["workers/worker_profile_bottom_sheet/view"]
+    OD["hourly_offers/reservation_successfully"] -->|"عرض الملف"| PV["workers/worker_profile_bottom_sheet/view"]
     U["show_visits/upcoming"] -->|"استبدال العاملة"| R["orders/visits/replace_worker"]
     U -->|"عرض الملف"| PV
     R -->|"عرض الملف"| PR["workers/worker_profile_bottom_sheet/replace_worker"]

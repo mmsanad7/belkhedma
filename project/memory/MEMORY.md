@@ -37,7 +37,7 @@
 | [0016](../decisions/0016-no-buttons-in-worker-cards.md) | الكروت في بالخدمة مفيهاش زراير: «عرض الملف» اتشال من `worker_card` والضغط على الكارت بيفتح الملف، و«تغيير العاملة» مش في البيزنس | منة | منة · 2026-11-24 |
 | [0017](../decisions/0017-compact-worker-card.md) | كارت العاملة المدمج: البيانات في سطر تحت التقييم، والمهارات في الملف بس | منة | منة · 2026-11-24 |
 | [0018](../decisions/0018-visit-first-assigned-workers.md) | العاملات في تفاصيل طلب الساعة: الأولوية للزيارة، بكمبوننت `visit_worker_card` (مقترح ٢ بتعديل منة) | منة | منة · 2026-11-24 |
-| [0019](../decisions/0019-replace-worker-before-payment.md) | استبدال العاملة قبل الدفع في الساعة من تفاصيل الطلب (اختلاف عن مكانه في excp)، بالشيتات الموجودة | منة | منة · 2026-11-24 |
+| [0019](../decisions/0019-replace-worker-before-payment.md) | استبدال العاملة قبل الدفع في الساعة من صفحة تأكيد الحجز (زي excp)، بالشيتات الموجودة | منة | منة · 2026-11-24 |
 
 ## الخطوة الجاية
 - **2026-11-24 الصبح (م. سند + منة):** مناقشة الفروق بين معين وبالخدمة في اختيار العاملة، والقرار في كل فرق:
@@ -52,6 +52,8 @@
 - **2026-11-24 (منة):** استبدال العاملة على الزيارة قبل الدفع في الساعة زي excp، من تفاصيل الطلب، بالشيتات الموجودة زي ما هي. اتنفذ ([قرار 0019](../decisions/0019-replace-worker-before-payment.md)).
 - **2026-11-24 (منة):** في الساعة: «تأكيد الحجز» ← [`reservation_in_progress`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6744-18214) (الـ 4 خطوات) ← بعد 0.8 ثانية لوحدها ← [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) ← «ادفع» ← `payment_successfully`. الترتيب القديم كان: الدفع الأول وبعده الخطوات.
 - **2026-11-24 (منة):** 3 مقترحات لعرض محتوى [الملف الشخصي للعاملة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) في `draft_screens` (مش معتمدة)، مستنية اختيارها: [أ هيدر مدمج](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9451-22155) (`worker_card` فوق)، [ب صورة مربعة + سطور بيانات](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9451-22828)، [ج تبويبات](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9451-22553) (نبذة / المهارات / الفيديو). قبل التطبيق: اقرا النسخة الحالية علشان لو منة عدّلت عليها.
+- **2026-11-24 (منة):** في كمبوننت [`payment_methods`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=819-4024) بيانات الكارت (`card_container`) وتنبيه الأمان (`security_notice`) **مخفيين حالياً**، علشان ميظهروش في صفحات تأكيد الحجز. ولوجوهات الدفع لسه ظاهرة.
+- **2026-11-24 (منة):** قسم العاملات على الزيارات (والاستبدال قبل الدفع) اتنقل لصفحة [تأكيد الحجز في الساعة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) في slot `extra_content` في template `reservation_success` ([قرار 0018](../decisions/0018-visit-first-assigned-workers.md)، [0019](../decisions/0019-replace-worker-before-payment.md)). ده كمان شال الاختلاف عن excp في مكان الاستبدال.
 
 ## طريقة الشغل والتوصيات
 > قواعد ثابتة، منها اللي قاله صاحب المشروع ومنها اللي طلع من شغل Menna وبقى نمط متّبع.

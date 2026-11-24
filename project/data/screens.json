@@ -278,11 +278,11 @@
                         "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=669-3049"
                     },
                     {
-                        "name":  "hourly_offers/offer_details/assigned_workers",
+                        "name":  "hourly_offers/offer_details/days_selected",
                         "section":  "hourly_offers",
                         "node_id":  "9329:24395",
                         "width":  393,
-                        "height":  1198,
+                        "height":  718,
                         "type":  "bottom_sheet",
                         "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395"
                     },
@@ -354,8 +354,8 @@
                         "section":  "hourly_offers",
                         "node_id":  "1728:14094",
                         "width":  393,
-                        "height":  852,
-                        "type":  "screen",
+                        "height":  940,
+                        "type":  "bottom_sheet",
                         "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094"
                     },
                     {

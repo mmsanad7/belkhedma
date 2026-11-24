@@ -44,7 +44,7 @@
 
 | المكان | الشاشة |
 |---|---|
-| قبل الدفع | [`hourly_offers/offer_details/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395): كارت لكل زيارة (`visit_worker_card`، الأولوية للزيارة: [قرار 0018](../../decisions/0018-visit-first-assigned-workers.md))، والضغط عليه بيفتح ملف العاملة. راجع [hourly-services.md](hourly-services.md) |
+| قبل الدفع | [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) (بعد تأكيد الحجز وقبل الدفع، زي excp): كارت لكل زيارة (`visit_worker_card`، الأولوية للزيارة: [قرار 0018](../../decisions/0018-visit-first-assigned-workers.md))، والضغط عليه بيفتح ملف العاملة. راجع [hourly-services.md](hourly-services.md) |
 | الزيارات | `visit_details`: «عرض الملف» جنب اسم العاملة، و«استبدال العاملة» في القادمة |
 | الاستبدال | `orders/visits/replace_worker` ← `replace_worker_bottom_sheet` ← `favorite_replaced_worker_bottom_sheet` ← `favorite_worker_result_popup` أو `replace_worker_result_bottom_sheet`. راجع [visits.md](visits.md) |
 
