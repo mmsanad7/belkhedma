@@ -4,6 +4,11 @@
 
 ## 2026-11-24
 
+### Figma: كارت العاملة المدمج، و3 مقترحات الزيارة فيها الأساس (طلب منة)
+- [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185): اتطبق مقترح أ «مدمج» ([قرار 0017](../decisions/0017-compact-worker-card.md)). الديانة والخبرة والجنسية (`contract_information_chip` `without_bg`) بقت في سطر تحت التقييم، والمهارات و`show_skills` اتشالوا. الارتفاع 96 بدل 180، في [`choose_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22500) و[`more_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25915) و[`worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392) و[`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874).
+- [`proposals/assigned_workers_visit_first`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9408-67) في `sand_box`: مقترح ج بتعديل منة + ١ الزيارة عنوان الكارت، ٢ التاريخ بارز، ٣ خط زمني. الألوان من المتغيرات (`buttons/btn_primary`، `primary/100`). مستنية اختيار منة.
+- التوثيق: قرار 0017 جديد، وتحديث قرار 0006، و`workers.md`، و`organisms.md`، والذاكرة.
+
 ### Figma: فلترة العاملات بمكوّنات الفلترة، ومقترحات لكارت العاملة وعرض العاملات (طلب منة)
 - [`workers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26680): اتبنت تاني بنفس مكوّنات [فلترة عروض الساعة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=585-4041): 4 `filter_section` بعنوان، وجواها `filtration_elements` (`Default` / `Variant2` للمختار) من غير أيقونات، بترتيب RTL. الشيت بقى 393×558.
 - مقترحات في `sand_box` (مش معتمدة، مستنية اختيار منة):

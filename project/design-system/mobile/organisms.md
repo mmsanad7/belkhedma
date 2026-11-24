@@ -81,7 +81,7 @@
 
 | المكوّن | الـ Variants | الاستخدام |
 |---|---|---|
-| [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) | `state=` default. Boolean: `show_skills` | كارت العاملة في القوائم والملخصات: الصورة، الاسم، التقييم، `contract_information_chip` (الديانة، الخبرة، الجنسية)، و`badges` للمهارات. من غير زراير، والضغط على الكارت بيفتح الملف ([قرار 0016](../../decisions/0016-no-buttons-in-worker-cards.md)). راجع [workers.md](../../product/features/workers.md) |
+| [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) | `state=` default | كارت العاملة المدمج ([قرار 0017](../../decisions/0017-compact-worker-card.md)): الصورة، الاسم، التقييم، وتحته سطر `contract_information_chip` `without_bg` (الديانة، الخبرة، الجنسية). من غير مهارات. من غير زراير، والضغط على الكارت بيفتح الملف ([قرار 0016](../../decisions/0016-no-buttons-in-worker-cards.md)). راجع [workers.md](../../product/features/workers.md) |
 | [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186) | `state=` default. Boolean: `show_video` | الملف الشخصي للعاملة: البيانات، «فيديو تعريفي»، و`default_card` للنبذة وللمهارات المعتمدة |
 
 ## الحساب والدعم

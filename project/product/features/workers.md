@@ -51,7 +51,7 @@
 
 | المكوّن | الصفحة | الخصائص |
 |---|---|---|
-| [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) | organisms | `state=default`. نصوص: `worker_name`، `rating_value`، `rating_count`. Boolean: `show_skills`. من غير زراير: الضغط على الكارت كله ([قرار 0016](../../decisions/0016-no-buttons-in-worker-cards.md)) |
+| [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) | organisms | `state=default`. نصوص: `worker_name`، `rating_value`، `rating_count`. من غير مهارات ([قرار 0017](../../decisions/0017-compact-worker-card.md)). من غير زراير: الضغط على الكارت كله ([قرار 0016](../../decisions/0016-no-buttons-in-worker-cards.md)) |
 | [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186) | organisms | `state=default`. نصوص: `worker_name`، `rating_value`، `rating_count`. Boolean: `show_video`. النبذة والمهارات جوه slot الـ `default_card`، وبتتعدل في كل instance |
 | `ic_play` (`9297:5`) | icons | أيقونة تشغيل، لونها `text/text_primary`. بتستخدم جوه `icon_placeholder` |
 
@@ -77,7 +77,7 @@
 | الديانة | مسلمة | ✓ | ✓ |
 | الخبرة | +5 سنوات خبرة | ✓ | ✓ |
 | الجنسية | الفلبين | ✓ | ✓ |
-| المهارات | غسيل وكي (+2) | أول مهارة + العدد الباقي | كلها، تحت «المهارات المعتمدة» |
+| المهارات | غسيل وكي (+2) | — ([قرار 0017](../../decisions/0017-compact-worker-card.md)) | كلها، تحت «المهارات المعتمدة» |
 | النبذة | نص حر | — | ✓ |
 | الفيديو التعريفي | — | — | زرار ← شيت |
 
