@@ -43,7 +43,7 @@
 - **صفحة `contract_details` وشيت الشروط والأحكام مش في بيزنس بالخدمة،** فاتلغوا:
   - «تأكيد الحجز» بيودّي على صفحة تأكيد الحجز على طول.
   - الـ checkbox بتاع الشروط ملوش رابط.
-  - الفريمين اتضاف قبل اسمهم `_` ([قرار 0003](0003-underscore-ignored.md)) بدل ما يتمسحوا، علشان لو احتجناهم نرجّعهم: [`_monthly_offers/contract_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25517) و[`_monthly_offers/terms_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25712).
+  - الفريمين (`9354:25517` و`9354:25712`) **اتمسحوا نهائي من Figma** بطلب منة. ده استثناء لقاعدة «متتمسحش، حط `_`»، والقاعدة نفسها لسه زي ما هي.
 - **فتح الفلتر لوحده في [`monthly_offers/default`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-10966) مقصود:**
   - الرابط `After delay 0.2s` اترجّع، والحركة ماشية على [قرار 0009](0009-bottom-sheet-overlay-interaction.md).
   - «تصفية» فضلت مربوطة كمان، علشان العميل يفتح الفلتر تاني.

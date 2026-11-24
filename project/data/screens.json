@@ -5,7 +5,7 @@
     "generated":  "2026-11-24",
     "count":  120,
     "ignored_prefix":  "_",
-    "ignored_count":  7,
+    "ignored_count":  5,
     "screens":  [
                     {
                         "name":  "addresses/add_new_address",

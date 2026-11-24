@@ -3,6 +3,11 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-24
+### Figma: مسح «تفاصيل التعاقد» والشروط نهائي (طلب منة)
+- الفريمين `_monthly_offers/contract_details` (`9354:25517`) و`_monthly_offers/terms_bottom_sheet` (`9354:25712`) اتمسحوا من Figma بعد ما اتأكدنا إن مفيش روابط عليهم.
+- ده استثناء للصفحتين دول بس، وقاعدة «اللي يتلغي يتحط قبل اسمه `_`» لسه زي ما هي ([الذاكرة](../memory/MEMORY.md#طريقة-الشغل-والتوصيات)).
+- إعادة توليد `screens.json` و`screens-index.md` (120 إطار، و5 متجاهلين). تحديث [قرار 0015](../decisions/0015-monthly-flow-aligned-with-excp.md#تحديث-2026-11-24-منة).
+
 ### Figma: فتح الفلتر لوحده، وإلغاء «تفاصيل التعاقد» والشروط (طلب منة)
 - [`monthly_offers/default`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-10966): رابط الشاشة `After delay 0.2s` اللي بيفتح [الفلتر](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26522) لوحده اترجّع. كان اتشال بالغلط في تصليحات قرار 0015، والحركة بقت على [قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md).
 - «تأكيد الحجز» في [`offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11054) و[`offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392) بقى بيودّي على [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-15386) على طول، والـ checkbox بتاع الشروط ملوش رابط.
