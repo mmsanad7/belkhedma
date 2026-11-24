@@ -3,9 +3,9 @@
     "page":  "screens",
     "page_id":  "13:7",
     "generated":  "2026-11-24",
-    "count":  122,
+    "count":  120,
     "ignored_prefix":  "_",
-    "ignored_count":  5,
+    "ignored_count":  7,
     "screens":  [
                     {
                         "name":  "addresses/add_new_address",
@@ -521,15 +521,6 @@
                         "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25915"
                     },
                     {
-                        "name":  "monthly_offers/contract_details",
-                        "section":  "monthly_offers",
-                        "node_id":  "9354:25517",
-                        "width":  393,
-                        "height":  852,
-                        "type":  "screen",
-                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25517"
-                    },
-                    {
                         "name":  "monthly_offers/default",
                         "section":  "monthly_offers",
                         "node_id":  "892:10966",
@@ -609,15 +600,6 @@
                         "height":  852,
                         "type":  "screen",
                         "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-15386"
-                    },
-                    {
-                        "name":  "monthly_offers/terms_bottom_sheet",
-                        "section":  "monthly_offers",
-                        "node_id":  "9354:25712",
-                        "width":  393,
-                        "height":  384,
-                        "type":  "bottom_sheet",
-                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25712"
                     },
                     {
                         "name":  "monthly_offers/worker_selection_method_bottom_sheet",

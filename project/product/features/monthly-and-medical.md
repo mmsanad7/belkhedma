@@ -8,7 +8,7 @@
 
 ```mermaid
 flowchart TD
-    A["monthly_offers/default"] -->|"تصفية"| F["offers_filtration_bottom_sheet"]
+    A["monthly_offers/default"] -->|"تلقائي بعد 0.2s / تصفية"| F["offers_filtration_bottom_sheet"]
     F -->|"تطبيق الفلتر"| A2["monthly_offers/filtered"]
     F -->|"استعراض كل الباقات"| A
     A --> P["offers_summary_popup"]
@@ -24,18 +24,15 @@ flowchart TD
     PR -->|"فيديو تعريفي"| VID["workers/worker_video_bottom_sheet"]
     PR -->|"اختيار العاملة"| D2["offer_details/worker_selected"]
     D2 -->|"تغيير العاملة"| CW
-    D -->|"الشروط"| T["terms_bottom_sheet"]
-    D2 -->|"الشروط"| T
-    D -->|"تأكيد الحجز"| CD["contract_details"]
-    D2 -->|"تأكيد الحجز"| CD
-    CD -->|"التالي"| RS["reservation_successfully (تأكيد + الدفع)"]
+    D -->|"تأكيد الحجز"| RS["reservation_successfully (تأكيد + الدفع)"]
+    D2 -->|"تأكيد الحجز"| RS
     RS -->|"ادفع"| PS["payment_successfully"]
     PS --> H["home / orders/monthly_order_details"]
 ```
 
 | الشاشة | الوصف | المقابل في excp |
 |---|---|---|
-| [`monthly_offers/default`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-10966) · [`filtered`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-10985) | قائمة العروض، وبعد الفلترة | `packages/default` |
+| [`monthly_offers/default`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-10966) · [`filtered`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-10985) | قائمة العروض، وبعد الفلترة. أول ما العميل يدخل، الفلتر بيتفتح لوحده بعد 0.2 ثانية | `packages/default` |
 | [`offers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26522) | فلترة العروض | — |
 | [`offers_summary_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11022) | ملخص العرض و«الحصول على العرض» | `package_details_sheet` |
 | [`worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23557) (+ 7 حالات) | «ما هي خياراتك المفضلة؟» ([قرار 0013](../../decisions/0013-worker-selection-sheet-from-excp.md)) | `how_select_worker_sheet` |
@@ -45,8 +42,6 @@ flowchart TD
 | [`workers/worker_profile_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) · [`worker_video_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26601) | الملف الشخصي + «اختيار العاملة»، والفيديو | `worker_employee_sheet` · `worker_video_sheet` |
 | [`offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11054) | تفاصيل التعاقد لما الشركة تختار العاملة. راجع [checkout-and-payment.md](checkout-and-payment.md) | `package_details/choose_worker_branch` |
 | [`offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392) | نفس الشاشة بكارت العاملة المختارة و«تغيير العاملة». ملخص السعر فيه «مصاريف التوصيل : 80» | `package_details/default` |
-| [`terms_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25712) | «الشروط والأحكام» من الـ checkbox | `terms_sheet` |
-| [`contract_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25517) | معاينة العقد، «بإكمالك الخطوات فأنت توافق على الشروط والأحكام»، «يتوجب عليك رفع المستندات المطلوبة لاحقاً»، «تحميل العقد»، «التالي» | `contract_details` |
 | [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-15386) | «تم تأكيد حجزك بنجاح» + اختيار وسيلة الدفع + «ادفع» | `success_contract_sheet` + `payment` |
 | [`payment_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11085) | «تهانينا - تم الدفع بنجاح» | `payment_success` |
 | [`reservation_failed`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-15388) | فشل الحجز. محدش بيوصله في الأفراد، لأن مفيش خطوة «جاري التأكيد» | — |

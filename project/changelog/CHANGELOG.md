@@ -3,6 +3,17 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-24
+### Figma: فتح الفلتر لوحده، وإلغاء «تفاصيل التعاقد» والشروط (طلب منة)
+- [`monthly_offers/default`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-10966): رابط الشاشة `After delay 0.2s` اللي بيفتح [الفلتر](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26522) لوحده اترجّع. كان اتشال بالغلط في تصليحات قرار 0015، والحركة بقت على [قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md).
+- «تأكيد الحجز» في [`offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11054) و[`offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392) بقى بيودّي على [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-15386) على طول، والـ checkbox بتاع الشروط ملوش رابط.
+- الفريمين اتضاف قبل اسمهم `_` بدل ما يتمسحوا ([قرار 0003](../decisions/0003-underscore-ignored.md)): [`_monthly_offers/contract_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25517) و[`_monthly_offers/terms_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25712).
+
+### التوثيق
+- [قرار 0015](../decisions/0015-monthly-flow-aligned-with-excp.md): اتضاف تحديث، والاختلاف رقم 5 عن excp.
+- [monthly-and-medical.md](../product/features/monthly-and-medical.md): الرحلة من غير الصفحتين، وفتح الفلتر لوحده.
+- [الذاكرة](../memory/MEMORY.md): قرار م. منة بتحديث الريبو أول بأول، وإن روابط `After delay` مقصودة، وإن تفاصيل التعاقد والشروط مش في البيزنس.
+- إعادة توليد `screens.json` و`screens-index.md` (120 إطار، و7 متجاهلين).
+
 ### Figma: ربط شيتات «توصيل للمنزل»
 - [`worker_selection_method_bottom_sheet/app_delivery`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24066): «موافق» اتربط بـ [`choose_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22500).
 - [`worker_selection_method_bottom_sheet/receive_delivery`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24770):
