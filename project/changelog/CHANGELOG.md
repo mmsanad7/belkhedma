@@ -4,6 +4,13 @@
 
 ## 2026-11-24
 
+### Figma: فلترة العاملات بمكوّنات الفلترة، ومقترحات لكارت العاملة وعرض العاملات (طلب منة)
+- [`workers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26680): اتبنت تاني بنفس مكوّنات [فلترة عروض الساعة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=585-4041): 4 `filter_section` بعنوان، وجواها `filtration_elements` (`Default` / `Variant2` للمختار) من غير أيقونات، بترتيب RTL. الشيت بقى 393×558.
+- مقترحات في `sand_box` (مش معتمدة، مستنية اختيار منة):
+  - [`proposals/worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9380-220): الحالي + أ مدمج + ب شبكة عمودين + ج صورة كبيرة وتفاصيل في سطور.
+  - [`proposals/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9381-355): الحالي + أ مجمّعة حسب العاملة + ب كروت أفقية + ج سطر لكل زيارة. كلهم من غير «عرض الملف» ([قرار 0016](../decisions/0016-no-buttons-in-worker-cards.md)).
+- التوثيق: `workers.md`، والذاكرة.
+
 ### Figma: صورة العاملة (طلب منة)
 - الصورة اللي منة ضافتها في `sand_box` اتسمت [`worker_placeholder_photo`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9365-44258) (الفريم والصورة).
 - اتحطت كـ override على صورة `profile_avatar_photo` جوه [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) و[`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186) و[عارض الصورة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25815)، فظهرت في 24 مكان (كل كروت وملفات العاملات). الـ atom نفسه ما اتغيرش.

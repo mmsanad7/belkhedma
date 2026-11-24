@@ -79,7 +79,7 @@
 | `monthly_offers/worker_selection_method_bottom_sheet/receive` | Bottom sheet | 393×268 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24444) |
 | `monthly_offers/worker_selection_method_bottom_sheet/receive_company` | Bottom sheet | 393×364 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24575) |
 | `monthly_offers/worker_selection_method_bottom_sheet/receive_delivery` | Bottom sheet | 393×304 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24770) |
-| `monthly_offers/workers_filtration_bottom_sheet` | Bottom sheet | 393×472 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26680) |
+| `monthly_offers/workers_filtration_bottom_sheet` | Bottom sheet | 393×558 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26680) |
 
 ## رعاية طبية
 

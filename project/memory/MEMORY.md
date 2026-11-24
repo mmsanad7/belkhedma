@@ -42,6 +42,10 @@
   - الـ 5 فروق المكتوبة تحت في «أسئلة مفتوحة».
   
   بعد القرارات نطبّق في Figma، وبعدها نعمل المراجعة الشاملة.
+- **2026-11-24 (منة):** مستنيين اختيارها بين مقترحات في `sand_box`:
+  - [كارت العاملة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9380-220): أ مدمج، ب شبكة عمودين، ج صورة كبيرة + تفاصيل في سطور.
+  - [عرض العاملات في تفاصيل طلب الساعة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9381-355): أ مجمّعة حسب العاملة، ب كروت أفقية، ج سطر لكل زيارة. كلهم من غير زرار «عرض الملف» ([قرار 0016](../decisions/0016-no-buttons-in-worker-cards.md)).
+  - بعد الاختيار: المقترح يتحوّل لـ variant في الكمبوننت ويتطبّق في الشاشات.
 
 ## طريقة الشغل والتوصيات
 > قواعد ثابتة، منها اللي قاله صاحب المشروع ومنها اللي طلع من شغل Menna وبقى نمط متّبع.
@@ -51,6 +55,7 @@
 - **2026-11-24 (منة):** في بيزنس بالخدمة مفيش صفحة «تفاصيل التعاقد» (`contract_details`) ولا شيت «الشروط والأحكام» في الأفراد. «تأكيد الحجز» بيروح لصفحة تأكيد الحجز على طول ([قرار 0015](../decisions/0015-monthly-flow-aligned-with-excp.md#تحديث-2026-11-24-منة)). الفريمين اتمسحوا نهائي بطلبها، كاستثناء. قاعدة «اللي يتلغي يتحط قبل اسمه `_`» لسه سارية على أي حاجة تانية.
 - **2026-11-24 (منة):** الكروت في بالخدمة **مفيهاش زراير**. الضغط على الكارت نفسه هو اللي بيكمّل الخطوة. و«تغيير العاملة» في تفاصيل التعاقد مش في البيزنس ([قرار 0016](../decisions/0016-no-buttons-in-worker-cards.md)).
 - **2026-11-24 (منة):** صورة العاملة في كل الملف هي [`worker_placeholder_photo`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9365-44258) (في `sand_box`)، كـ override على `profile_avatar_photo` جوه `worker_card` و`worker_profile` وعارض الصورة. الـ atom ما يتغيرش لأنه صورة حساب العميل. S-10 اتقفل.
+- **2026-11-24 (منة):** الفلاتر في بالخدمة بتستخدم `filter_section` + `filtration_elements` زي [فلترة عروض الساعة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=585-4041)، مش `section_header` + `chips`.
 
 - **2026-11-24 (من شغل منة):** إعدادات الـ overlay على الفريم (Position، Background، Close outside) مش بتتعدل من الـ Plugin API. علشان شيت جديد ياخدها صح، انسخ فريم شيت متظبط زي [`workers/worker_profile_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032)، وفضّي محتواه، وحط المحتوى الجديد.
 - **2026-11-24 (من شغل منة):** محتوى الـ slot بيتنسخ في الـ instance وقت إنشائها. لو عدّلت محتوى slot في template، اعمل instances جديدة في الشاشات، لأن القديمة مش بتتحدّث لوحدها.
