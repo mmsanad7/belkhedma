@@ -3,6 +3,13 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-24
+### Figma: ربط شيتات «توصيل للمنزل»
+- [`worker_selection_method_bottom_sheet/app_delivery`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24066): «موافق» اتربط بـ [`choose_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22500).
+- [`worker_selection_method_bottom_sheet/receive_delivery`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24770):
+  - «موافق» اتربط بـ [`offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392).
+  - «من الشركة» بقى `Swap overlay` بدل `Change to` القديم.
+- اتراجعت كل روابط الحالات التمانية على الجدول اللي في [قرار 0013](../decisions/0013-worker-selection-sheet-from-excp.md)، ومفيش اختلاف.
+
 ### Figma: رحلة الأفراد جاهزة للتسليم ([قرار 0015](../decisions/0015-monthly-flow-aligned-with-excp.md))
 - صفحات جديدة:
   - [`monthly_offers/choose_worker/more_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25915)
