@@ -4,6 +4,13 @@
 
 ## 2026-11-24
 
+### Figma: استبدال العاملة قبل الدفع في الساعة (طلب منة، [قرار 0019](../decisions/0019-replace-worker-before-payment.md))
+- شيت جديد [`workers/worker_profile_bottom_sheet/current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015): نسخة من `/view` (بنفس إعدادات الـ overlay)، بزرار «استبدال العاملة» بيودّي على [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874).
+- [`hourly_offers/offer_details/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395): الـ 4 `visit_worker_card` بقوا بيفتحوا الشيت الجديد. التنبيه بقى «…ويمكنك استبدالها على أي زيارة بالضغط عليها.»
+- [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926): «تم» بقى `Close` بدل ما يودّي على الزيارات القادمة.
+- `replace_worker`: زرار الرجوع في `top_navbar` اتربط `Back`.
+- التوثيق: قرار 0019 جديد، وتحديث 0012، و`hourly-services.md`، و`workers.md`، و`visits.md`، والذاكرة، وفهرس الشاشات.
+
 ### Figma: صورة العاملة مربعة في العارض، وعلامة على الصورة في الكارت (طلب منة)
 - atom جديد [`image_ratio_1_to_1`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9432-1130): نفس `image_ratio_2_to_1` بس مربع 361×361 (`radius_lg`). مفيش atom لصورة مربعة قبل كده.
 - [`workers/worker_photo_viewer_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25815): الصورة الدايرية (`profile_avatar_photo`) اتغيرت لـ `image_ratio_1_to_1` بعرض الشيت. الشيت بقى 393×528.

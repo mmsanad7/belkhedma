@@ -25,6 +25,7 @@
 
 | [`workers/worker_profile_bottom_sheet/view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713) | نفس الملف بزرار «تم» (بيقفل). بيتفتح من تفاصيل طلب الساعة قبل الدفع ومن الزيارات |
 | [`workers/worker_profile_bottom_sheet/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23794) | نفس الملف بزرار «اختيار العاملة» اللي بيفتح تأكيد الاستبدال. بيتفتح من `orders/visits/replace_worker` |
+| [`workers/worker_profile_bottom_sheet/current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015) | نفس الملف بزرار «استبدال العاملة» اللي بيودّي على `orders/visits/replace_worker`. بيتفتح من كروت الزيارات في تفاصيل طلب الساعة قبل الدفع ([قرار 0019](../../decisions/0019-replace-worker-before-payment.md)) |
 
 كل الـ bottom sheets هنا متبنية على organism `bottom_sheet` (`585:3350`)، والمحتوى في الـ slot بتاعه، زي `monthly_offers/offers_filtration_bottom_sheet`.
 
