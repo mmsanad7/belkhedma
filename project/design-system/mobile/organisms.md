@@ -81,7 +81,8 @@
 
 | المكوّن | الـ Variants | الاستخدام |
 |---|---|---|
-| [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) | `state=` default | كارت العاملة المدمج ([قرار 0017](../../decisions/0017-compact-worker-card.md)): الصورة، الاسم، التقييم، وتحته سطر `contract_information_chip` `without_bg` (الديانة، الخبرة، الجنسية). من غير مهارات. من غير زراير، والضغط على الكارت بيفتح الملف ([قرار 0016](../../decisions/0016-no-buttons-in-worker-cards.md)). راجع [workers.md](../../product/features/workers.md) |
+| [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) | `state=` default | كارت العاملة المدمج ([قرار 0017](../../decisions/0017-compact-worker-card.md)): الصورة 80، والاسم والتقييم في سطر (`name_rating`)، وتحتهم `contract_information_chip` `with_bg` (الديانة، الخبرة، الجنسية). من غير مهارات. من غير زراير، والضغط على الكارت بيفتح الملف ([قرار 0016](../../decisions/0016-no-buttons-in-worker-cards.md)). راجع [workers.md](../../product/features/workers.md) |
+| [`visit_worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9425-7013) | `state=` default. نصوص: `visit_name`، `worker_name`، `day_name`، `day_number`، `month`. `visit_time` (badges) مكشوف | كارت الزيارة والعاملة المعيّنة عليها، والأولوية للزيارة: مربع التاريخ، ورقم الزيارة والوقت، والعاملة. من غير زراير، والضغط عليه بيفتح ملف العاملة ([قرار 0018](../../decisions/0018-visit-first-assigned-workers.md)) |
 | [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186) | `state=` default. Boolean: `show_video` | الملف الشخصي للعاملة: البيانات، «فيديو تعريفي»، و`default_card` للنبذة وللمهارات المعتمدة |
 
 ## الحساب والدعم

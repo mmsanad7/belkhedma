@@ -44,7 +44,7 @@
 | `hourly_offers/filters_applied` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=852-7024) |
 | `hourly_offers/filters_bottom_sheet/with_selected_filters` | Bottom sheet | 393×711 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7471-24777) |
 | `hourly_offers/offer_details` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=669-3049) |
-| `hourly_offers/offer_details/assigned_workers` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395) |
+| `hourly_offers/offer_details/assigned_workers` | Bottom sheet | 393×1198 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395) |
 | `hourly_offers/offers_filtration_bottom_sheet` | Bottom sheet | 393×744 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=585-4041) |
 | `hourly_offers/offers_filtration_bottom_sheet` | Bottom sheet | 393×438 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9098-22052) |
 | `hourly_offers/offers_summary_popup` | Bottom sheet | 393×408 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=585-3676) |

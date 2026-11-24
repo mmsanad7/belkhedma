@@ -57,8 +57,8 @@ flowchart TD
 ### تفاصيل الطلب: `hourly_offers/offer_details`
 راجع [checkout-and-payment.md](checkout-and-payment.md).
 
-بعد اختيار الأيام وتاريخ البدء بتظهر الحالة [`hourly_offers/offer_details/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395). فيها `default_card` «العاملات على زيارات العقد»:
-- لكل زيارة سطر بالعاملة اللي الشركة عيّنتها، و«عرض الملف».
+بعد اختيار الأيام وتاريخ البدء بتظهر الحالة [`hourly_offers/offer_details/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395). فيها قسم «العاملات على زيارات العقد» ([قرار 0018](../../decisions/0018-visit-first-assigned-workers.md)):
+- لكل زيارة كارت [`visit_worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9425-7013): مربع التاريخ، ورقم الزيارة والوقت، والعاملة اللي الشركة عيّنتها. الضغط على الكارت بيفتح ملف العاملة.
 - تنبيه: «يتم تحديد العاملة حسب الإتاحة، ويمكنك استبدالها من زياراتك بعد تأكيد الحجز».
 
 القرار في [0012](../../decisions/0012-hourly-workers.md). العميل مش بيختار العاملة قبل الحجز، ومفيش «عدد العاملات» على العروض.
