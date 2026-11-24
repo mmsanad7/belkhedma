@@ -3,7 +3,7 @@
     "page":  "screens",
     "page_id":  "13:7",
     "generated":  "2026-11-24",
-    "count":  111,
+    "count":  118,
     "ignored_prefix":  "_",
     "ignored_count":  5,
     "screens":  [
@@ -595,11 +595,74 @@
                     {
                         "name":  "monthly_offers/worker_selection_method_bottom_sheet",
                         "section":  "monthly_offers",
-                        "node_id":  "9302:22310",
+                        "node_id":  "9336:23557",
                         "width":  393,
-                        "height":  278,
+                        "height":  228,
                         "type":  "bottom_sheet",
-                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22310"
+                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23557"
+                    },
+                    {
+                        "name":  "monthly_offers/worker_selection_method_bottom_sheet/app",
+                        "section":  "monthly_offers",
+                        "node_id":  "9336:23688",
+                        "width":  393,
+                        "height":  324,
+                        "type":  "bottom_sheet",
+                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23688"
+                    },
+                    {
+                        "name":  "monthly_offers/worker_selection_method_bottom_sheet/app_company",
+                        "section":  "monthly_offers",
+                        "node_id":  "9336:23845",
+                        "width":  393,
+                        "height":  492,
+                        "type":  "bottom_sheet",
+                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23845"
+                    },
+                    {
+                        "name":  "monthly_offers/worker_selection_method_bottom_sheet/app_delivery",
+                        "section":  "monthly_offers",
+                        "node_id":  "9336:24066",
+                        "width":  393,
+                        "height":  356,
+                        "type":  "bottom_sheet",
+                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24066"
+                    },
+                    {
+                        "name":  "monthly_offers/worker_selection_method_bottom_sheet/company_branch",
+                        "section":  "monthly_offers",
+                        "node_id":  "9336:24249",
+                        "width":  393,
+                        "height":  396,
+                        "type":  "bottom_sheet",
+                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24249"
+                    },
+                    {
+                        "name":  "monthly_offers/worker_selection_method_bottom_sheet/receive",
+                        "section":  "monthly_offers",
+                        "node_id":  "9336:24444",
+                        "width":  393,
+                        "height":  228,
+                        "type":  "bottom_sheet",
+                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24444"
+                    },
+                    {
+                        "name":  "monthly_offers/worker_selection_method_bottom_sheet/receive_company",
+                        "section":  "monthly_offers",
+                        "node_id":  "9336:24575",
+                        "width":  393,
+                        "height":  396,
+                        "type":  "bottom_sheet",
+                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24575"
+                    },
+                    {
+                        "name":  "monthly_offers/worker_selection_method_bottom_sheet/receive_delivery",
+                        "section":  "monthly_offers",
+                        "node_id":  "9336:24770",
+                        "width":  393,
+                        "height":  260,
+                        "type":  "bottom_sheet",
+                        "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24770"
                     },
                     {
                         "name":  "monthly_offers/workers_filtration_bottom_sheet",

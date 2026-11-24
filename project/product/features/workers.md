@@ -12,7 +12,8 @@
 | [0005](../../decisions/0005-workers-plan-excludes-mediation.md) | الوساطة برا الخطة حاليًا | معتمد |
 | [0006](../../decisions/0006-worker-entity.md) | كيان العاملة: كارت + ملف شخصي بنفس بيانات معين | معتمد ومنفّذ |
 | [0007](../../decisions/0007-worker-selection-from-offer-company.md) | اختيار العاملة من عاملات الشركة صاحبة العرض بس | معتمد |
-| [0008](../../decisions/0008-monthly-worker-selection-flow.md) | رحلة اختيار العاملة في خدمات الأفراد | معتمد ومنفّذ |
+| [0008](../../decisions/0008-monthly-worker-selection-flow.md) | رحلة اختيار العاملة في خدمات الأفراد | معتمد ومنفّذ (الشيت اتحدّث بـ 0013) |
+| [0013](../../decisions/0013-worker-selection-sheet-from-excp.md) | شيت «ما هي خياراتك المفضلة؟» زي ملف excp: الاختيار والاستلام والفرع | معتمد ومنفّذ |
 | [0012](../../decisions/0012-hourly-workers.md) | الساعة: الشركة بتعيّن، والعاملة بتظهر قبل الدفع، ومفيش عدد عاملات، والاستبدال من الزيارات القادمة | معتمد ومنفّذ |
 
 ## الشاشات
@@ -31,7 +32,7 @@
 
 | الشاشة | الوصف |
 |---|---|
-| [`monthly_offers/worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22310) | «اختيار العاملة»: «تحب تختار العاملة إزاي؟» + كارتين `filtration_elements`: «أختارها بنفسي» (مختار) و«تختارها الشركة»، وزرار «متابعة» |
+| [`monthly_offers/worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23557) وحالاته: [`/app`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23688)، [`/app_company`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23845)، [`/app_delivery`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24066)، [`/company_branch`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24249)، [`/receive`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24444)، [`/receive_company`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24575)، [`/receive_delivery`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24770) | «ما هي خياراتك المفضلة؟»: «كيف تريد اختيار العاملة» (من التطبيق / من الشركة)، و«كيف تريد استلام العاملة» (من الشركة / توصيل للمنزل + مصاريف التوصيل 80)، و«اختر الفرع المناسب لك»، و«موافق». كله instance من template [`worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9335-5182). التفاصيل والروابط في [قرار 0013](../../decisions/0013-worker-selection-sheet-from-excp.md) |
 | [`monthly_offers/choose_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22500) | «اختيار العاملة»: فلاتر مختارة (`filtered_chip`) + «تصفية» و«رتب بـ» (`sorting_dropdown`)، و`section_header` «عاملات «اسم الشركة»»، وقائمة `worker_card`، و«اعرض المزيد من العاملات». «عرض الملف» بيفتح `workers/worker_profile_bottom_sheet` |
 | [`monthly_offers/workers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22376) | «فلترة العاملات»: 4 أقسام، كل قسم `section_header` + `chips`: النوع، الخبرة، الديانة، المهارات. و«مسح الكل» / «تطبيق الفلتر» |
 | [`monthly_offers/offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392) | تفاصيل التعاقد: `worker_card` للعاملة المختارة (من غير مهارات) بزرار «تغيير العاملة»، مكان ملاحظة «سيتم اختيار العاملة من فرع الشركة» |

@@ -3,6 +3,26 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-24
+### Figma: شيت «ما هي خياراتك المفضلة؟» من ملف excp ([قرار 0013](../decisions/0013-worker-selection-sheet-from-excp.md))
+- template جديد [`worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9335-5182) على صفحة templates:
+  - 8 حالات: `default`، `app`، `app_company`، `app_delivery`، `company_branch`، `receive`، `receive_company`، `receive_delivery`.
+  - متبني من `bottom_sheet` و`default_card` و`chips` و`address_item` و`contract_information_chip` و`text_buttons`، والـ chips بتعمل `Change to` بين الحالات.
+- 8 فريمات على screens بدل الفريم القديم `9302:22310` اللي اتمسح:
+  - [`monthly_offers/worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23557)، و7 حالات تحته.
+  - اتنسخوا من فريم متظبط على [قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md).
+- الروابط:
+  - «الحصول على العرض» في ملخص العرض بيفتح `default`.
+  - الـ chips بتبدّل الحالة بـ `Swap overlay`.
+  - «موافق» بيودّي لـ [`choose_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22500) أو [`offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11054) أو [`offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392).
+
+### التوثيق
+- [قرار 0013](../decisions/0013-worker-selection-sheet-from-excp.md)، وتحديث [0008](../decisions/0008-monthly-worker-selection-flow.md) و[workers.md](../product/features/workers.md) و[monthly-and-medical.md](../product/features/monthly-and-medical.md) و[templates.md](../design-system/mobile/templates.md).
+- [S-12](../brand/deviations.md): فريم طريقة الاختيار طلع من القائمة، واتضاف حل نسخ الفريم المتظبط.
+- [الذاكرة](../memory/MEMORY.md):
+  - ملف excp اتضاف كمرجع (منة: «زي معين ولكن متوضح أكتر والروابط فيه صح»).
+  - السؤالين 2 و5 من فروق معين اتقفلوا.
+- إعادة توليد `screens.json` و`screens-index.md` (118 إطار).
+
 ### Figma: مطابقة شغل العاملات مع قرارات 0009 و0010 و0011
 - [قرار الساعة](../decisions/0012-hourly-workers.md) رقمه بقى 0012 بدل 0009، لأن رقم 0009 اتاخد لـ [إعدادات الـ bottom sheet](../decisions/0009-bottom-sheet-overlay-interaction.md).
 - الـ popups الجديدة اتغير اسمها لـ `_bottom_sheet` ([S-11](../brand/deviations.md)):

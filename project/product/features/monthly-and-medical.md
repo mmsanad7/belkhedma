@@ -11,8 +11,8 @@ flowchart LR
     A --> P["offers_summary_popup"]
     A2 --> P
     P -->|"الحصول على العرض"| WM["worker_selection_method_bottom_sheet"]
-    WM -->|"تختارها الشركة"| D
-    WM -->|"أختارها بنفسي"| CW["choose_worker"] --> D2["offer_details/worker_selected"]
+    WM -->|"من الشركة + الفرع"| D
+    WM -->|"من التطبيق + الاستلام"| CW["choose_worker"] --> D2["offer_details/worker_selected"]
     D2 --> PS
     P -.- D["monthly_offers/offer_details"]
     D --> PS["payment_successfully"]
@@ -26,7 +26,7 @@ flowchart LR
 | `monthly_offers/filtered` | القائمة بعد الفلترة |
 | `monthly_offers/offers_filtration_bottom_sheet` | خيارات الفلترة |
 | `monthly_offers/offers_summary_popup` | ملخص العرض |
-| `monthly_offers/worker_selection_method_bottom_sheet` | «أختارها بنفسي / تختارها الشركة». راجع [workers.md](workers.md) |
+| `monthly_offers/worker_selection_method_bottom_sheet` (+ 7 حالات) | «ما هي خياراتك المفضلة؟»: من التطبيق / من الشركة، وطريقة الاستلام، والفرع ([قرار 0013](../../decisions/0013-worker-selection-sheet-from-excp.md)). راجع [workers.md](workers.md) |
 | `monthly_offers/choose_worker` · `workers_filtration_bottom_sheet` | قائمة عاملات الشركة صاحبة العرض والفلتر. «عرض الملف» بيفتح `workers/worker_profile_bottom_sheet` بزرار «اختيار العاملة» |
 | `monthly_offers/offer_details` | تفاصيل الطلب والدفع لما الشركة هي اللي تختار العاملة. راجع [checkout-and-payment.md](checkout-and-payment.md) |
 | `monthly_offers/offer_details/worker_selected` | نفس الشاشة، بكارت العاملة المختارة و«تغيير العاملة» |
