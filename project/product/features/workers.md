@@ -59,7 +59,7 @@
 
 | الجزء | المكوّن |
 |---|---|
-| الصورة | `profile_avatar_photo` (atom) |
+| الصورة | `profile_avatar_photo` (atom)، بصورة عاملة كـ override ([`worker_placeholder_photo`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9365-44258)) |
 | نجمة التقييم | `rating_stars` `state=only_1_star` (atom) |
 | الديانة، الخبرة، الجنسية | `contract_information_chip` `state=with_bg` (molecule): `label` = «الديانة» و`value` = «مسلمة» |
 | المهارات | `badges` `state=primary` (molecule) |

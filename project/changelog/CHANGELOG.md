@@ -4,6 +4,11 @@
 
 ## 2026-11-24
 
+### Figma: صورة العاملة (طلب منة)
+- الصورة اللي منة ضافتها في `sand_box` اتسمت [`worker_placeholder_photo`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9365-44258) (الفريم والصورة).
+- اتحطت كـ override على صورة `profile_avatar_photo` جوه [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) و[`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186) و[عارض الصورة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25815)، فظهرت في 24 مكان (كل كروت وملفات العاملات). الـ atom نفسه ما اتغيرش.
+- [S-10](../brand/deviations.md) اتقفل.
+
 ### Figma: كارت العاملة من غير زراير، وشيل «تغيير العاملة» (طلب منة، [قرار 0016](../decisions/0016-no-buttons-in-worker-cards.md))
 - [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185): `profile_button` («عرض الملف») اتمسح من الكمبوننت، والـ Boolean `show_profile_button` اتشال.
 - الرابط اتنقل على الكارت نفسه (16 كارت): في [`choose_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22500) و[`more_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25915) بيفتح [الملف الشخصي](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032)، وفي [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) بيفتح [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23794). الضغط على الصورة لسه بيفتح عارض الصورة.
