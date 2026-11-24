@@ -24,11 +24,21 @@
 
 ## التنفيذ
 - **الـ template:** [`worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9335-5182) على صفحة `templates`، بـ 8 حالات بـ `state=`.
-  - متبني من مكوّنات موجودة بس: `bottom_sheet`، `default_card` (عنوان + أيقونة + slot)، `chips`، `address_item` للفروع (والأيقونة الشمال `ic_checkbox_checked` / `unchecked`)، `contract_information_chip` لمصاريف التوصيل، و`text_buttons` `state=disabled` لـ «موافق» المقفول.
-  - جوه الـ template، الـ chips بتعمل `Change to` بين الحالات زي المرجع.
+  - **تحديث 2026-11-24 (طلب منة):** الشيت بقى بعناصر شيت [`hourly_offers/offers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=585-4041):
+    - كل سؤال `filter_section`، وكل اختيار كارت `filtration_elements` بأيقونة. المختار `Property 1=Variant2` (الوردي).
+    - الفروع كروت نصية من نفس العنصر.
+    - العنوان فوق كل قسم `section_header`، لأن نسخة الـ `filter_section` اللي بكارتين مفيهاش هيدر ومينفعش يتضاف جوه instance.
+    - مصاريف التوصيل `contract_information_chip`، و«موافق» المقفول `text_buttons` `state=disabled`.
+    - (النسخة الأولى كانت `default_card` + `chips` + `address_item`، واتشالت.)
+  - **أيقونات جديدة** على صفحة `icons`، في نفس جريد أيقونات الفلاتر:
+    - [`ic_from_app`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9341-24422): موبايل عليه بروفايل.
+    - [`ic_from_company`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9341-24423): مبنى شركة، وبيستخدم كمان لـ «الاستلام من الشركة».
+    - [`ic_home_delivery`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9341-24424): عربية توصيل وبيت.
+    - الأولى والتانية اتولّدوا بـ Figma AI. التالتة اترسمت يدوي، لأن الرصيد خلص ([C-08](../brand/deviations.md)).
+  - جوه الـ template، الكروت بتعمل `Change to` بين الحالات زي المرجع.
 - **الشاشات:** 8 فريمات `monthly_offers/worker_selection_method_bottom_sheet[/<state>]`، كل فريم فيه instance من حالة.
   - Figma مش بيسمح بروابط من صفحة `templates` لفريمات على صفحة `screens`، فالروابط اتحطت على الفريمات.
-  - الـ chips بتبدّل بين فريمات الحالات بـ `Swap overlay` من غير حركة، زي `Change to` في المرجع. ده تغيير حالة جوه نفس الشيت، مش فتح شيت جديد، فمش داخل في [قرار 0009](0009-bottom-sheet-overlay-interaction.md) **(يحتاج تأكيد م. سند)**.
+  - الكروت بتبدّل بين فريمات الحالات بـ `Swap overlay` من غير حركة، زي `Change to` في المرجع. ده تغيير حالة جوه نفس الشيت، مش فتح شيت جديد، فمش داخل في [قرار 0009](0009-bottom-sheet-overlay-interaction.md) **(يحتاج تأكيد م. سند)**.
   - فتح الشيت من ملخص العرض ماشي على 0009. والفريمات اتنسخت من فريم متظبط، فواخدة Bottom center والخلفية 25% وClose outside.
 - الفريم القديم `9302:22310` اتمسح، ومكانه فريم الحالة `default`.
 

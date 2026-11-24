@@ -70,14 +70,14 @@
 | `monthly_offers/payment_successfully` | Bottom sheet | 393×262 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11085) |
 | `monthly_offers/reservation_failed` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-15388) |
 | `monthly_offers/reservation_successfully` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-15386) |
-| `monthly_offers/worker_selection_method_bottom_sheet` | Bottom sheet | 393×228 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23557) |
-| `monthly_offers/worker_selection_method_bottom_sheet/app` | Bottom sheet | 393×324 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23688) |
-| `monthly_offers/worker_selection_method_bottom_sheet/app_company` | Bottom sheet | 393×492 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23845) |
-| `monthly_offers/worker_selection_method_bottom_sheet/app_delivery` | Bottom sheet | 393×356 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24066) |
-| `monthly_offers/worker_selection_method_bottom_sheet/company_branch` | Bottom sheet | 393×396 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24249) |
-| `monthly_offers/worker_selection_method_bottom_sheet/receive` | Bottom sheet | 393×228 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24444) |
-| `monthly_offers/worker_selection_method_bottom_sheet/receive_company` | Bottom sheet | 393×396 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24575) |
-| `monthly_offers/worker_selection_method_bottom_sheet/receive_delivery` | Bottom sheet | 393×260 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24770) |
+| `monthly_offers/worker_selection_method_bottom_sheet` | Bottom sheet | 393×268 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23557) |
+| `monthly_offers/worker_selection_method_bottom_sheet/app` | Bottom sheet | 393×404 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23688) |
+| `monthly_offers/worker_selection_method_bottom_sheet/app_company` | Bottom sheet | 393×500 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23845) |
+| `monthly_offers/worker_selection_method_bottom_sheet/app_delivery` | Bottom sheet | 393×440 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24066) |
+| `monthly_offers/worker_selection_method_bottom_sheet/company_branch` | Bottom sheet | 393×364 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24249) |
+| `monthly_offers/worker_selection_method_bottom_sheet/receive` | Bottom sheet | 393×268 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24444) |
+| `monthly_offers/worker_selection_method_bottom_sheet/receive_company` | Bottom sheet | 393×364 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24575) |
+| `monthly_offers/worker_selection_method_bottom_sheet/receive_delivery` | Bottom sheet | 393×304 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24770) |
 | `monthly_offers/workers_filtration_bottom_sheet` | Bottom sheet | 393×472 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22376) |
 
 ## رعاية طبية

@@ -18,7 +18,7 @@ This is enforced by a project hook: [.claude/settings.json](.claude/settings.jso
 
 **Messages from the owner:** pending items (`- [ ]`) in [project/memory/messages-to-menna.md](project/memory/messages-to-menna.md) must be delivered at the start of your reply to Menna's first request, verbatim and with the stated emotion/emoji. Then mark the item `- [x]` with the delivery date, and commit and push. The hook injects this on every prompt until it is marked.
 
-**Guideline:** Mueen's business is the reference. Any deviation from it needs a joint decision with م. سند; never deviate on your own.
+**Guideline:** Since 2026-11-24 the business reference is the excp file [`excp_base_app_atomic`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=0-1) (same business as Mueen, clearer and with correct links), replacing Mueen ([decision 0014](project/decisions/0014-excp-replaces-mueen-as-reference.md)). Any deviation from it needs a joint decision with م. سند; never deviate on your own.
 
 Throughout the session, keep Menna in mind: whenever she says or does something that is a decision, recommendation or new info, record it in memory, and repeat the reminder above if she has not documented it.
 

@@ -3,6 +3,27 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-24
+### قرار: excp هو المرجع بدل معين
+- [قرار 0014](../decisions/0014-excp-replaces-mueen-as-reference.md) (منة): ملف [`excp_base_app_atomic`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=0-1) هو المرجع من النهارده.
+  - اتحدّث الـ Guideline في `AGENTS.md`، و[الذاكرة](../memory/MEMORY.md)، و[mueen-workers.md](../product/references/mueen-workers.md) اتعلّم إنه مرجع قديم.
+  - قاعدة القرار المشترك مع م. سند لسه سارية على أي اختلاف عن excp.
+
+### Figma: شيت اختيار العاملة بعناصر شيت فلترة العروض وأيقونات لكل اختيار
+- الـ template [`worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9335-5182) اتعاد بناؤه بعناصر [`hourly_offers/offers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=585-4041):
+  - `filter_section` + كروت `filtration_elements` بأيقونات، والمختار `Variant2`.
+  - الفروع كروت نصية.
+  - العناوين `section_header`.
+- أيقونات جديدة على صفحة icons:
+  - [`ic_from_app`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9341-24422) و[`ic_from_company`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9341-24423): اتولّدوا بـ Figma AI.
+  - [`ic_home_delivery`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9341-24424): اترسمت يدوي ([C-08](../brand/deviations.md)).
+- الفريمات التمانية `monthly_offers/worker_selection_method_bottom_sheet[/<state>]`:
+  - اتعملها instances جديدة، لأن محتوى الـ slot القديم كان متنسخ فيها.
+  - اتربطت من جديد: الكروت بـ `Swap overlay`، و«موافق» بـ `Navigate`.
+- `section_header` في شيت فلترة العاملات و`choose_worker` و`replace_worker`: العنوان اتعمله override لليمين ([C-07](../brand/deviations.md)).
+
+### التوثيق
+- تحديث [قرار 0013](../decisions/0013-worker-selection-sheet-from-excp.md) و[workers.md](../product/features/workers.md) و[deviations.md](../brand/deviations.md) (C-07، C-08)، وإعادة توليد `screens.json` و`screens-index.md`.
+
 ### Figma: شيت «ما هي خياراتك المفضلة؟» من ملف excp ([قرار 0013](../decisions/0013-worker-selection-sheet-from-excp.md))
 - template جديد [`worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9335-5182) على صفحة templates:
   - 8 حالات: `default`، `app`، `app_company`، `app_delivery`، `company_branch`، `receive`، `receive_company`، `receive_delivery`.

@@ -2,6 +2,8 @@
 
 توثيق لطريقة ظهور العاملات وإدارتها في تطبيق معين، كمرجع لإضافة العاملات في بالخدمة. المقارنة مع بالخدمة في [audit المقارنة](../../design-system/audits/2026-11-23-mueen-workers-comparison.md).
 
+> ⚠️ **مرجع قديم من 2026-11-24:** المرجع بقى ملف [`excp_base_app_atomic`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=0-1) ([قرار 0014](../../decisions/0014-excp-replaces-mueen-as-reference.md)). الملف ده فاضل للتاريخ والمقارنة.
+>
 > ده توثيق لتطبيق تاني، مش لبالخدمة. كل اللي هنا مقروء من Figma معين (نصوص الشاشات وروابط البروتوتايب) بتاريخ 2026-11-23، ومحدش من فريق معين أكّده.
 
 ## الملف
