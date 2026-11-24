@@ -4,6 +4,13 @@
 
 ## 2026-11-24
 
+### Figma: 3 مقترحات لعرض محتوى الملف الشخصي للعاملة (طلب منة)
+- في `draft_screens` (مش معتمدة)، كلها نسخ من [`workers/worker_profile_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) ومبنية من مكوّنات موجودة:
+  - [`proposal_a_compact_header`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9451-22155): `worker_card` كهيدر، و«فيديو تعريفي»، والنبذة، والمهارات.
+  - [`proposal_b_photo_and_data_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9451-22828): صورة مربعة (`image_ratio_1_to_1`) جنب الاسم والتقييم والفيديو، والبيانات سطور (`contract_information_chip` `full_width`)، والنبذة، والمهارات.
+  - [`proposal_c_tabs`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9451-22553): `worker_card` كهيدر، وتبويبات (`tabs`) نبذة / المهارات / الفيديو، وتحتها محتوى التبويب المختار.
+- [`image_ratio_1_to_1`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9432-1130): الصورة جواه بقت `Fill` بـ auto layout، علشان تتظبط مع أي مقاس للـ instance (قبل كده مكانتش بتتصغر).
+
 ### Figma: ترتيب تأكيد الحجز في الساعة (طلب منة)
 - «تأكيد الحجز» في [`hourly_offers/offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=669-3049) و[`offer_details/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395) بقى بيودّي على [`reservation_in_progress`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6744-18214) (كان بيودّي على `reservation_successfully`).
 - `reservation_in_progress`: رابط `After delay` بقى 0.8 ثانية لـ [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) بـ Smart animate. قبل كده كان بعد 2 ثانية بيفتح `payment_successfully`.
