@@ -25,6 +25,6 @@
   - `ic_play` (`9297:5`) على صفحة `icons`.
   - `worker_card` (`9311:24185`) و`worker_profile` (`9311:24186`) على صفحة `organisms`، كـ component sets بـ `state=default`، ومتبنيين من مكوّنات موجودة (`contract_information_chip`، `badges`، `default_card`، `text_buttons`، `profile_avatar_photo`، `rating_stars`).
   - **تحديث 2026-11-23:** `worker_info_chip` اللي كان اتعمل في الأول اتمسح، ومكانه `contract_information_chip` الموجود.
-  - الشاشات: `workers/worker_profile_bottom_sheet` (`9298:23032`) و`workers/worker_video_bottom_sheet` (`9298:23100`).
+  - الشاشات: `workers/worker_profile_bottom_sheet` (`9298:23032`) و`workers/worker_video_bottom_sheet` (`9354:26601`).
 - **ملفات التوثيق:** `workers.md`، `organisms.md`، `molecules.md`، `glossary.md`، `overview.md`، `status.md`، `deviations.md`، `screens.json`، `screens-index.md`، والـ changelog.
 - **مش جزء من القرار ده:** فين الكارت هيظهر، والزرار الأساسي في الملف الشخصي (اختيار / استبدال). دول قرارات جاية.

@@ -3,6 +3,37 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-24
+### Figma: رحلة الأفراد جاهزة للتسليم ([قرار 0015](../decisions/0015-monthly-flow-aligned-with-excp.md))
+- صفحات جديدة:
+  - [`monthly_offers/choose_worker/more_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25915)
+  - [`workers/worker_photo_viewer_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25815)
+  - [`monthly_offers/contract_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25517)
+  - [`monthly_offers/terms_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25712)
+- الروابط زي مسار excp:
+  - «تأكيد الحجز» بيودّي على `contract_details`، و«التالي» بيودّي على `reservation_successfully`.
+  - الشروط بتفتح شيت الشروط.
+  - «اعرض المزيد» بيودّي على `more_workers`، وصورة العاملة بتفتح العارض.
+- تصليحات:
+  - «تصفية» اتصلحت، ورابط الفريم كله اتشال.
+  - «استعراض كل الباقات» كان بيودّي على فريم متجاهل.
+  - اتشال رابط زيادة في `choose_worker`، و22 action من غير وجهة، و`Change to` قديم في `app_delivery`.
+- 6 شيتات اتبنوا تاني على فريم متظبط على [قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md) واتوجّهت ليهم الروابط، فـ [S-12](../brand/deviations.md) اتقفل. الـ IDs الجديدة:
+  - [`offers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26522)
+  - [`worker_video_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26601)
+  - [`workers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26680)
+  - [`replace_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26768)
+  - [`favorite_replaced_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26847)
+  - [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926)
+- [`offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392): «خدمات اضافية» في ملخص السعر بقت «مصاريف التوصيل : 80».
+
+### التوثيق
+- [قرار 0015](../decisions/0015-monthly-flow-aligned-with-excp.md).
+- [monthly-and-medical.md](../product/features/monthly-and-medical.md): الرحلة كاملة وجدول بيقابل كل شاشة بـ excp.
+- تحديث [status.md](../status/status.md) (الأفراد جاهزة للتسليم) و[الذاكرة](../memory/MEMORY.md):
+  - 3 دروس عن Figma (إعدادات الـ overlay، والـ slots، والروابط بين الصفحات).
+  - الـ 4 اختلافات عن excp.
+- تحديث الروابط للـ IDs الجديدة في `workers.md` و`visits.md` و`0006`، وإعادة توليد `screens.json` و`screens-index.md` (122 إطار).
+
 ### قرار: excp هو المرجع بدل معين
 - [قرار 0014](../decisions/0014-excp-replaces-mueen-as-reference.md) (منة): ملف [`excp_base_app_atomic`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=0-1) هو المرجع من النهارده.
   - اتحدّث الـ Guideline في `AGENTS.md`، و[الذاكرة](../memory/MEMORY.md)، و[mueen-workers.md](../product/references/mueen-workers.md) اتعلّم إنه مرجع قديم.
