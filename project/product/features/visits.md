@@ -13,9 +13,9 @@ flowchart LR
     P --> WR["worker_rating_bottom_sheet"]
     P --> FW["favorite_worker_popup"] --> FWR["favorite_worker_result_popup"]
     P -.->|"يحتاج تأكيد"| UFR["unfavorite_worker_result_popup"]
-    U -->|"استبدال العاملة"| RW["replace_worker"] --> RWP["replace_worker_popup"] --> FRP["favorite_replaced_worker_popup"]
+    U -->|"استبدال العاملة"| RW["replace_worker"] --> RWP["replace_worker_bottom_sheet"] --> FRP["favorite_replaced_worker_bottom_sheet"]
     FRP -->|"تأكيد التفضيل"| FWR
-    FRP -->|"هذه الزيارة فقط"| RWR["replace_worker_result_popup"]
+    FRP -->|"هذه الزيارة فقط"| RWR["replace_worker_result_bottom_sheet"]
     U -->|"عرض الملف"| PV["workers/worker_profile_bottom_sheet/view"]
     P -->|"عرض الملف"| PV
 ```
@@ -33,9 +33,9 @@ flowchart LR
 | [`orders/visits/favorite_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31414) | تأكيد تفضيل العاملة |
 | [`orders/visits/favorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) | «تم تفضيل العاملة في 4 زيارات من أصل 50 زيارة، لعدم توفر إتاحيتها في باقي الزيارات» + «تم» / «تواصل عبر واتساب» |
 | [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) | «استبدال العاملة»: «العاملة الحالية في الزيارة» (`worker_card` من غير مهارات وزرار)، و«اختيار عاملة جديدة»: بحث (`input_fields` `type=search`)، وتبويبات الكل / سبق التعامل معها / المفضلة، و«تصفية» و«رتب بـ»، وقائمة `worker_card`. «عرض الملف» بيفتح `workers/worker_profile_bottom_sheet/replace_worker` |
-| [`orders/visits/replace_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24296) | «سيتم استبدال العاملة في الزيارة رقم 2 كالتالي:» + العاملة الحالية والجديدة (`contract_information_chip` `full_width`)، و«تأكيد الاستبدال» / «إلغاء» |
-| [`orders/visits/favorite_replaced_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24319) | «هل تريد تفضيل العاملة …؟ سيتم ترشيحها لباقي زيارات الطلب حسب الإتاحة.»، و«تأكيد التفضيل» (يروح لـ `favorite_worker_result_popup`) / «هذه الزيارة فقط» |
-| [`orders/visits/replace_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24345) | «تم استبدال العاملة»: «ستقوم العاملة … بالزيارة رقم 2.» + «تم». الرسمة `process_result_vectors` `state=reservation_success` |
+| [`orders/visits/replace_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24296) | «سيتم استبدال العاملة في الزيارة رقم 2 كالتالي:» + العاملة الحالية والجديدة (`contract_information_chip` `full_width`)، و«تأكيد الاستبدال» / «إلغاء» |
+| [`orders/visits/favorite_replaced_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24319) | «هل تريد تفضيل العاملة …؟ سيتم ترشيحها لباقي زيارات الطلب حسب الإتاحة.»، و«تأكيد التفضيل» (يروح لـ `favorite_worker_result_popup`) / «هذه الزيارة فقط» |
+| [`orders/visits/replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24345) | «تم استبدال العاملة»: «ستقوم العاملة … بالزيارة رقم 2.» + «تم». الرسمة `process_result_vectors` `state=reservation_success` |
 | [`orders/visits/unfavorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9308-24382) | نجاح إلغاء التفضيل: رسمة العاملة بقلب مكسور (`process_result_vectors` `state=unfavorite_worker`)، «تم إلغاء تفضيل العاملة» + «تم». النص ومكان الدخول عليها **(يحتاج تأكيد)** |
 
 حالة «سابقة بعد التقييم» مش شاشة لوحدها. هي متغير `status=previous, state=expanded_rated` في `visit_details`.

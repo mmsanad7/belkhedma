@@ -827,7 +827,7 @@
                         "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18272"
                     },
                     {
-                        "name":  "orders/visits/favorite_replaced_worker_popup",
+                        "name":  "orders/visits/favorite_replaced_worker_bottom_sheet",
                         "section":  "orders",
                         "node_id":  "9329:24319",
                         "width":  393,
@@ -863,7 +863,7 @@
                         "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874"
                     },
                     {
-                        "name":  "orders/visits/replace_worker_popup",
+                        "name":  "orders/visits/replace_worker_bottom_sheet",
                         "section":  "orders",
                         "node_id":  "9329:24296",
                         "width":  393,
@@ -872,7 +872,7 @@
                         "figma_url":  "https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24296"
                     },
                     {
-                        "name":  "orders/visits/replace_worker_result_popup",
+                        "name":  "orders/visits/replace_worker_result_bottom_sheet",
                         "section":  "orders",
                         "node_id":  "9329:24345",
                         "width":  393,

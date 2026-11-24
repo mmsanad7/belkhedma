@@ -3,13 +3,28 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-24
+### Figma: مطابقة شغل العاملات مع قرارات 0009 و0010 و0011
+- [قرار الساعة](../decisions/0012-hourly-workers.md) رقمه بقى 0012 بدل 0009، لأن رقم 0009 اتاخد لـ [إعدادات الـ bottom sheet](../decisions/0009-bottom-sheet-overlay-interaction.md).
+- الـ popups الجديدة اتغير اسمها لـ `_bottom_sheet` ([S-11](../brand/deviations.md)):
+  - [`orders/visits/replace_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24296)
+  - [`orders/visits/favorite_replaced_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24319)
+  - [`orders/visits/replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24345)
+- 21 interaction بتفتح شيتات العاملات اتظبطوا على [قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md): Open overlay، Move in ↑، Ease in and out، 300ms. التنقل بين الـ popups كان `Swap overlay` وبقى `Open overlay`.
+- إعدادات الفريم نفسه (Position، Background، Close outside) مش بتتعدل من الـ API، فاتسجلت في [S-12](../brand/deviations.md).
+- الـ 91 interaction التانيين اللي مش ماشيين على 0009 قدام، ومش من شغل العاملات، اتسابوا للمراجعة الشاملة المؤجلة.
+
+### التوثيق
+- [رسالة م. سند](../memory/messages-to-menna.md) عن قرار 0007 اتوصّلت لمنة واتعلّمت `[x]`.
+- [قرار 0012](../decisions/0012-hourly-workers.md): «عدد العاملات» متعلّم إنه مختلف عن معين ومحتاج قرار مشترك، والاستبدال متعلّم إنه معتمد على 0007 اللي محل مراجعة.
+- [الذاكرة](../memory/MEMORY.md): سطر لقرار 0012، وسؤالين مفتوحين: عدد العاملات وإعدادات الـ overlay.
+
 ### Figma
 - العاملات في خدمات الساعة ([قرار 0012](../decisions/0012-hourly-workers.md)):
   - `visit_details`: في الكروت المفتوحة (`upcoming/expanded`، `previous/expanded`، `previous/expanded_rated`) اتضاف `worker_row`، وفيه اسم العاملة + «عرض الملف» (`text_buttons` `card_button`). وفي القادمة اتضاف «استبدال العاملة» (`text_buttons` `outlined` small) جنب «تأجيل الزيارة».
   - فريمات جديدة:
     - `hourly_offers/offer_details/assigned_workers`
     - `workers/worker_profile_bottom_sheet/view` و`/replace_worker`
-    - `orders/visits/replace_worker`، و`replace_worker_popup`، و`favorite_replaced_worker_popup`، و`replace_worker_result_popup`
+    - `orders/visits/replace_worker`، و`replace_worker_bottom_sheet`، و`favorite_replaced_worker_bottom_sheet`، و`replace_worker_result_bottom_sheet`
   - كل ده من مكوّنات موجودة: `bottom_sheet`، `default_card`، `contract_information_chip`، `outline_notifications`، `section_header`، `tabs`، `input_fields`، `process_result_container`، `worker_card`.
   - البروتوتايب: رحلة الاستبدال مربوطة من الزيارات القادمة للنتيجة، و«عرض الملف» مربوط في الزيارات وتفاصيل طلب الساعة.
 - نص سؤال طريقة الاختيار في الأفراد بقى بالفصحى زي باقي التطبيق: «كيف تريد اختيار العاملة؟». ونص البحث بقى «ابحث باسم العاملة».

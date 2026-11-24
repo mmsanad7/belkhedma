@@ -140,12 +140,12 @@
 | `orders/order_details/invoice_bottom_sheet` | Bottom sheet | 393×567 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18283) |
 | `orders/order_details/service_rating_bottom_sheet` | Bottom sheet | 393×439 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18290) |
 | `orders/order_details/visits_bottom_sheet` | Bottom sheet | 393×532 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18272) |
-| `orders/visits/favorite_replaced_worker_popup` | Bottom sheet | 393×184 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24319) |
+| `orders/visits/favorite_replaced_worker_bottom_sheet` | Bottom sheet | 393×184 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24319) |
 | `orders/visits/favorite_worker_popup` | Bottom sheet | 393×184 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31414) |
 | `orders/visits/favorite_worker_result_popup` | Bottom sheet | 393×276 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) |
 | `orders/visits/replace_worker` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) |
-| `orders/visits/replace_worker_popup` | Bottom sheet | 393×236 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24296) |
-| `orders/visits/replace_worker_result_popup` | Bottom sheet | 393×262 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24345) |
+| `orders/visits/replace_worker_bottom_sheet` | Bottom sheet | 393×236 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24296) |
+| `orders/visits/replace_worker_result_bottom_sheet` | Bottom sheet | 393×262 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24345) |
 | `orders/visits/reschedule_visit_bottom_sheet` | Bottom sheet | 393×488 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157) |
 | `orders/visits/unfavorite_worker_result_popup` | Bottom sheet | 393×276 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9308-24382) |
 | `orders/visits/worker_rating_bottom_sheet` | Bottom sheet | 393×440 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31316) |
