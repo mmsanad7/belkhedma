@@ -4,6 +4,16 @@
 
 ## 2026-11-24
 
+### Figma: المهارات قبل النبذة، و5 مقترحات لـ «فيديو تعريفي» (طلب منة)
+- [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186): «المهارات المعتمدة» بقت قبل «نبذة عن العاملة». اتطبقت على كل شيتات الملف (`worker_profile_bottom_sheet` و`/view` و`/replace_worker` و`/current_worker`). واتعدّل نفس الترتيب في مقترحات الملف الشخصي في `draft_screens`، وفي مقترح التبويبات بقى تبويب «المهارات» هو الأول والمختار.
+- [`proposals/worker_video_entry`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9464-23504) في `draft_screens` (مش معتمدة):
+  - [`video_proposal_1_thumbnail`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9464-22622): صورة مصغّرة (`image_ratio_2_to_1`) وفي النص زرار تشغيل، وعليها «فيديو تعريفي 0:45».
+  - [`video_proposal_2_row_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9464-22804): كارت أبيض فيه «شاهد الفيديو التعريفي» و«تعرّف على العاملة في 45 ثانية»، وزرار تشغيل.
+  - [`video_proposal_3_on_avatar`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9464-22983): زرار تشغيل صغير على صورة العاملة، وتحتها «اضغط على الصورة لمشاهدة الفيديو التعريفي».
+  - [`video_proposal_4_pill`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9464-23159): chip «فيديو تعريفي» بأيقونة تشغيل جنب التقييم.
+  - [`video_proposal_5_secondary_button`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9464-23335): زرار ثانوي بعرض الشاشة «شاهد الفيديو التعريفي».
+- التوثيق: قرار 0006 (ترتيب الملف)، والذاكرة.
+
 ### Figma: إخفاء بيانات الكارت، ونقل العاملات لصفحة تأكيد الحجز في الساعة (طلب منة)
 - [`payment_methods`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=819-4024): `card_container` (رقم الكارت والاسم والانتهاء وCVV) و`security_notice` (Escrow) بقوا مخفيين في الكمبوننت، فاختفوا من كل صفحات تأكيد الحجز. لوجوهات الدفع والعنوان لسه ظاهرين.
 - template [`reservation_success`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=2485-23331) (`type=default`): اتضاف slot `extra_content` بعد `reservation_status`، ومعاه Boolean `has_extra_content` (افتراضي off، فباقي الصفحات زي ما هي).
