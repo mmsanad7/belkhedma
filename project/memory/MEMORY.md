@@ -50,6 +50,7 @@
 - **درس (2026-11-24):** منة بتعدّل على المقترحات بنفسها في `sand_box`. قبل تطبيق أي مقترح اختارته، اقرا النسخة الحالية من Figma (مش اللي اتعمل أول مرة) وطبّق تعديلاتها.
 - **مفتوح:** منة طلبت أيقونة تانية تنضاف لـ `filter_icons` جنب [`unfavorite_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9425-866)، ومستنيين تحدد هي إيه.
 - **2026-11-24 (منة):** استبدال العاملة على الزيارة قبل الدفع في الساعة زي excp، من تفاصيل الطلب، بالشيتات الموجودة زي ما هي. اتنفذ ([قرار 0019](../decisions/0019-replace-worker-before-payment.md)).
+- **2026-11-24 (منة):** في الساعة: «تأكيد الحجز» ← [`reservation_in_progress`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6744-18214) (الـ 4 خطوات) ← بعد 0.8 ثانية لوحدها ← [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) ← «ادفع» ← `payment_successfully`. الترتيب القديم كان: الدفع الأول وبعده الخطوات.
 
 ## طريقة الشغل والتوصيات
 > قواعد ثابتة، منها اللي قاله صاحب المشروع ومنها اللي طلع من شغل Menna وبقى نمط متّبع.

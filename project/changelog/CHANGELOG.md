@@ -4,6 +4,12 @@
 
 ## 2026-11-24
 
+### Figma: ترتيب تأكيد الحجز في الساعة (طلب منة)
+- «تأكيد الحجز» في [`hourly_offers/offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=669-3049) و[`offer_details/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395) بقى بيودّي على [`reservation_in_progress`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6744-18214) (كان بيودّي على `reservation_successfully`).
+- `reservation_in_progress`: رابط `After delay` بقى 0.8 ثانية لـ [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) بـ Smart animate. قبل كده كان بعد 2 ثانية بيفتح `payment_successfully`.
+- «ادفع» في `reservation_successfully` بقى بيفتح [`payment_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=851-5135) كـ overlay ([قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md)). كان بيرجع لـ `reservation_in_progress`، وده كان هيعمل لفة مقفولة مع الترتيب الجديد.
+- التوثيق: `hourly-services.md` (الرحلة والشرح)، والذاكرة.
+
 ### Figma: استبدال العاملة قبل الدفع في الساعة (طلب منة، [قرار 0019](../decisions/0019-replace-worker-before-payment.md))
 - شيت جديد [`workers/worker_profile_bottom_sheet/current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015): نسخة من `/view` (بنفس إعدادات الـ overlay)، بزرار «استبدال العاملة» بيودّي على [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874).
 - [`hourly_offers/offer_details/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395): الـ 4 `visit_worker_card` بقوا بيفتحوا الشيت الجديد. التنبيه بقى «…ويمكنك استبدالها على أي زيارة بالضغط عليها.»

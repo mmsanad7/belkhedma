@@ -28,7 +28,9 @@ flowchart TD
     B2 --> P
     P -->|"زائر"| L["auth/login_popup_in_offers_steps"]
     P -->|"الحصول على العرض"| D["hourly_offers/offer_details"]
-    D -->|"تأكيد الحجز"| PS["payment_successfully"]
+    D -->|"تأكيد الحجز"| IP["reservation_in_progress"]
+    IP -->|"تلقائي بعد 0.8s"| OK["reservation_successfully"]
+    OK -->|"ادفع"| PS["payment_successfully"]|"تأكيد الحجز"| PS["payment_successfully"]
     PS --> IP["reservation_in_progress"]
     IP --> OK["reservation_successfully"]
     IP --> LEAD["reservation_successfully_lead"]
@@ -71,6 +73,8 @@ flowchart TD
 4. تأكيد الحجز
 
 ورسالة «يقوم مقدم الخدمة بإعداد عقدك الآن...» وزر «العودة للرئيسية». العميل يقدر يخرج من الشاشة، والحجز يكمل في الخلفية («ما يحتاج تنتظر هنا، حجزك بيكمل»).
+
+**في البروتوتايب (طلب منة 2026-11-24):** «تأكيد الحجز» في [`offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=669-3049) و[`offer_details/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395) بيودّي على [`reservation_in_progress`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6744-18214). بعد 0.8 ثانية بتنتقل لوحدها (Smart animate) للحالة التانية [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094): «تم تأكيد حجزك بنجاح» والدفع. «ادفع» بيفتح [`payment_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=851-5135) كـ overlay ([قرار 0009](../../decisions/0009-bottom-sheet-overlay-interaction.md)).
 
 ### النتيجة
 `reservation_successfully` · `reservation_successfully_lead` · `reservation_failed`، من templates `reservation_success` و`reservation_failed`.
