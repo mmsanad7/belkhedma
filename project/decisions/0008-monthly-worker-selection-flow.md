@@ -27,10 +27,10 @@ flowchart LR
     M -->|"تختارها الشركة"| OD["offer_details"]
     M -->|"أختارها بنفسي / متابعة"| CW["choose_worker"]
     CW -->|"تصفية"| F["workers_filtration_bottom_sheet"]
-    CW -->|"عرض الملف"| PR["workers/worker_profile_bottom_sheet"]
+    CW -->|"الضغط على الكارت"| PR["workers/worker_profile_bottom_sheet"]
     PR -->|"فيديو تعريفي"| VID["workers/worker_video_bottom_sheet"]
     PR -->|"اختيار العاملة"| ODS["offer_details/worker_selected"]
-    ODS -->|"تغيير العاملة"| CW
+    %% «تغيير العاملة» اتشال (قرار 0016)
 ```
 
 ## الأثر

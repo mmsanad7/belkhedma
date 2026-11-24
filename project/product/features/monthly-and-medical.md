@@ -19,11 +19,10 @@ flowchart TD
     CW -->|"اعرض المزيد"| MW["choose_worker/more_workers"]
     CW -->|"تصفية"| WF["workers_filtration_bottom_sheet"]
     CW -->|"صورة العاملة"| PH["workers/worker_photo_viewer_bottom_sheet"]
-    CW -->|"عرض الملف"| PR["workers/worker_profile_bottom_sheet"]
+    CW -->|"الضغط على الكارت"| PR["workers/worker_profile_bottom_sheet"]
     MW --> PR
     PR -->|"فيديو تعريفي"| VID["workers/worker_video_bottom_sheet"]
     PR -->|"اختيار العاملة"| D2["offer_details/worker_selected"]
-    D2 -->|"تغيير العاملة"| CW
     D -->|"تأكيد الحجز"| RS["reservation_successfully (تأكيد + الدفع)"]
     D2 -->|"تأكيد الحجز"| RS
     RS -->|"ادفع"| PS["payment_successfully"]
@@ -41,7 +40,7 @@ flowchart TD
 | [`workers/worker_photo_viewer_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25815) | صورة العاملة كبيرة (بالضغط على الصورة في الكارت) | `worker_photo_viewer` |
 | [`workers/worker_profile_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) · [`worker_video_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26601) | الملف الشخصي + «اختيار العاملة»، والفيديو | `worker_employee_sheet` · `worker_video_sheet` |
 | [`offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11054) | تفاصيل التعاقد لما الشركة تختار العاملة. راجع [checkout-and-payment.md](checkout-and-payment.md) | `package_details/choose_worker_branch` |
-| [`offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392) | نفس الشاشة بكارت العاملة المختارة و«تغيير العاملة». ملخص السعر فيه «مصاريف التوصيل : 80» | `package_details/default` |
+| [`offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392) | نفس الشاشة بكارت العاملة المختارة (للعرض بس، من غير «تغيير العاملة»: [قرار 0016](../../decisions/0016-no-buttons-in-worker-cards.md)). ملخص السعر فيه «مصاريف التوصيل : 80» | `package_details/default` |
 | [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-15386) | «تم تأكيد حجزك بنجاح» + اختيار وسيلة الدفع + «ادفع» | `success_contract_sheet` + `payment` |
 | [`payment_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11085) | «تهانينا - تم الدفع بنجاح» | `payment_success` |
 | [`reservation_failed`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-15388) | فشل الحجز. محدش بيوصله في الأفراد، لأن مفيش خطوة «جاري التأكيد» | — |

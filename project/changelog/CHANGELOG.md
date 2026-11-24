@@ -3,6 +3,13 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-24
+
+### Figma: كارت العاملة من غير زراير، وشيل «تغيير العاملة» (طلب منة، [قرار 0016](../decisions/0016-no-buttons-in-worker-cards.md))
+- [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185): `profile_button` («عرض الملف») اتمسح من الكمبوننت، والـ Boolean `show_profile_button` اتشال.
+- الرابط اتنقل على الكارت نفسه (16 كارت): في [`choose_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22500) و[`more_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25915) بيفتح [الملف الشخصي](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032)، وفي [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) بيفتح [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23794). الضغط على الصورة لسه بيفتح عارض الصورة.
+- [`offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392): «تغيير العاملة» اتشال، والكارت للعرض بس.
+- التوثيق: قرار 0016 جديد، وتحديث قرار 0006 و0008، و`workers.md`، و`monthly-and-medical.md`، و`visits.md`، و`organisms.md`، والذاكرة.
+
 ### Figma: مسح «تفاصيل التعاقد» والشروط نهائي (طلب منة)
 - الفريمين `_monthly_offers/contract_details` (`9354:25517`) و`_monthly_offers/terms_bottom_sheet` (`9354:25712`) اتمسحوا من Figma بعد ما اتأكدنا إن مفيش روابط عليهم.
 - ده استثناء للصفحتين دول بس، وقاعدة «اللي يتلغي يتحط قبل اسمه `_`» لسه زي ما هي ([الذاكرة](../memory/MEMORY.md#طريقة-الشغل-والتوصيات)).

@@ -33,9 +33,9 @@
 | الشاشة | الوصف |
 |---|---|
 | [`monthly_offers/worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23557) وحالاته: [`/app`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23688)، [`/app_company`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23845)، [`/app_delivery`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24066)، [`/company_branch`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24249)، [`/receive`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24444)، [`/receive_company`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24575)، [`/receive_delivery`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-24770) | «ما هي خياراتك المفضلة؟» بكروت `filtration_elements` بأيقونات (زي شيت فلترة العروض): «كيف تريد اختيار العاملة» (من التطبيق / من الشركة)، و«كيف تريد استلام العاملة» (من الشركة / توصيل للمنزل + مصاريف التوصيل 80)، و«اختر الفرع المناسب لك»، و«موافق». كله instance من template [`worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9335-5182). التفاصيل والروابط في [قرار 0013](../../decisions/0013-worker-selection-sheet-from-excp.md) |
-| [`monthly_offers/choose_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22500) | «اختيار العاملة»: فلاتر مختارة (`filtered_chip`) + «تصفية» و«رتب بـ» (`sorting_dropdown`)، و`section_header` «عاملات «اسم الشركة»»، وقائمة `worker_card`، و«اعرض المزيد من العاملات». «عرض الملف» بيفتح `workers/worker_profile_bottom_sheet` |
+| [`monthly_offers/choose_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-22500) | «اختيار العاملة»: فلاتر مختارة (`filtered_chip`) + «تصفية» و«رتب بـ» (`sorting_dropdown`)، و`section_header` «عاملات «اسم الشركة»»، وقائمة `worker_card`، و«اعرض المزيد من العاملات». الضغط على الكارت بيفتح `workers/worker_profile_bottom_sheet` ([قرار 0016](../../decisions/0016-no-buttons-in-worker-cards.md)) |
 | [`monthly_offers/workers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26680) | «فلترة العاملات»: 4 أقسام، كل قسم `section_header` + `chips`: النوع، الخبرة، الديانة، المهارات. و«مسح الكل» / «تطبيق الفلتر» |
-| [`monthly_offers/offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392) | تفاصيل التعاقد: `worker_card` للعاملة المختارة (من غير مهارات) بزرار «تغيير العاملة»، مكان ملاحظة «سيتم اختيار العاملة من فرع الشركة» |
+| [`monthly_offers/offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392) | تفاصيل التعاقد: `worker_card` للعاملة المختارة (من غير مهارات، للعرض بس)، مكان ملاحظة «سيتم اختيار العاملة من فرع الشركة» |
 
 حالة «تختارها الشركة» هي [`monthly_offers/offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11054) زي ما هي.
 
@@ -51,7 +51,7 @@
 
 | المكوّن | الصفحة | الخصائص |
 |---|---|---|
-| [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) | organisms | `state=default`. نصوص: `worker_name`، `rating_value`، `rating_count`. Boolean: `show_skills`، `show_profile_button` |
+| [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) | organisms | `state=default`. نصوص: `worker_name`، `rating_value`، `rating_count`. Boolean: `show_skills`. من غير زراير: الضغط على الكارت كله ([قرار 0016](../../decisions/0016-no-buttons-in-worker-cards.md)) |
 | [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186) | organisms | `state=default`. نصوص: `worker_name`، `rating_value`، `rating_count`. Boolean: `show_video`. النبذة والمهارات جوه slot الـ `default_card`، وبتتعدل في كل instance |
 | `ic_play` (`9297:5`) | icons | أيقونة تشغيل، لونها `text/text_primary`. بتستخدم جوه `icon_placeholder` |
 
@@ -63,7 +63,7 @@
 | نجمة التقييم | `rating_stars` `state=only_1_star` (atom) |
 | الديانة، الخبرة، الجنسية | `contract_information_chip` `state=with_bg` (molecule): `label` = «الديانة» و`value` = «مسلمة» |
 | المهارات | `badges` `state=primary` (molecule) |
-| «عرض الملف»، «فيديو تعريفي» | `text_buttons` `state=card_button` / `see_all` (atom) |
+| «فيديو تعريفي» | `text_buttons` `state=card_button` / `see_all` (atom) |
 | «نبذة عن العاملة»، «المهارات المعتمدة» | `default_card` (organism) بعنوان + slot |
 | خلفية الكارت | نفس fills وeffects بتوع `offers_card` |
 
