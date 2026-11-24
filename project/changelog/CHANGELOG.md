@@ -4,6 +4,13 @@
 
 ## 2026-11-24
 
+### Figma: صورة العاملة مربعة في العارض، وعلامة على الصورة في الكارت (طلب منة)
+- atom جديد [`image_ratio_1_to_1`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9432-1130): نفس `image_ratio_2_to_1` بس مربع 361×361 (`radius_lg`). مفيش atom لصورة مربعة قبل كده.
+- [`workers/worker_photo_viewer_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25815): الصورة الدايرية (`profile_avatar_photo`) اتغيرت لـ `image_ratio_1_to_1` بعرض الشيت. الشيت بقى 393×528.
+- molecule جديد [`photo_zoom_badge`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9432-25884): دايرة بيضا 24 (`bg_white`) فيها `icon_placeholder` 16 بـ `ic_form_search` بلون `text_primary`. مفيش أيقونة تكبير في الملف، فاستخدمنا العدسة.
+- [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185): الصورة اتحطت جوه `avatar_container` ومعاها `photo_zoom_badge` على الركن. رابط عارض الصورة اتنقل من `worker_avatar` لـ `avatar_container` (علشان الضغط على العلامة كمان يفتح الصورة)، واتضاف في الكروت اللي مكانش فيها (`worker_selected` و`orders/visits/replace_worker`).
+- التوثيق: `atoms.md`، `molecules.md`، `organisms.md`، `icons-and-images/README.md`، `monthly-and-medical.md`، الذاكرة، وفهرس الشاشات.
+
 ### Figma: تعديلات منة على كارت العاملة، وكارت الزيارة، وأيقونة `unfavorite_worker` (طلب منة)
 - [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185): اتطبقت تعديلات منة على [مقترح أ](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9380-333): صورة 80، والاسم والتقييم في سطر (`name_rating`)، والبيانات `with_bg` بتلف. الارتفاع 120 ([قرار 0017](../decisions/0017-compact-worker-card.md)).
 - كمبوننت جديد [`visit_worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9425-7013) في organisms، من مقترح ٢ بتعديل منة ([قرار 0018](../decisions/0018-visit-first-assigned-workers.md)).

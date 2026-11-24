@@ -37,6 +37,7 @@
 | [`payment_methods_logos`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=819-515) | `method=` visa · master_card · mada · apple_pay × `state=` default · selected | شعارات الدفع |
 | [`logo`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11246) | `state=` default · state2 | شعار بالخدمة |
 | [`image_ratio_2_to_1`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=78-2083) | — | صورة بنسبة 2:1 (البانرات) |
+| [`image_ratio_1_to_1`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9432-1130) | — | صورة مربعة 1:1، بنفس شكل `image_ratio_2_to_1` (`radius_lg`). أول استخدام: [عارض صورة العاملة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25815) |
 | [`service_image`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11400) | `state=` default | صورة الخدمة (54×54) |
 | [`icon_placeholder`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=727-3434) | `state=` size_120 · size_24 · size_16 · size_12 | حاوية أيقونة بمقاسات ثابتة |
 | [`side_menu_icon`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11395) | `state=` default | أيقونة بند القائمة الجانبية |

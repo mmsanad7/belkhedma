@@ -12,6 +12,7 @@
 | [`search_or_filtration`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11605) | `state=` default · state2 | منطقة بحث وفلترة |
 | [`filter_section`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7284-21694) | `state=` expanded_options · expanded_price_range | قسم داخل شيت الفلترة |
 | [`filtration_elements`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6068-30821) | `Property 1=` Default · Variant2 · Variant3 | عناصر الفلترة |
+| [`photo_zoom_badge`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9432-25884) | `state=` default | دايرة بيضا 24 فيها `icon_placeholder` 16 بـ `ic_form_search`، على ركن صورة العاملة في `worker_card`. بتوضّح إن الضغط على الصورة بيفتحها كبيرة |
 | [`sorting_dropdown`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=41-364) | `state=` default · branded | قائمة «رتّب بـ» |
 | [`sorting_filtration`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=65-398) | `state=` default | زر «تصفية» |
 | [`filtered_chip`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11451) | `state=` default | فلتر مختار |
