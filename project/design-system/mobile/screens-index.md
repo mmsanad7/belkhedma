@@ -1,6 +1,6 @@
 # فهرس الشاشات (Mobile)
 
-كل الإطارات في صفحة `screens` في Figma (104 إطاراً). الملف مولَّد من [`project/data/screens.json`](../../data/screens.json) بالسكريبت [`generate-screens.ps1`](../../../shared/scripts/generate-screens.ps1)، فلو تغيّرت الشاشات شغّل السكريبت تاني.
+كل الإطارات في صفحة `screens` في Figma (111 إطاراً). الملف مولَّد من [`project/data/screens.json`](../../data/screens.json) بالسكريبت [`generate-screens.ps1`](../../../shared/scripts/generate-screens.ps1)، فلو تغيّرت الشاشات شغّل السكريبت تاني.
 
 - **شاشة:** إطار كامل `393×852`.
 - **Bottom sheet:** إطار أقصر يمثّل نافذة منبثقة من الأسفل فوق شاشة أخرى.
@@ -44,6 +44,7 @@
 | `hourly_offers/filters_applied` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=852-7024) |
 | `hourly_offers/filters_bottom_sheet/with_selected_filters` | Bottom sheet | 393×711 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7471-24777) |
 | `hourly_offers/offer_details` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=669-3049) |
+| `hourly_offers/offer_details/assigned_workers` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395) |
 | `hourly_offers/offers_filtration_bottom_sheet` | Bottom sheet | 393×744 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=585-4041) |
 | `hourly_offers/offers_filtration_bottom_sheet` | Bottom sheet | 393×438 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9098-22052) |
 | `hourly_offers/offers_summary_popup` | Bottom sheet | 393×408 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=585-3676) |
@@ -139,8 +140,12 @@
 | `orders/order_details/invoice_bottom_sheet` | Bottom sheet | 393×567 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18283) |
 | `orders/order_details/service_rating_bottom_sheet` | Bottom sheet | 393×439 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18290) |
 | `orders/order_details/visits_bottom_sheet` | Bottom sheet | 393×532 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18272) |
+| `orders/visits/favorite_replaced_worker_popup` | Bottom sheet | 393×184 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24319) |
 | `orders/visits/favorite_worker_popup` | Bottom sheet | 393×184 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31414) |
 | `orders/visits/favorite_worker_result_popup` | Bottom sheet | 393×276 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) |
+| `orders/visits/replace_worker` | شاشة | 393×852 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) |
+| `orders/visits/replace_worker_popup` | Bottom sheet | 393×236 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24296) |
+| `orders/visits/replace_worker_result_popup` | Bottom sheet | 393×262 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24345) |
 | `orders/visits/reschedule_visit_bottom_sheet` | Bottom sheet | 393×488 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157) |
 | `orders/visits/unfavorite_worker_result_popup` | Bottom sheet | 393×276 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9308-24382) |
 | `orders/visits/worker_rating_bottom_sheet` | Bottom sheet | 393×440 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31316) |
@@ -198,4 +203,6 @@
 | الإطار | النوع | المقاس | Figma |
 |---|---|---|---|
 | `workers/worker_profile_bottom_sheet` | Bottom sheet | 393×497 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) |
+| `workers/worker_profile_bottom_sheet/replace_worker` | Bottom sheet | 393×549 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23794) |
+| `workers/worker_profile_bottom_sheet/view` | Bottom sheet | 393×549 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713) |
 | `workers/worker_video_bottom_sheet` | Bottom sheet | 393×624 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23100) |

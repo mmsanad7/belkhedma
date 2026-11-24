@@ -13,6 +13,7 @@
 | [0006](../../decisions/0006-worker-entity.md) | كيان العاملة: كارت + ملف شخصي بنفس بيانات معين | معتمد ومنفّذ |
 | [0007](../../decisions/0007-worker-selection-from-offer-company.md) | اختيار العاملة من عاملات الشركة صاحبة العرض بس | معتمد |
 | [0008](../../decisions/0008-monthly-worker-selection-flow.md) | رحلة اختيار العاملة في خدمات الأفراد | معتمد ومنفّذ |
+| [0012](../../decisions/0012-hourly-workers.md) | الساعة: الشركة بتعيّن، والعاملة بتظهر قبل الدفع، ومفيش عدد عاملات، والاستبدال من الزيارات القادمة | معتمد ومنفّذ |
 
 ## الشاشات
 
@@ -20,6 +21,9 @@
 |---|---|
 | [`workers/worker_profile_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) | «الملف الشخصي للعاملة»: `bottom_sheet` + `worker_profile` في الـ slot + زرار «اختيار العاملة». «فيديو تعريفي» بيفتح شيت الفيديو (overlay) |
 | [`workers/worker_video_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23100) | «الفيديو التعريفي»: `bottom_sheet` فيه مساحة الفيديو و`icon_placeholder` (`ic_play`)، وزرار «تم» |
+
+| [`workers/worker_profile_bottom_sheet/view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713) | نفس الملف بزرار «تم» (بيقفل). بيتفتح من تفاصيل طلب الساعة قبل الدفع ومن الزيارات |
+| [`workers/worker_profile_bottom_sheet/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23794) | نفس الملف بزرار «اختيار العاملة» اللي بيفتح تأكيد الاستبدال. بيتفتح من `orders/visits/replace_worker` |
 
 كل الـ bottom sheets هنا متبنية على organism `bottom_sheet` (`585:3350`)، والمحتوى في الـ slot بتاعه، زي `monthly_offers/offers_filtration_bottom_sheet`.
 
@@ -33,6 +37,14 @@
 | [`monthly_offers/offer_details/worker_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9302-23392) | تفاصيل التعاقد: `worker_card` للعاملة المختارة (من غير مهارات) بزرار «تغيير العاملة»، مكان ملاحظة «سيتم اختيار العاملة من فرع الشركة» |
 
 حالة «تختارها الشركة» هي [`monthly_offers/offer_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11054) زي ما هي.
+
+### خدمات الساعة ([قرار 0012](../../decisions/0012-hourly-workers.md))
+
+| المكان | الشاشة |
+|---|---|
+| قبل الدفع | [`hourly_offers/offer_details/assigned_workers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395): العاملة على كل زيارة + «عرض الملف». راجع [hourly-services.md](hourly-services.md) |
+| الزيارات | `visit_details`: «عرض الملف» جنب اسم العاملة، و«استبدال العاملة» في القادمة |
+| الاستبدال | `orders/visits/replace_worker` ← `replace_worker_popup` ← `favorite_replaced_worker_popup` ← `favorite_worker_result_popup` أو `replace_worker_result_popup`. راجع [visits.md](visits.md) |
 
 ## المكوّنات
 
@@ -85,8 +97,8 @@
 ## الخطوات الجاية (كل واحدة بقرار)
 مرشحين من [audit المقارنة](../../design-system/audits/2026-11-23-mueen-workers-comparison.md#اللي-ممكن-ينتقل-مرشحين-للخطة):
 1. ~~اختيار العاملة في الأفراد (`monthly`)~~: منفّذ ([قرار 0008](../../decisions/0008-monthly-worker-selection-flow.md)).
-2. الساعة: العاملة المعيّنة على الزيارات، وعدد العاملات.
-3. الاستبدال من الزيارات القادمة.
+2. ~~الساعة: العاملة المعيّنة على الزيارات~~: منفّذ ([قرار 0012](../../decisions/0012-hourly-workers.md)). عدد العاملات اتأجل.
+3. ~~الاستبدال من الزيارات القادمة~~: منفّذ ([قرار 0012](../../decisions/0012-hourly-workers.md)).
 4. قائمة المفضلة و«سبق التعامل معهم».
 5. العاملات على الطلب في تفاصيل الطلب.
 6. الحظر ([قرار 0002](../../decisions/0002-defer-block-worker.md)).

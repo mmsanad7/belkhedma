@@ -13,7 +13,14 @@ flowchart LR
     P --> WR["worker_rating_bottom_sheet"]
     P --> FW["favorite_worker_popup"] --> FWR["favorite_worker_result_popup"]
     P -.->|"يحتاج تأكيد"| UFR["unfavorite_worker_result_popup"]
+    U -->|"استبدال العاملة"| RW["replace_worker"] --> RWP["replace_worker_popup"] --> FRP["favorite_replaced_worker_popup"]
+    FRP -->|"تأكيد التفضيل"| FWR
+    FRP -->|"هذه الزيارة فقط"| RWR["replace_worker_result_popup"]
+    U -->|"عرض الملف"| PV["workers/worker_profile_bottom_sheet/view"]
+    P -->|"عرض الملف"| PV
 ```
+
+الاستبدال اتضاف في [قرار 0012](../../decisions/0012-hourly-workers.md).
 
 ## الشاشات
 
@@ -25,6 +32,10 @@ flowchart LR
 | [`orders/visits/worker_rating_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31316) | «تقييم العاملة»: اسم العاملة، 4 معايير بالنجوم، «ملاحظاتك على العاملة» (اختياري)، و«إرسال التقييم» |
 | [`orders/visits/favorite_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31414) | تأكيد تفضيل العاملة |
 | [`orders/visits/favorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) | «تم تفضيل العاملة في 4 زيارات من أصل 50 زيارة، لعدم توفر إتاحيتها في باقي الزيارات» + «تم» / «تواصل عبر واتساب» |
+| [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) | «استبدال العاملة»: «العاملة الحالية في الزيارة» (`worker_card` من غير مهارات وزرار)، و«اختيار عاملة جديدة»: بحث (`input_fields` `type=search`)، وتبويبات الكل / سبق التعامل معها / المفضلة، و«تصفية» و«رتب بـ»، وقائمة `worker_card`. «عرض الملف» بيفتح `workers/worker_profile_bottom_sheet/replace_worker` |
+| [`orders/visits/replace_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24296) | «سيتم استبدال العاملة في الزيارة رقم 2 كالتالي:» + العاملة الحالية والجديدة (`contract_information_chip` `full_width`)، و«تأكيد الاستبدال» / «إلغاء» |
+| [`orders/visits/favorite_replaced_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24319) | «هل تريد تفضيل العاملة …؟ سيتم ترشيحها لباقي زيارات الطلب حسب الإتاحة.»، و«تأكيد التفضيل» (يروح لـ `favorite_worker_result_popup`) / «هذه الزيارة فقط» |
+| [`orders/visits/replace_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24345) | «تم استبدال العاملة»: «ستقوم العاملة … بالزيارة رقم 2.» + «تم». الرسمة `process_result_vectors` `state=reservation_success` |
 | [`orders/visits/unfavorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9308-24382) | نجاح إلغاء التفضيل: رسمة العاملة بقلب مكسور (`process_result_vectors` `state=unfavorite_worker`)، «تم إلغاء تفضيل العاملة» + «تم». النص ومكان الدخول عليها **(يحتاج تأكيد)** |
 
 حالة «سابقة بعد التقييم» مش شاشة لوحدها. هي متغير `status=previous, state=expanded_rated` في `visit_details`.
@@ -39,9 +50,9 @@ flowchart LR
 
 | الحالة | الشارة | المحتوى وهو مفتوح |
 |---|---|---|
-| قادمة `upcoming` | «جديدة» | اسم العاملة، «تأجيل الزيارة»، تنبيه «في حالة تأجيل الزيارة لا يمكن ضمان نفس العاملة حسب الإتاحية» |
-| سابقة `previous` | «انتهت» | اسم العاملة، «لا يوجد تقييم للعاملة» + «تقييم»، «تفضيل العاملة» |
-| سابقة بعد التقييم `expanded_rated` | «انتهت» | «تقييمك للعاملة» بالمتوسط (مثلاً 4.5)، الأربع معايير، ملاحظاتك، «تفضيل العاملة» |
+| قادمة `upcoming` | «جديدة» | اسم العاملة + «عرض الملف»، و«استبدال العاملة» / «تأجيل الزيارة»، وتنبيه «في حالة تأجيل الزيارة لا يمكن ضمان نفس العاملة حسب الإتاحية» |
+| سابقة `previous` | «انتهت» | اسم العاملة + «عرض الملف»، «لا يوجد تقييم للعاملة» + «تقييم»، «تفضيل العاملة» |
+| سابقة بعد التقييم `expanded_rated` | «انتهت» | اسم العاملة + «عرض الملف»، «تقييمك للعاملة» بالمتوسط (مثلاً 4.5)، الأربع معايير، ملاحظاتك، «تفضيل العاملة» |
 
 الكارت وهو مقفول فيه: عنوان الزيارة، رقم الزيارة، ووقت الزيارة.
 
@@ -51,6 +62,7 @@ flowchart LR
 - التقييم والتفضيل للزيارات السابقة بس.
 - التفضيل بيتطبق على الزيارات الجاية في الطلب حسب الإتاحة، وممكن يتطبق جزئياً (X من Y زيارة). ولو اتطبق جزئياً العميل يقدر يتواصل مع خدمة العملاء على واتساب.
 - تقييم العاملة منفصل عن تقييم الخدمة (`service_rating_bottom_sheet`) اللي على مستوى الطلب.
+- الاستبدال للزيارات القادمة بس، والعاملات من الشركة صاحبة العرض ([قرار 0012](../../decisions/0012-hourly-workers.md)). بعد الاستبدال العميل يختار: يفضّل العاملة الجديدة لباقي الزيارات (نفس بيزنس التفضيل)، أو يخليها للزيارة دي بس.
 
 ## الحالات الخاصة
 - الحالة الفارغة (مفيش زيارات قادمة أو سابقة): مش مرسومة.
@@ -68,5 +80,6 @@ flowchart LR
 - [ ] التفضيل بيتطبق على الطلب ده بس ولا على كل طلبات العميل؟
 - [ ] ينفع العميل يلغي التفضيل بعد كده؟ ومن فين؟ (حالة النجاح اترسمت في `unfavorite_worker_result_popup`، بس زرار الإلغاء وpopup التأكيد لسه مش مرسومين)
 - [ ] ينفع العميل يعدّل التقييم بعد ما يبعته؟
+- [ ] فيه حد أقصى لعدد مرات الاستبدال، أو نافذة زمنية قبل الزيارة؟ ولو العاملة الجديدة مش متاحة في ميعاد الزيارة؟
 - [ ] هل `visits_bottom_sheet` القديمة لسه مطلوبة، ولا الشاشة الجديدة بقت مكانها؟
 - [ ] الوصول للزيارات من تفاصيل الطلب بس، ولا هيبقى فيه «زياراتي» عامة زي Enaya؟

@@ -2,6 +2,24 @@
 
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
+## 2026-11-24
+### Figma
+- العاملات في خدمات الساعة ([قرار 0012](../decisions/0012-hourly-workers.md)):
+  - `visit_details`: في الكروت المفتوحة (`upcoming/expanded`، `previous/expanded`، `previous/expanded_rated`) اتضاف `worker_row`، وفيه اسم العاملة + «عرض الملف» (`text_buttons` `card_button`). وفي القادمة اتضاف «استبدال العاملة» (`text_buttons` `outlined` small) جنب «تأجيل الزيارة».
+  - فريمات جديدة:
+    - `hourly_offers/offer_details/assigned_workers`
+    - `workers/worker_profile_bottom_sheet/view` و`/replace_worker`
+    - `orders/visits/replace_worker`، و`replace_worker_popup`، و`favorite_replaced_worker_popup`، و`replace_worker_result_popup`
+  - كل ده من مكوّنات موجودة: `bottom_sheet`، `default_card`، `contract_information_chip`، `outline_notifications`، `section_header`، `tabs`، `input_fields`، `process_result_container`، `worker_card`.
+  - البروتوتايب: رحلة الاستبدال مربوطة من الزيارات القادمة للنتيجة، و«عرض الملف» مربوط في الزيارات وتفاصيل طلب الساعة.
+- نص سؤال طريقة الاختيار في الأفراد بقى بالفصحى زي باقي التطبيق: «كيف تريد اختيار العاملة؟». ونص البحث بقى «ابحث باسم العاملة».
+
+### التوثيق
+- قرار [0012](../decisions/0012-hourly-workers.md).
+- تحديث `workers.md` و`visits.md` و`hourly-services.md` و`organisms.md` و`glossary.md` و`status.md` والـ audit.
+- `deviations.md`: `state4` و`state5` في `process_result_vectors` اتضافوا لـ C-02.
+- إعادة توليد `screens.json` و`screens-index.md` (111 إطار).
+
 ## 2026-11-23
 ### التوثيق: الروابط في الشات
 - [قرار 0011](../decisions/0011-document-everything-with-links.md) اتوسع: أي حاجة ينفع يكون ليها رابط (commit، قرار، ملف، عنصر في Figma) لازم تبقى رابط في الرد في الشات كمان. القاعدة اتضافت في `AGENTS.md` والذاكرة.

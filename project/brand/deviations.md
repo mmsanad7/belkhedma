@@ -27,7 +27,7 @@
 | # | المكان | المشكلة | المقترح |
 |---|---|---|---|
 | C-01 | `filtration_elements`، `service`، `home_banners_carousel`، `bottom_price`، `profile_card`، `address_confirmation`، `company_in_featured`، `price_range_slider` | الخاصية اسمها `Property 1` وقيمها `Default` و`Variant2` و`Variant3` بدل `state=` بقيم وصفية | إعادة التسمية بنفس نمط باقي المكتبة |
-| C-02 | `text_buttons` (`state9`)، `navbar_btn_icon` (`state2`)، `logo` (`state2`)، `progress_bar` (`state3`)، `search_or_filtration` (`state2`)، `dashboard_statistics` (`state2`)، `payment_input` (`state3`)، `company_in_home` (`state2`، `state3`، `state4`) | قيم variants مرقّمة بدون معنى | أسماء وصفية |
+| C-02 | `process_result_vectors` (`state4` = الحظر، `state5` = التفضيل)، `text_buttons` (`state9`)، `navbar_btn_icon` (`state2`)، `logo` (`state2`)، `progress_bar` (`state3`)، `search_or_filtration` (`state2`)، `dashboard_statistics` (`state2`)، `payment_input` (`state3`)، `company_in_home` (`state2`، `state3`، `state4`) | قيم variants مرقّمة بدون معنى | أسماء وصفية |
 | C-03 | صفحات `atoms` و`molecules` و`organisms` | عناصر شاردة: `Rectangle 1`، `Rectangle 2`، `Polygon 1`، ونص اسمه `6` في molecules | حذفها أو نقلها لـ `sand_box` |
 | C-04 | `separate_back` | الاسم غير واضح، والمقصود غالباً زر الرجوع | `back_button` |
 | C-07 | `section_header` (`1227:11534`) | `has_left_button` و`has_right_button` مش مربوطين بنص «مشاهدة الكل»، فالنص بيفضل ظاهر. في شيت فلترة العاملات وفي `choose_worker` اتخبى كـ override | ربط النص بـ `has_left_button` في الكومبوننت |
