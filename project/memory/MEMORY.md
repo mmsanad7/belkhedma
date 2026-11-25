@@ -58,6 +58,7 @@
 - **2026-11-25 (منة):** المهارات المعتمدة في الملف الشخصي بقت بنفس شكل بيانات العاملة: `contract_information_chip` `state=with_bg` (النقطة + القيمة، من غير label)، بدل `badges`. اتطبق في `worker_profile` وكل مقترحات `draft_screens`.
 - **2026-11-25 (منة):** الشاشات الطويلة بتفضل **393×852** ومعاها `Clip content` و`Overflow: Vertical` (اسكرول)، زي `choose_worker`. مش بنطوّل الفريم.
 - **2026-11-25 (منة):** في template `reservation_success` الـ header وزرار «ادفع» **ثابتين**، والمحتوى بس اللي بيسكرول (`scroll_content`). ده بيطبق على كل صفحات تأكيد الحجز.
+- **2026-11-25 (منة):** زرار الإغلاق (×) في أي bottom sheet لازم يقفله. الرابط `Close overlay` متحط على `close_icon` في [`bottom_sheet_header`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11580) نفسه، فأي شيت جديد بياخده لوحده.
 - **2026-11-25 (منة):** «فيديو تعريفي» اتحسم: اختارت مقترح «حلقة الستوري» ([`video_v2_a_story_ring`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9490-22323)) بتعديلها (العلامة تشغيل بس من غير كلمة). اتعمل molecules جديدة [`video_play_tag`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9524-1634) و[`video_avatar_ring`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9524-1642)، واتحطت في `worker_profile` مكان الصورة وزرار «فيديو تعريفي» (اتشال هو و`show_video`). الضغط على الصورة بيفتح شيت الفيديو في الـ 4 شيتات.
 
 ## طريقة الشغل والتوصيات

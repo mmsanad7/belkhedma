@@ -27,7 +27,7 @@
 | [`menu_icon_item`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=78-1593) | `state=` default · active | بند في الشريط السفلي (أيقونة + نص) |
 | [`address_at_navbar`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1009-26692) | `state=` address_selected · address_not_selected | العنوان في شريط الرئيسية |
 | [`section_header`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11534) | `state=` default | عنوان قسم + «مشاهدة الكل» |
-| [`bottom_sheet_header`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11580) | `state=` header | هيدر الـ bottom sheet (عنوان + إغلاق) |
+| [`bottom_sheet_header`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11580) | `state=` header | هيدر الـ bottom sheet (عنوان + إغلاق). زرار الإغلاق `close_icon` عليه `Close overlay` في الكمبوننت نفسه، فبيقفل أي شيت (2026-11-25) |
 | [`side_menu_items`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1038-27962) | `state=` default · critical | بنود قائمة «المزيد» |
 | [`list_item`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1285-3717) | — | بند قائمة عام |
 | [`buttons_icon`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1287-11439) | `state=` default · main · danger | زر أيقونة بنص تحته |

@@ -4,6 +4,11 @@
 
 ## 2026-11-25
 
+### Figma: زرار الإغلاق بيقفل كل الـ bottom sheets (طلب منة)
+- [`bottom_sheet_header`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11580): أيقونة الإغلاق (`ic_popup_close`) اتسمت `close_icon` واتحط عليها `On click → Close overlay` في الكمبوننت نفسه. كل الشيتات اللي بتستخدم الهيدر خدت الرابط.
+- مراجعة صفحة `screens`: 39 شيت. 35 زرار إغلاق بقوا بيقفلوا، و3 شيتات زرار الإغلاق فيها مخفي من الأساس (`hourly_offers/offers_filtration_bottom_sheet` ×2، و`company_selection_bottom_sheet`). علامات × التانية في `filters_bottom_sheet/with_selected_filters` بتاعة شيل الفلتر من الـ chips، مش إغلاق الشيت.
+- التوثيق: `molecules.md`، والذاكرة.
+
 ### Figma: «فيديو تعريفي» بحلقة حوالين صورة العاملة (طلب منة)
 - منة اختارت [`video_v2_a_story_ring`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9490-22323) بتعديلها: العلامة تحت الصورة تشغيل بس، 32×24.
 - molecules جديدة (من `profile_avatar_photo` و`ic_play` وgradient الزرار الأساسي ومتغير `bg_white`):
