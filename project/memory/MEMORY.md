@@ -58,7 +58,7 @@
 - **2026-11-25 (منة):** المهارات المعتمدة في الملف الشخصي بقت بنفس شكل بيانات العاملة: `contract_information_chip` `state=with_bg` (النقطة + القيمة، من غير label)، بدل `badges`. اتطبق في `worker_profile` وكل مقترحات `draft_screens`.
 - **2026-11-25 (منة):** الشاشات الطويلة بتفضل **393×852** ومعاها `Clip content` و`Overflow: Vertical` (اسكرول)، زي `choose_worker`. مش بنطوّل الفريم.
 - **2026-11-25 (منة):** في template `reservation_success` الـ header وزرار «ادفع» **ثابتين**، والمحتوى بس اللي بيسكرول (`scroll_content`). ده بيطبق على كل صفحات تأكيد الحجز.
-- **2026-11-25 (منة):** مقترحات «فيديو تعريفي» الخمسة الأولى اترفضت (اتحط قبل اسمها `_`). منة سمحت **استثناءً** بتصميم جديد مش لازم يكون من الكمبوننت الموجودة. فيه 4 مقترحات جديدة مستنية اختيارها في [`proposals/worker_video_entry_v2`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9490-22322): أ حلقة متدرّجة حوالين الصورة (زي الستوري)، ب كارت متدرّج بزرار تشغيل نابض، ج معاينة فيديو طولية (reel)، د مشغّل بموجة صوت. لو اتختار واحد، يتعمل كمبوننت جديد على Atomic Design.
+- **2026-11-25 (منة):** «فيديو تعريفي» اتحسم: اختارت مقترح «حلقة الستوري» ([`video_v2_a_story_ring`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9490-22323)) بتعديلها (العلامة تشغيل بس من غير كلمة). اتعمل molecules جديدة [`video_play_tag`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9524-1634) و[`video_avatar_ring`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9524-1642)، واتحطت في `worker_profile` مكان الصورة وزرار «فيديو تعريفي» (اتشال هو و`show_video`). الضغط على الصورة بيفتح شيت الفيديو في الـ 4 شيتات.
 
 ## طريقة الشغل والتوصيات
 > قواعد ثابتة، منها اللي قاله صاحب المشروع ومنها اللي طلع من شغل Menna وبقى نمط متّبع.

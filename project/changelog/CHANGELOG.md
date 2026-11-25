@@ -4,6 +4,15 @@
 
 ## 2026-11-25
 
+### Figma: «فيديو تعريفي» بحلقة حوالين صورة العاملة (طلب منة)
+- منة اختارت [`video_v2_a_story_ring`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9490-22323) بتعديلها: العلامة تحت الصورة تشغيل بس، 32×24.
+- molecules جديدة (من `profile_avatar_photo` و`ic_play` وgradient الزرار الأساسي ومتغير `bg_white`):
+  - [`video_play_tag`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9524-1634) `state=default`.
+  - [`video_avatar_ring`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9524-1642) `state=default`، وBoolean `has_video` بيتحكم في الحلقة والعلامة.
+- [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186): `worker_avatar` اتغير لـ `video_avatar_ring` (اسمه `worker_video_avatar`، exposed). زرار «فيديو تعريفي» (`text_buttons` see_all) اتشال، والـ Boolean `show_video` اتشال.
+- الرابط: الضغط على `worker_video_avatar` في الـ 4 شيتات (`worker_profile_bottom_sheet`، `/view`، `/replace_worker`، `/current_worker`) بيفتح [`worker_video_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26601) ([قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md)). الشيتات بقت 393×533.
+- التوثيق: `molecules.md`، و`organisms.md`، و`workers.md`، وقرار 0006، والذاكرة، وفهرس الشاشات.
+
 ### Figma: تثبيت الهيدر وزرار الدفع في template تأكيد الحجز (طلب منة)
 - [`reservation_success`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=2485-23331):
   - `type=default`: `reservation_status` و`extra_content` اتحطوا جوه frame جديد `scroll_content` (Fill، `Clip content`، `Overflow: Vertical`). الـ header فوق وزرار «ادفع» تحت بقوا برا الاسكرول، فبيفضلوا ثابتين. ومساحة 32 تحت الزرار.

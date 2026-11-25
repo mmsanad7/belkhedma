@@ -20,7 +20,7 @@
 
 | الشاشة (اسم الإطار في Figma) | الوصف |
 |---|---|
-| [`workers/worker_profile_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) | «الملف الشخصي للعاملة»: `bottom_sheet` + `worker_profile` في الـ slot + زرار «اختيار العاملة». «فيديو تعريفي» بيفتح شيت الفيديو (overlay) |
+| [`workers/worker_profile_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) | «الملف الشخصي للعاملة»: `bottom_sheet` + `worker_profile` في الـ slot + زرار «اختيار العاملة». الضغط على صورة العاملة (`video_avatar_ring`) بيفتح شيت الفيديو (overlay) |
 | [`workers/worker_video_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26601) | «الفيديو التعريفي»: `bottom_sheet` فيه مساحة الفيديو و`icon_placeholder` (`ic_play`)، وزرار «تم» |
 
 | [`workers/worker_profile_bottom_sheet/view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713) | نفس الملف بزرار «تم» (بيقفل). بيتفتح من تفاصيل طلب الساعة قبل الدفع ومن الزيارات |
@@ -53,7 +53,7 @@
 | المكوّن | الصفحة | الخصائص |
 |---|---|---|
 | [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) | organisms | `state=default`. نصوص: `worker_name`، `rating_value`، `rating_count`. من غير مهارات ([قرار 0017](../../decisions/0017-compact-worker-card.md)). من غير زراير: الضغط على الكارت كله ([قرار 0016](../../decisions/0016-no-buttons-in-worker-cards.md)) |
-| [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186) | organisms | `state=default`. نصوص: `worker_name`، `rating_value`، `rating_count`. Boolean: `show_video`. النبذة والمهارات جوه slot الـ `default_card`، وبتتعدل في كل instance |
+| [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186) | organisms | `state=default`. نصوص: `worker_name`، `rating_value`، `rating_count`. الصورة `video_avatar_ring` (exposed، و`has_video` بيشيل الحلقة والعلامة). النبذة والمهارات جوه slot الـ `default_card`، وبتتعدل في كل instance |
 | `ic_play` (`9297:5`) | icons | أيقونة تشغيل، لونها `text/text_primary`. بتستخدم جوه `icon_placeholder` |
 
 **المكوّنات الموجودة اللي اتبنوا منها:**
@@ -64,7 +64,7 @@
 | نجمة التقييم | `rating_stars` `state=only_1_star` (atom) |
 | الديانة، الخبرة، الجنسية | `contract_information_chip` `state=with_bg` (molecule): `label` = «الديانة» و`value` = «مسلمة» |
 | المهارات | `contract_information_chip` `state=with_bg` (molecule)، القيمة بس من غير label، زي شكل الديانة والخبرة والجنسية (طلب منة 2026-11-25). كانت `badges` |
-| «فيديو تعريفي» | `text_buttons` `state=card_button` / `see_all` (atom) |
+| «فيديو تعريفي» | [`video_avatar_ring`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9524-1642) + [`video_play_tag`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9524-1634) (molecules): حلقة متدرّجة حوالين الصورة وعلامة تشغيل (طلب منة 2026-11-25) |
 | «نبذة عن العاملة»، «المهارات المعتمدة» | `default_card` (organism) بعنوان + slot |
 | خلفية الكارت | نفس fills وeffects بتوع `offers_card` |
 
@@ -91,7 +91,7 @@
 ## يحتاج تأكيد
 - [ ] مصدر بيانات العاملة (صورة، فيديو، نبذة، مهارات معتمدة) لكل شركة: API ولا scraper ولا إدخال يدوي.
 - [ ] مين بيعتمد «المهارات المعتمدة»: الشركة ولا بالخدمة؟
-- [ ] لو العاملة مالهاش فيديو، `show_video` بيبقى off. ولو مالهاش صورة؟
+- [ ] لو العاملة مالهاش فيديو، `has_video` في `video_avatar_ring` بيبقى off. ولو مالهاش صورة؟
 - [ ] الزرار الأساسي في الملف الشخصي حسب السياق: «اختيار العاملة» في خدمات الأفراد. الاستبدال قرار جاي.
 - [ ] لو الشركة مالهاش عاملات متاحة للعرض: هل «أختارها بنفسي» يختفي ولا يبقى disabled؟ والحالة الفارغة في `choose_worker` مش مرسومة.
 - [ ] «رتب بـ» في قائمة العاملات بيرتب بإيه (الأعلى تقييماً، الخبرة…)؟

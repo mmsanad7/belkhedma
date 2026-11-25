@@ -211,8 +211,8 @@
 | الإطار | النوع | المقاس | Figma |
 |---|---|---|---|
 | `workers/worker_photo_viewer_bottom_sheet` | Bottom sheet | 393×528 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-25815) |
-| `workers/worker_profile_bottom_sheet` | Bottom sheet | 393×497 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) |
-| `workers/worker_profile_bottom_sheet/current_worker` | Bottom sheet | 393×549 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015) |
-| `workers/worker_profile_bottom_sheet/replace_worker` | Bottom sheet | 393×549 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23794) |
-| `workers/worker_profile_bottom_sheet/view` | Bottom sheet | 393×549 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713) |
+| `workers/worker_profile_bottom_sheet` | Bottom sheet | 393×533 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9298-23032) |
+| `workers/worker_profile_bottom_sheet/current_worker` | Bottom sheet | 393×533 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015) |
+| `workers/worker_profile_bottom_sheet/replace_worker` | Bottom sheet | 393×533 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23794) |
+| `workers/worker_profile_bottom_sheet/view` | Bottom sheet | 393×533 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713) |
 | `workers/worker_video_bottom_sheet` | Bottom sheet | 393×624 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26601) |
