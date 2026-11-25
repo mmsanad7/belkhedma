@@ -3,6 +3,15 @@
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
 ## 2026-11-25
+
+### Figma: رفض مقترحات الملف الشخصي والفيديو، و4 تصميمات جديدة للفيديو (طلب منة)
+- مقترحات الملف الشخصي التلاتة اترفضت، والملف الحالي معتمد. اتحط قبل اسمها `_` ([قرار 0003](../decisions/0003-underscore-ignored.md)). ومقترحات الفيديو الخمسة وsection `proposals/worker_video_entry` اتحط قبلهم `_` كمان.
+- [`proposals/worker_video_entry_v2`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9490-22322) في `draft_screens`: تصميمات جديدة (استثناء من شرط الكمبوننت الموجودة بموافقة منة)، والألوان من المتغيرات والـ gradient بتاع الزرار الأساسي:
+  - [`video_v2_a_story_ring`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9490-22323): حلقة متدرّجة حوالين صورة العاملة وتحتها «فيديو ▶».
+  - [`video_v2_b_gradient_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9490-22618): كارت متدرّج فيه «تعرّف على …» و«فيديو تعريفي · 0:45»، وزرار تشغيل أبيض بحلقات نابضة.
+  - [`video_v2_c_reel_preview`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9490-22856): معاينة طولية من الفيديو (64×100) بزرار تشغيل ومدة، وجنبها «فيديو تعريفي» ووصف.
+  - [`video_v2_d_waveform`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9490-23094): مشغّل زي الرسايل الصوتية: زرار تشغيل متدرّج، وموجة، والمدة.
+
 ### Figma: المهارات بنفس شكل بيانات العاملة (طلب منة)
 - [`worker_profile`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24186): الـ `badges` في «المهارات المعتمدة» اتغيرت لـ `contract_information_chip` `state=with_bg` (النقطة + اسم المهارة، والـ label مخفي، و`has_icon` off)، زي الديانة والخبرة والجنسية. السطر بيلف لو المهارات كتير. اتطبق على كل شيتات الملف الشخصي.
 - نفس التعديل في مقترحات `draft_screens` (الملف الشخصي التلاتة، والفيديو الخمسة).
