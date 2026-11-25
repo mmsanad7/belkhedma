@@ -4,6 +4,10 @@
 
 ## 2026-11-25
 
+### Figma: أيقونة «جاري تأكيد الحجز» (طلب منة)
+- [`process_result_vectors`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=713-3343): اتضاف variant جديد `state=reservation_in_progress` ([9539:5](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9539-5)) فيه أيقونة [`ic_alarm_clock`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6002-30832) الموجودة مصغّرة لـ 40. ده بدل التقويم بعلامة صح، لأنه معناه إن الحجز اتأكد خلاص.
+- الأيقونة الجديدة اتحطت في variant `state=with_progress` من [`process_result_container`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6755-19720)، وده الـ variant اللي بيظهر في [`hourly_offers/reservation_in_progress`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6744-18214).
+
 ### Figma: زرار الإغلاق بيقفل كل الـ bottom sheets (طلب منة)
 - [`bottom_sheet_header`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11580): أيقونة الإغلاق (`ic_popup_close`) اتسمت `close_icon` واتحط عليها `On click → Close overlay` في الكمبوننت نفسه. كل الشيتات اللي بتستخدم الهيدر خدت الرابط.
 - مراجعة صفحة `screens`: 39 شيت. 35 زرار إغلاق بقوا بيقفلوا، و3 شيتات زرار الإغلاق فيها مخفي من الأساس (`hourly_offers/offers_filtration_bottom_sheet` ×2، و`company_selection_bottom_sheet`). علامات × التانية في `filters_bottom_sheet/with_selected_filters` بتاعة شيل الفلتر من الـ chips، مش إغلاق الشيت.
