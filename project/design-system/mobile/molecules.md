@@ -40,7 +40,7 @@
 | [`general_badges`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=41-388) | `status=` primary · warning · active · cancelled | شارة عامة |
 | [`badges`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=41-371) | `state=` primary · secondary | «ضمان الاستبدال»، «عرض محدود» |
 | [`contract_information_chip`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=690-3272) | `state=` with_bg · without_bg · full_width | معلومة عقد (الفترة، الجنسية…) |
-| [`outline_notifications`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=819-4927) | `status=` success · warning · danger | رسالة تنبيه بإطار |
+| [`outline_notifications`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=819-4927) | `status=` success · warning · danger · hint | رسالة تنبيه بإطار. `hint` اتضافت 2026-11-25: خلفية `primary/50`، وأيقونة [`ic_lightbulb`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9551-8034) بلون `primary/600`، ونص `text_black`. مستخدمة في «زيارات العقد» |
 | [`time_stamp`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1927-16263) | `state=` default | وقت الإشعار |
 
 ## العروض والشركات والطلبات

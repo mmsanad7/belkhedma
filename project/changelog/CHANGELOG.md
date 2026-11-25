@@ -4,6 +4,14 @@
 
 ## 2026-11-25
 
+### Figma: «زيارات العقد» في تأكيد حجز الساعة (طلب منة)
+- **من slot لفريم عادي:** في template [`reservation_success`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=2485-23331) (`type=default`) الـ slot `extra_content` اتشال، ومكانه frame عادي [`contract_visits`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9551-9921). الـ Boolean `has_extra_content` اتغير اسمه لـ `has_contract_visits`. القسم شغال على on في [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) بس.
+- **روابط الكروت:** اتعملت تاني على الشاشة. الـ 4 كروت بتفتح [`current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015) كـ overlay (Move in، 300ms).
+- **العنوان:** «العاملات على زيارات العقد» بقى «زيارات العقد».
+- **الـ hint:** اتضاف تحت العنوان: «لا تقلق، بعد الدفع يمكنك استبدال العاملة واختيار عاملة محددة، وإدارة جميع زياراتك بسهولة.»
+- **variant جديد:** `status=hint` ([9551:8037](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9551-8037)) في [`outline_notifications`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=819-4927)، بخلفية `primary/50`.
+- **أيقونة جديدة:** [`ic_lightbulb`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9551-8034) في صفحة icons، لأن مكانش فيه أيقونة لمبة.
+
 ### Figma: أيقونة «جاري تأكيد الحجز» (طلب منة)
 - [`process_result_vectors`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=713-3343): اتضاف variant جديد `state=reservation_in_progress` ([9539:5](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9539-5)) فيه أيقونة [`ic_alarm_clock`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6002-30832) الموجودة مصغّرة لـ 40. ده بدل التقويم بعلامة صح، لأنه معناه إن الحجز اتأكد خلاص.
 - الأيقونة الجديدة اتحطت في variant `state=with_progress` من [`process_result_container`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6755-19720)، وده الـ variant اللي بيظهر في [`hourly_offers/reservation_in_progress`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6744-18214).

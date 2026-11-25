@@ -28,3 +28,7 @@
 
 ## تحديث 2026-11-24 (منة)
 القسم `assigned_workers` اتنقل من تفاصيل الطلب لصفحة [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) (بعد «تأكيد الحجز» وقبل الدفع). اتحط في slot جديد `extra_content` في template [`reservation_success`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=2485-23331)، ومعاه Boolean `has_extra_content` (افتراضي off، فباقي صفحات التأكيد زي ما هي). الفريم القديم اتغير اسمه لـ `hourly_offers/offer_details/days_selected`.
+
+## تحديث 2026-11-25 (منة)
+- الـ slot `extra_content` اتحوّل لـ frame عادي اسمه [`contract_visits`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9551-9921) جوه template `reservation_success`، والـ Boolean اتغير اسمه لـ `has_contract_visits`. روابط الكروت لشيت [`current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015) اتعملت تاني على الشاشة.
+- العنوان بقى «زيارات العقد»، واتضاف تحته hint (`outline_notifications` `status=hint`).

@@ -59,7 +59,8 @@ flowchart TD
 ### تفاصيل الطلب: `hourly_offers/offer_details`
 راجع [checkout-and-payment.md](checkout-and-payment.md).
 
-بعد اختيار الأيام وتاريخ البدء بتظهر الحالة [`hourly_offers/offer_details/days_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395) (كان اسمها `assigned_workers`). وبعد «تأكيد الحجز»، صفحة [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) فيها قسم «العاملات على زيارات العقد» ([قرار 0018](../../decisions/0018-visit-first-assigned-workers.md)، واتنقل هنا بطلب منة 2026-11-24):
+بعد اختيار الأيام وتاريخ البدء بتظهر الحالة [`hourly_offers/offer_details/days_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395) (كان اسمها `assigned_workers`). وبعد «تأكيد الحجز»، صفحة [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) فيها قسم «زيارات العقد» ([قرار 0018](../../decisions/0018-visit-first-assigned-workers.md)، واتنقل هنا بطلب منة 2026-11-24). لحد 2026-11-25 كان اسمه «العاملات على زيارات العقد». القسم فيه:
+- تحت العنوان hint: «لا تقلق، بعد الدفع يمكنك استبدال العاملة واختيار عاملة محددة، وإدارة جميع زياراتك بسهولة.»
 - لكل زيارة كارت [`visit_worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9425-7013): مربع التاريخ، ورقم الزيارة والوقت، والعاملة اللي الشركة عيّنتها. الضغط على الكارت بيفتح ملف العاملة بزرار «استبدال العاملة» ([قرار 0019](../../decisions/0019-replace-worker-before-payment.md)).
 - تنبيه: «يتم تحديد العاملة حسب الإتاحة، ويمكنك استبدالها على أي زيارة بالضغط عليها».
 
