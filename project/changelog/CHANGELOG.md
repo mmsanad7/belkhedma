@@ -4,6 +4,11 @@
 
 ## 2026-11-25
 
+### Figma: طول صفحة تأكيد الحجز في الساعة والاسكرول (طلب منة)
+- [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094): الفريم رجع 393×852، و`Clip content` on، و`Overflow` = Vertical. الـ template جوه طوله 972 (المحتوى 940 + 32 مساحة تحت زرار «ادفع»)، فالصفحة بتسكرول.
+- [`hourly_offers/offer_details/days_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395): رجع 852 (كان hug بـ 718).
+- التوثيق: الذاكرة، وفهرس الشاشات.
+
 ### Figma: رفض مقترحات الملف الشخصي والفيديو، و4 تصميمات جديدة للفيديو (طلب منة)
 - مقترحات الملف الشخصي التلاتة اترفضت، والملف الحالي معتمد. اتحط قبل اسمها `_` ([قرار 0003](../decisions/0003-underscore-ignored.md)). ومقترحات الفيديو الخمسة وsection `proposals/worker_video_entry` اتحط قبلهم `_` كمان.
 - [`proposals/worker_video_entry_v2`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9490-22322) في `draft_screens`: تصميمات جديدة (استثناء من شرط الكمبوننت الموجودة بموافقة منة)، والألوان من المتغيرات والـ gradient بتاع الزرار الأساسي:
@@ -32,7 +37,7 @@
 ### Figma: إخفاء بيانات الكارت، ونقل العاملات لصفحة تأكيد الحجز في الساعة (طلب منة)
 - [`payment_methods`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=819-4024): `card_container` (رقم الكارت والاسم والانتهاء وCVV) و`security_notice` (Escrow) بقوا مخفيين في الكمبوننت، فاختفوا من كل صفحات تأكيد الحجز. لوجوهات الدفع والعنوان لسه ظاهرين.
 - template [`reservation_success`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=2485-23331) (`type=default`): اتضاف slot `extra_content` بعد `reservation_status`، ومعاه Boolean `has_extra_content` (افتراضي off، فباقي الصفحات زي ما هي).
-- [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094): `has_extra_content` = on، وقسم `assigned_workers` (العنوان، و4 `visit_worker_card` بروابطهم، والتنبيه) اتنقل جوه الـ slot. الصفحة بقت 393×940.
+- [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094): `has_extra_content` = on، وقسم `assigned_workers` (العنوان، و4 `visit_worker_card` بروابطهم، والتنبيه) اتنقل جوه الـ slot. الصفحة بقت 393×940 (وفي 2026-11-25 رجعت 852 باسكرول).
 - [`hourly_offers/offer_details/days_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395): ده الفريم اللي كان اسمه `offer_details/assigned_workers`، واتغير اسمه بعد ما القسم اتنقل منه. طوله بقى 718.
 - التوثيق: تحديث قرار 0018 و0019 (المكان بقى زي excp)، و0012، و`hourly-services.md`، و`workers.md`، و`templates.md`، و`organisms.md`، والذاكرة، وفهرس الشاشات.
 
