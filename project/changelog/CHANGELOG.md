@@ -4,6 +4,15 @@
 
 ## 2026-11-25
 
+### Figma: تثبيت الهيدر وزرار الدفع في template تأكيد الحجز (طلب منة)
+- [`reservation_success`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=2485-23331):
+  - `type=default`: `reservation_status` و`extra_content` اتحطوا جوه frame جديد `scroll_content` (Fill، `Clip content`، `Overflow: Vertical`). الـ header فوق وزرار «ادفع» تحت بقوا برا الاسكرول، فبيفضلوا ثابتين. ومساحة 32 تحت الزرار.
+  - `type=lead`: نفس الفكرة، الـ header ثابت والمحتوى بيسكرول.
+  - الـ padding الجانبي اتنقل جوه `scroll_content` علشان ظل الكروت ميتقصش. وزرار «ادفع» عرضه ثابت 361 في كل الـ instances.
+- [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094): الـ instance بقى 852، والاسكرول بقى جوه الـ template، فشلت `Overflow` من الفريم.
+- كل صفحات تأكيد الحجز (الساعة والأفراد والوساطة) خدت التعديل. والصفحات القصيرة زرار الدفع فيها بقى في آخر الشاشة.
+- التوثيق: `templates.md`، والذاكرة.
+
 ### Figma: طول صفحة تأكيد الحجز في الساعة والاسكرول (طلب منة)
 - [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094): الفريم رجع 393×852، و`Clip content` on، و`Overflow` = Vertical. الـ template جوه طوله 972 (المحتوى 940 + 32 مساحة تحت زرار «ادفع»)، فالصفحة بتسكرول.
 - [`hourly_offers/offer_details/days_selected`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-24395): رجع 852 (كان hug بـ 718).
