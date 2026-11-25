@@ -63,7 +63,7 @@
 | الصورة | `profile_avatar_photo` (atom)، بصورة عاملة كـ override ([`worker_placeholder_photo`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9365-44258)) |
 | نجمة التقييم | `rating_stars` `state=only_1_star` (atom) |
 | الديانة، الخبرة، الجنسية | `contract_information_chip` `state=with_bg` (molecule): `label` = «الديانة» و`value` = «مسلمة» |
-| المهارات | `badges` `state=primary` (molecule) |
+| المهارات | `contract_information_chip` `state=with_bg` (molecule)، القيمة بس من غير label، زي شكل الديانة والخبرة والجنسية (طلب منة 2026-11-25). كانت `badges` |
 | «فيديو تعريفي» | `text_buttons` `state=card_button` / `see_all` (atom) |
 | «نبذة عن العاملة»، «المهارات المعتمدة» | `default_card` (organism) بعنوان + slot |
 | خلفية الكارت | نفس fills وeffects بتوع `offers_card` |

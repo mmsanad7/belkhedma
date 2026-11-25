@@ -55,6 +55,7 @@
 - **2026-11-24 (منة):** في كمبوننت [`payment_methods`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=819-4024) بيانات الكارت (`card_container`) وتنبيه الأمان (`security_notice`) **مخفيين حالياً**، علشان ميظهروش في صفحات تأكيد الحجز. ولوجوهات الدفع لسه ظاهرة.
 - **2026-11-24 (منة):** قسم العاملات على الزيارات (والاستبدال قبل الدفع) اتنقل لصفحة [تأكيد الحجز في الساعة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) في slot `extra_content` في template `reservation_success` ([قرار 0018](../decisions/0018-visit-first-assigned-workers.md)، [0019](../decisions/0019-replace-worker-before-payment.md)). ده كمان شال الاختلاف عن excp في مكان الاستبدال.
 - **2026-11-24 (منة):** في الملف الشخصي للعاملة **«المهارات المعتمدة» قبل «نبذة عن العاملة»**. اتعدّلت في كمبوننت `worker_profile` (فاتطبقت على كل شيتات الملف) وفي مقترحات `draft_screens`.
+- **2026-11-25 (منة):** المهارات المعتمدة في الملف الشخصي بقت بنفس شكل بيانات العاملة: `contract_information_chip` `state=with_bg` (النقطة + القيمة، من غير label)، بدل `badges`. اتطبق في `worker_profile` وكل مقترحات `draft_screens`.
 - **2026-11-24 (منة):** 5 مقترحات لشكل «فيديو تعريفي» في `draft_screens` ([`proposals/worker_video_entry`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9464-23504)) مستنية اختيارها: ١ صورة مصغّرة بزرار تشغيل، ٢ سطر في كارت، ٣ زرار تشغيل على صورة العاملة، ٤ chip جنب التقييم، ٥ زرار ثانوي عريض.
 
 ## طريقة الشغل والتوصيات
