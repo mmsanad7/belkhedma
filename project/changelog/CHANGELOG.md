@@ -2,6 +2,16 @@
 
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
+## 2026-11-26
+
+### Figma: الفلترة في «استبدال العاملة» (طلب منة)
+- **الشاشة:** [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874).
+- **«تصفية» اتشالت:** اتمسح الـ `sorting_dropdown` «تصفية» (كان بيفتح [`workers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26680))، واتمسح معاه الـ frame `filtration_options` اللي كان فوق، واللي جواه `filtration_selected` المخفي. المحتوى بقى يبدأ من y=96.
+- **صف جديد تحت البحث** [`filtration_row`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9633-25778): على الشمال «رتب بـ» ([`sorting_dropdown`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23881)، نفس الـ instance بعد ما اتنقل)، وعلى اليمين [`filtration_chips`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9633-25779).
+- **التبويبات بقت chips فلترة:** `workers_tabs` (الكل / سبق التعامل معها / المفضلة) اتشال، ومكانه chipين من [`chips`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=41-354) `state=not_active`: «المفضلة» وجنبها 4 ([9633:25785](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9633-25785))، و«سبق التعامل معها» وجنبها 8 ([9633:25780](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9633-25780)). تبويب «الكل» اتشال، على أساس إن لو مفيش chip مختارة بتظهر كل العاملات **(يحتاج تأكيد)**.
+- **تعديل في الـ atom [`chips`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=41-354):** فيه Boolean جديد `has_count`، وهو off افتراضياً، فالـ 57 instance القديمة متأثرتش. لما يتفتح بيظهر `count_badge`، وده instance من [`number_badge`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11370) جنب الكلمة. في `state=active` البادج لونه `bg_white` والرقم `text_primary`. الـ gap اتربط بـ `spacing/spacing_xs`. عدّلنا المكوّن الموجود بدل ما نعمل component جديد ([قرار 0010](../decisions/0010-reuse-components-first.md)).
+- **الروابط:** التبويبات القديمة كانت بتودّي على `show_visits/previous`، وده رابط قديم ([قرار 0019](../decisions/0019-replace-worker-before-payment.md)). الـ chips الجديدة لسه مالهاش interaction.
+
 ## 2026-11-25
 
 ### Figma: «زيارات العقد» في تأكيد حجز الساعة (طلب منة)
