@@ -4,6 +4,10 @@
 
 ## 2026-11-26
 
+### مراجعة تانية لـ ف-1 (قبل الدفع بس، طلب م. سند)
+- **في Figma:** «تم» في [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) اتغيّر من Navigate لـ `replace_worker` لـ Navigate لـ [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) (Dissolve). ف-1 اتقفل لرحلة قبل الدفع.
+- **التوثيق:** التعديل اتعمل في Figma مباشرة من غير commit، فالتوثيق اتحدّث علشان يطابق Figma: [قرار 0019](../decisions/0019-replace-worker-before-payment.md)، و[visits.md](../product/features/visits.md)، و[status.md](../status/status.md)، والذاكرة.
+
 ### مراجعة: خطوات الاستبدال قبل الدفع مقارنة بـ excp (طلب م. سند)
 - مراجعة قراءة بس، ومفيش تعديل في Figma: [2026-11-26-replace-worker-vs-excp.md](../design-system/audits/2026-11-26-replace-worker-vs-excp.md).
 - أهم فرق (ف-1): «تم» بعد «هذه الزيارة فقط» بيرجّع لـ `replace_worker`، وفي excp بيرجّع لصفحة التأكيد. ده محتاج قرار مشترك.

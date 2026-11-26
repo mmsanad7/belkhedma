@@ -22,7 +22,10 @@
 
 ## الفروق
 
-### ف-1: بعد «هذه الزيارة فقط» العميل بيرجع لقايمة العاملات، مش لصفحة التأكيد ❌ محتاج قرار مشترك
+### ف-1: بعد «هذه الزيارة فقط» العميل بيرجع لقايمة العاملات، مش لصفحة التأكيد ✅ اتقفل لقبل الدفع (2026-11-26)
+> **مراجعة تانية (قبل الدفع بس):** «تم» في [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) اتغيّر في Figma وبقى بيودّي لـ [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) (Dissolve). كده النتيجتين بيرجّعوا لتأكيد الحجز زي excp. اللي فاضل في رحلة قبل الدفع: كارت الزيارة في التأكيد بيفضل بالعاملة القديمة (حدود البروتوتايب)، وزرار النتيجة اسمه «تم»، وفي excp «العودة الي الزيارات». وموضوع رحلة بعد الحجز مؤجل بطلب م. سند.
+>
+> اللي تحت ده التحليل الأول، ومتساب للتاريخ.
 - **excp:** النتيجتين بيرجّعوا لـ `success_contract` بزرار «العودة الي الزيارات».
 - **بالخدمة:** [«تم»](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) بيرجّع لـ [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874).
 - منة عملت كده بقصد في 2026-11-26 ([CHANGELOG](../../changelog/CHANGELOG.md#2026-11-26)). بس ده اختلاف عن المرجع، فمحتاج قرار مشترك مع م. سند ([قرار 0014](../../decisions/0014-excp-replaces-mueen-as-reference.md)).

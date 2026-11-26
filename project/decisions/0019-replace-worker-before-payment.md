@@ -30,6 +30,10 @@
 - يعدّل [قرار 0012](0012-hourly-workers.md) (الاستبدال بقى قبل الدفع كمان).
 - ملفات التوثيق: `hourly-services.md`، `workers.md`، `visits.md`، الذاكرة، والـ changelog، وفهرس الشاشات.
 
+## تحديث 2026-11-26 (مراجعة م. سند)
+- «تم» في [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) بقى بيودّي لـ [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094)، زي نتيجة التفضيل. كده النتيجتين بيرجّعوا لتأكيد الحجز، زي excp ([audit ف-1](../design-system/audits/2026-11-26-replace-worker-vs-excp.md)).
+- التعديل اتعمل في Figma مباشرة، ومين عمله مش متسجل **(يحتاج تأكيد)**.
+
 ## تحديث 2026-11-24 (منة)
 - **المكان اتغير:** الاستبدال بقى من صفحة [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) (بعد «تأكيد الحجز» وقبل الدفع)، زي مكانه في excp ([`success_contract`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=733-3717)). كده الاختلاف عن excp في المكان اتشال.
 - الروابط زي ما هي. زرار الرجوع في `replace_worker` بيرجّع لصفحة التأكيد.

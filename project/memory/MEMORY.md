@@ -71,11 +71,12 @@
 > قواعد ثابتة، منها اللي قاله صاحب المشروع ومنها اللي طلع من شغل Menna وبقى نمط متّبع.
 
 - **2026-11-26 (منة):** في [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) مفيش «تصفية». «المفضلة» و«سبق التعامل معها» بقوا chips فلترة، وجنب كل واحدة عدد العاملات، وموجودين على اليمين تحت البحث. و«رتب بـ» على الشمال في نفس الصف. الـ chips دي معمولة من [`chips`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=41-354): الحالة `not_active_with_count`، ولما تتضغط بتبقى `active_with_count`، وبالعكس. منة هي اللي ضافت الحالتين دول. منة أكّدت إن تبويب «الكل» يتشال: لو مفيش chip مختارة بتظهر كل العاملات. وفي الشاشة «المفضلة» معروضة active ([CHANGELOG](../changelog/CHANGELOG.md#2026-11-26)).
-- **2026-11-26 (منة):** «تم» في نتيجتي الاستبدال **مختلفين بقصد، ويفضلوا كده**:
+- **2026-11-26 (Figma، بعد مراجعة م. سند):** ~~البند اللي تحت~~ **اتغيّر:** «تم» في النتيجتين بقى بيودّي لتأكيد الحجز [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094)، زي excp. التعديل اتعمل في Figma مباشرة، ومين عمله مش متسجل **(يحتاج تأكيد)** ([audit ف-1](../design-system/audits/2026-11-26-replace-worker-vs-excp.md)).
+- ~~**2026-11-26 (منة):** «تم» في نتيجتي الاستبدال **مختلفين بقصد، ويفضلوا كده**:~~
   - **بعد التفضيل:** [`favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715) بيودّي على تأكيد حجز الساعة [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094).
   - **«هذه الزيارة فقط»:** [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) بيرجّع لـ [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874).
 
-  متوحّدهمش في أي مراجعة.
+  ~~متوحّدهمش في أي مراجعة.~~
 - **2026-11-26 (منة):** **أي** bottom sheet أو popup بياخد إعدادات [قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md) بالظبط (Open overlay، Bottom center، Close when clicking outside، الخلفية `000000` بشفافية 25%، Move in ↑، Ease in and out، 300ms). جت ملاحظة على اختلاف الأنيميشن، فاتطبّقت على الصفحة كلها. Swap بين شيتين مختلفين بياخد نفس الأنيميشن، وSwap بين حالات نفس الشيت مستثنى ([توضيح 0009](../decisions/0009-bottom-sheet-overlay-interaction.md#توضيح-2026-11-26-منة)).
 - **2026-11-24 (قرار م. منة):** الريبو يتحدّث أول بأول. أي تعديل يترفع على طول، زي [قرار 0001](../decisions/0001-push-every-change.md) و[قرار 0011](../decisions/0011-document-everything-with-links.md).
 - **2026-11-24 (منة):** الروابط اللي على الشاشة نفسها بـ `After delay` (زي فتح الفلتر لوحده بعد 0.2 ثانية في قوائم العروض) **مقصودة**، ومتتشالش على إنها أخطاء.
