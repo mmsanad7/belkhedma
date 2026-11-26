@@ -4,6 +4,16 @@
 
 ## 2026-11-26
 
+### Figma: «تم» في نتايج الاستبدال بترجّع لـ «استبدال العاملة» (طلب منة)
+- **المشكلة:** في الاستبدال قبل الدفع، «تم» في `favorite_worker_result_popup` كان بيعمل Close بس، فالعميل كان بيرجع لتأكيد الحجز. منة عايزاه يرجع لـ [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874).
+- **نسخة جديدة من الـ popup** [`orders/visits/favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715):
+  - نفس المحتوى، و[«تم»](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25721) بيعمل Navigate لـ `replace_worker` (Dissolve، 300ms)، والـ Navigate بيقفل كل الشيتات المفتوحة.
+  - «تأكيد التفضيل» في [`favorite_replaced_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26847) بقى بيعمل Swap للنسخة دي.
+  - الأصلية [`favorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) ما اتغيّرتش، وفضلت بتقفل في مسار الزيارات السابقة.
+- **[`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926):** «تم» كان بيقفل الشيت بس، ودلوقتي بيعمل Navigate لـ `replace_worker` (Dissolve، 300ms). ده صح في الرحلتين، لأنهم الاتنين بيبدأوا من `replace_worker`.
+- **علامة X:** فضلت بتقفل الشيت بس في الاتنين.
+- **فهرس الشاشات:** اتولّد من Figma تاني، وبقى 122 إطار. ومع الإطار الجديد اتحدّثت مقاسات 4 شيتات اتغيّرت في Figma قبل كده: `hourly_offers/filters_bottom_sheet/with_selected_filters`، والحالتين بتوع `worker_selection_method_bottom_sheet`، و`replace_worker_bottom_sheet`.
+
 ### Figma: الفلترة في «استبدال العاملة» (طلب منة)
 - **الشاشة:** [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874).
 - **«تصفية» اتشالت:** اتمسح الـ `sorting_dropdown` «تصفية» (كان بيفتح [`workers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26680))، واتمسح معاه الـ frame `filtration_options` اللي كان فوق، واللي جواه `filtration_selected` المخفي. المحتوى بقى يبدأ من y=96.
