@@ -2,6 +2,17 @@
 
 أحدث التغييرات في الأعلى. كل سطر يذكر: ما تغيّر، والمكان (Figma أو التوثيق)، ورابط طلب التعديل لو موجود.
 
+## 2026-11-27
+
+### Figma: العاملة بقت ظاهرة في كارت الزيارة القادمة وهو مقفول (م-1، قرار م. سند)
+- [`visit_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-6048):
+  - `upcoming/expanded`: اتضافت صورة العاملة [`worker_avatar`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9709-26468) في `worker_row`.
+  - `upcoming/collapsed`: اتضاف [`worker_row`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9709-26470) (صورة واسم و«عرض الملف»). الكارت بقى 124 بدل 88.
+  - متغيرات `previous` ما اتغيّرتش: السابقة المقفولة مفيهاش عاملة (قاعدة م. سند، وexcp غلط فيها).
+- [`show_visits/upcoming`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309): «عرض الملف» في الـ 3 كروت المقفولة اتربط بـ overlay لـ [`view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713)، زي الكارت المفتوح.
+- اتأثر كمان [`visits_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18272) (طوله بقى 676).
+- التوثيق: [الـ audit](../design-system/audits/2026-11-26-upcoming-visits-vs-excp.md)، و[visits.md](../product/features/visits.md#كرت-الزيارة-visit_details)، والذاكرة.
+
 ## 2026-11-26
 
 ### مراجعة: شاشة الزيارات القادمة مقارنة بـ excp (طلب م. سند)
