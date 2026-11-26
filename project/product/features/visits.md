@@ -13,16 +13,31 @@ flowchart LR
     P --> WR["worker_rating_bottom_sheet"]
     P --> FW["favorite_worker_popup"] --> FWR["favorite_worker_result_popup"]
     P -.->|"يحتاج تأكيد"| UFR["unfavorite_worker_result_popup"]
-    U -->|"استبدال العاملة"| RW["replace_worker"] --> RWP["replace_worker_bottom_sheet"] --> FRP["favorite_replaced_worker_bottom_sheet"]
-    FRP -->|"تأكيد التفضيل"| FWRR["favorite_worker_result_popup/replace_worker"]
-    FRP -->|"هذه الزيارة فقط"| RWR["replace_worker_result_bottom_sheet"]
-    FWRR -->|"تم"| RSV["hourly_offers/reservation_successfully"]
-    RWR -->|"تم"| RW
-    U -->|"عرض الملف"| PV["workers/worker_profile_bottom_sheet/view"]
-    P -->|"عرض الملف"| PV
+    U -->|"عرض الملف"| CW["show_visits/current_worker_bottom_sheet"] -->|"استبدال العاملة"| RW["show_visits/replace_worker"]
+    U -->|"استبدال العاملة"| RW
+    RW --> WP["show_visits/replace_worker/worker_profile_bottom_sheet"] --> RWP["show_visits/replace_worker_bottom_sheet"] --> FRP["show_visits/favorite_replaced_worker_bottom_sheet"]
+    FRP -->|"تأكيد التفضيل"| FWRR["show_visits/favorite_worker_result_popup"]
+    FRP -->|"هذه الزيارة فقط"| RWR["show_visits/replace_worker_result_bottom_sheet"]
+    FWRR -->|"رجوع إلى الزيارات"| U
+    RWR -->|"رجوع إلى الزيارات"| U
+    P -->|"عرض الملف"| PV["workers/worker_profile_bottom_sheet/view"]
 ```
 
 الاستبدال اتضاف في [قرار 0012](../../decisions/0012-hourly-workers.md).
+
+**سلسلتين للاستبدال (م. سند 2026-11-27):** الاستبدال من الزيارات ليه نسخة لوحدها، أسماؤها بتبدأ بـ `orders/hourly_order_details/show_visits/`، وآخرها «رجوع إلى الزيارات» بيرجّع لـ `show_visits/upcoming`. السلسلة الأصلية (`workers/worker_profile_bottom_sheet/current_worker` و`orders/visits/replace_worker` وباقي `orders/visits/*` اللي تحت) فضلت باسمها لرحلة قبل الدفع، وآخرها بيرجّع لتأكيد الحجز. النسخة:
+
+| الفريم في نسخة الزيارات | منسوخ من |
+|---|---|
+| [`show_visits/current_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25891) | [`current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015) |
+| [`show_visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25895) | [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) |
+| [`show_visits/replace_worker/worker_profile_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25913) | [`worker_profile_bottom_sheet/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23794) |
+| [`show_visits/replace_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25917) | [`orders/visits/replace_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26768) |
+| [`show_visits/favorite_replaced_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25923) | [`orders/visits/favorite_replaced_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26847) |
+| [`show_visits/replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25927) | [`orders/visits/replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) |
+| [`show_visits/favorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25931) | [`orders/visits/favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715) |
+
+شيت الفيديو وعارض الصور متشاركين بين السلسلتين لأنهم بيتقفلوا بس. وأي تعديل في محتوى شيت لازم يتعمل في النسختين.
 
 ## الشاشات
 

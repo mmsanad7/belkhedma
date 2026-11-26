@@ -4,6 +4,12 @@
 
 ## 2026-11-27
 
+### Figma: سلسلة استبدال منفصلة للزيارات (م-4 / ب-1، قرار م. سند)
+- اتنسخت 7 فريمات من سلسلة الاستبدال لرحلة الزيارات بأسماء جديدة `orders/hourly_order_details/show_visits/*`، والأصلية فضلت باسمها لرحلة قبل الدفع (اختيار م. سند). القايمة في [visits.md](../product/features/visits.md#الرحلة).
+- الروابط جوه النسخة متربطة ببعض، و«رجوع إلى الزيارات» في النتيجتين ([9720:25927](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25927) و[9720:25931](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25931)) بيرجّع لـ [`show_visits/upcoming`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309).
+- «عرض الملف» في `show_visits/upcoming` و[`visits_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18272) بقى يفتح [`show_visits/current_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25891)، و«استبدال العاملة» في الكارت المفتوح بيودّي لـ [`show_visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25895).
+- اتعمل regenerate لـ `screens.json` و`screens-index.md` (129 شاشة).
+
 ### Figma: شكل العاملة على كارت الزيارة رجع لشكلنا، والبيزنس فضل زي excp (طلب م. سند)
 - م. سند وضّح إن «زي excp» كان قصده البيزنس وظهور العاملة في المقفول والمفتوح، مش الشكل. فالـ molecule `visit_worker_summary` و`visit_header` اتشالوا، وكل متغيرات [`visit_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-6048) الخمسة رجع فيها `worker_row` بشكلنا: صورة و«اسم العاملة :» و«عرض الملف».
 - الروابط فضلت زي ما هي: «عرض الملف» من القادمة بيفتح `current_worker` (فيه استبدال)، ومن السابقة بيفتح `view` (من غير استبدال).
