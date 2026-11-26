@@ -72,6 +72,7 @@
   - **«هذه الزيارة فقط»:** [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) بيرجّع لـ [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874).
 
   متوحّدهمش في أي مراجعة.
+- **2026-11-26 (منة):** **أي** bottom sheet أو popup بياخد إعدادات [قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md) بالظبط (Open overlay، Bottom center، Close when clicking outside، الخلفية `000000` بشفافية 25%، Move in ↑، Ease in and out، 300ms). جت ملاحظة على اختلاف الأنيميشن، فاتطبّقت على الصفحة كلها. Swap بين شيتين مختلفين بياخد نفس الأنيميشن، وSwap بين حالات نفس الشيت مستثنى ([توضيح 0009](../decisions/0009-bottom-sheet-overlay-interaction.md#توضيح-2026-11-26-منة)).
 - **2026-11-24 (قرار م. منة):** الريبو يتحدّث أول بأول. أي تعديل يترفع على طول، زي [قرار 0001](../decisions/0001-push-every-change.md) و[قرار 0011](../decisions/0011-document-everything-with-links.md).
 - **2026-11-24 (منة):** الروابط اللي على الشاشة نفسها بـ `After delay` (زي فتح الفلتر لوحده بعد 0.2 ثانية في قوائم العروض) **مقصودة**، ومتتشالش على إنها أخطاء.
 - **2026-11-24 (منة):** في بيزنس بالخدمة مفيش صفحة «تفاصيل التعاقد» (`contract_details`) ولا شيت «الشروط والأحكام» في الأفراد. «تأكيد الحجز» بيروح لصفحة تأكيد الحجز على طول ([قرار 0015](../decisions/0015-monthly-flow-aligned-with-excp.md#تحديث-2026-11-24-منة)). الفريمين اتمسحوا نهائي بطلبها، كاستثناء. قاعدة «اللي يتلغي يتحط قبل اسمه `_`» لسه سارية على أي حاجة تانية.

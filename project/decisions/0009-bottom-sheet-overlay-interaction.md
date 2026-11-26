@@ -23,6 +23,12 @@
 | Easing | `Ease in and out` |
 | Duration | `300ms` |
 
+### توضيح 2026-11-26 (منة)
+منة أكّدت إن **أي** bottom sheet ياخد الإعدادات دي. اتطبّقت على صفحة `screens` كلها ([CHANGELOG](../changelog/CHANGELOG.md#2026-11-26)):
+- **Swap بين شيتين مختلفين** (زي «تأكيد التفضيل» ← نتيجة التفضيل): الـ Action بيفضل `Swap overlay` علشان «تم» و X يقفلوا النتيجة من غير ما يرجّعوا الشيت اللي قبلها. بس الأنيميشن بقى نفس الجدول: `Move in` ↑، `Ease in and out`، `300ms`.
+- **استثناء: Swap بين حالات نفس الشيت** (زي اختيار خيار في [`monthly_offers/worker_selection_method_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9336-23688)، أو [`hourly_offers/offers_filtration_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9098-22115) لنفسه): الأنيميشن بيفضل زي ما هو، لأن الشيت مفتوح أصلاً، ولو عمل Move in هيطلع من تحت تاني مع كل ضغطة.
+- **إعدادات الفريم** (Position والخلفية والقفل لما تضغط برّه) بتتظبط يدوي، لأن الـ Plugin API مش بيعدّلها ([S-13](../brand/deviations.md)).
+
 ## المراجعة
 أي مراجعة للبروتوتايب لازم تتأكد إن كل interaction بيفتح bottom sheet ملتزم بالجدول ده. أي اختلاف يتصلّح، أو يتسجل في [deviations.md](../brand/deviations.md) لو ليه سبب.
 

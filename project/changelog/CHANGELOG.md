@@ -4,6 +4,17 @@
 
 ## 2026-11-26
 
+### Figma: توحيد أنيميشن الـ bottom sheets على قرار 0009 (طلب منة)
+- **السبب:** جت ملاحظة على اختلاف الأنيميشن. «تأكيد التفضيل» في [`favorite_replaced_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26847) كان بيعمل Swap من غير أنيميشن (Instant)، و«هذه الزيارة فقط» في نفس الشيت كان بيعمل Move in. منة طلبت إن **أي** bottom sheet ياخد إعدادات [قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md).
+- **المراجعة:** في صفحة `screens` فيه 136 interaction بتفتح `_bottom_sheet` أو `_popup`، من غير الـ section `_iPhone Duo Adaptation – home` لأنه بيتجاهل. **60** منهم كانوا غلط واتصلّحوا لـ `Move in` ↑، `Ease in and out`، `300ms`:
+  - أغلبهم كان `Ease out` بدل `Ease in and out`: زرار `service_type_selection_bottom_sheet` في الـ navbar في كل الشاشات، و`reschedule_visit_bottom_sheet`، و`worker_rating_bottom_sheet`، و`favorite_worker_popup`، و`contact_form_bottom_sheet`، وفتح شيت الفلترة تلقائي في [`hourly_offers/default`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=852-7042) و[`medical_offers/default`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=892-11003).
+  - `Dissolve` بدل `Move in`: شيتات تفاصيل الطلب (الزيارات، والتقييم، والتواصل، والفاتورة) في الأربع أنواع، و`offers_summary_popup/without_cleaning_materials` من [`offers`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1102-14116) و[`favorites`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1102-14135).
+  - `Instant`: شيتات الفلترة والشركات في الساعة والرعاية الطبية، و`offers_summary_popup` من [`hourly_offers/default`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=852-7043).
+  - Swap بين شيتين مختلفين: [«تأكيد التفضيل»](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26847) (كان Instant) و[«تأكيد» في `favorite_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31442) (كان Dissolve). الـ Action فضل Swap.
+- **سبتهم بقصد (15):** Swap بين حالات نفس الشيت في `monthly_offers/worker_selection_method_bottom_sheet/*` و`hourly_offers/offers_filtration_bottom_sheet` ([توضيح 0009](../decisions/0009-bottom-sheet-overlay-interaction.md#توضيح-2026-11-26-منة)).
+- **محتاج تعديل يدوي:** 4 فريمات إعدادات الـ overlay بتاعتها غلط، والـ API مش بيعدّلها ([S-13](../brand/deviations.md)).
+- **الشاشات الكاملة:** الـ Navigate لشاشات كاملة مش داخل في القرار، فما اتغيّرش، زي «تم» في نتيجتي الاستبدال (Dissolve) والدخول على `replace_worker` (Smart animate).
+
 ### Figma: «تم» في نتايج الاستبدال بترجّع لـ «استبدال العاملة» (طلب منة)
 - **المشكلة:** في الاستبدال قبل الدفع، «تم» في `favorite_worker_result_popup` كان بيعمل Close بس، فالعميل كان بيرجع لتأكيد الحجز. منة عايزاه يرجع لـ [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874).
 - **نسخة جديدة من الـ popup** [`orders/visits/favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715):
