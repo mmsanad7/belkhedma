@@ -4,6 +4,9 @@
 
 ## 2026-11-26
 
+### مراجعة: شاشة الزيارات القادمة مقارنة بـ excp (طلب م. سند)
+- مراجعة مركّزة على [`show_visits/upcoming`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309) بس، قدام [`my_visits/main/coming`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=1344-9574) في excp: [audit](../design-system/audits/2026-11-26-upcoming-visits-vs-excp.md). طلع فيها 4 فروق (م-1 لـ م-4).
+
 ### Figma: زرار نتيجة الاستبدال بقى «رجوع إلى الزيارات» (قرار م. سند)
 - `button_label` اتغيّر من «تم» لـ «رجوع إلى الزيارات» في [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) و[`favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715). الوجهة ما اتغيّرتش.
 
