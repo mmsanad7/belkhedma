@@ -12,7 +12,7 @@
 | [`fav_button`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=28-693) | `state=` not_active · active | القلب (المفضلة) |
 | [`separate_back`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11365) | `state=` default | زر رجوع منفصل |
 | [`toggle`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1603-16018) | `state=` on · off | مفتاح تشغيل وإيقاف (الإعدادات) |
-| [`chips`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=41-354) | `state=` not_active · active | اختيار (أيام الزيارة مثلاً) |
+| [`chips`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=41-354) | `state=` not_active · active · state3 | اختيار (أيام الزيارة مثلاً). [`state3`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9634-25765) (ضافته منة في 2026-11-26) chip فلترة جنبها خانة فيها العدد، ومستخدمة في [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874). اسمها مش `snake_case` وصفي، ومفيش منها نسخة active **(يحتاج تأكيد)** |
 | [`input_country_key`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11318) | `state=` default | مفتاح الدولة `+966` |
 
 ## الشارات والمؤشرات
