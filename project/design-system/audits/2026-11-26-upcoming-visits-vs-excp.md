@@ -13,7 +13,7 @@
 | العنوان | «زياراتي» | «عرض الزيارات» | 🟡 نصّي |
 | التبويبات | القادمة / المنتهية | الزيارات القادمة / الزيارات السابقة | ✅ نفس المعنى |
 | عنوان الكارت | «زيارة رقم 1#»، وتحته التاريخ والوقت | التاريخ، وتحته رقم الزيارة والوقت، وجنبه حالة «جديدة» | 🟡 ترتيب مختلف |
-| العاملة في الكارت | ظاهرة **في كل كارت حتى وهو مقفول**: صورة، واسم، وعلم الجنسية، وزرار «تفاصيل العاملة» | ظاهرة **في الكارت المفتوح بس**: الاسم و«عرض الملف»، **من غير صورة** | ✅ م-1 اتصلّح 2026-11-27 |
+| العاملة في الكارت | ظاهرة **في كل كارت حتى وهو مقفول**: صورة، واسم، وعلم الجنسية، وزرار «تفاصيل العاملة» | ظاهرة **في الكارت المفتوح بس**: الاسم و«عرض الملف»، **من غير صورة** | ✅ م-1 اتصلّح 2026-11-27 (في القادمة والسابقة) |
 | الإجراءات | في الكارت المفتوح: «استبدال العاملة» و«تأجيل الزيارة» | في الكارت المفتوح: «تأجيل الزيارة» و«استبدال العاملة» | ✅ |
 | تنبيه التأجيل | مش موجود | «في حالة تأجيل الزيارة لا يمكن ضمان نفس العاملة حسب الإتاحية» | ➕ إضافة عندنا |
 | الـ navbar السفلي | موجود | مش موجود، لأنها شاشة جوه تفاصيل الطلب | ✅ مقبول |
@@ -22,20 +22,21 @@
 
 | الرابط | excp | بالخدمة | الحكم |
 |---|---|---|---|
-| ملف العاملة | «تفاصيل العاملة» ← [شيت](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=5155-26743) فيه زرار «استبدال العاملة» وجملة «لست راض عن العاملة؟…» | «عرض الملف» ← [`worker_profile_bottom_sheet/view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713) فيه «تم» بس | 🟡 م-2 |
+| ملف العاملة | «تفاصيل العاملة» ← [شيت](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=5155-26743) فيه زرار «استبدال العاملة» وجملة «لست راض عن العاملة؟…» | «عرض الملف» ← [`worker_profile_bottom_sheet/view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713) فيه «تم» بس | ✅ م-2 اتصلّح 2026-11-27 |
 | التأجيل | [شيت التقويم](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=5153-26140) ← «تأجيل الزيارة» ← [«تم تأجيل الزيارة بنجاح»](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=5153-26209) ← «العودة الي الزيارات» | [`reschedule_visit_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157) ← «تأكيد التأجيل» بيقفل الشيت بس | 🟡 م-3 |
 | الاستبدال (البداية) | «استبدال العاملة» ← [`my_visits/replace_worker/list`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=1396-13641) | «استبدال العاملة» ← [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) | ✅ |
 | الاستبدال (الرجوع) | النتيجتين ← «العودة الي الزيارات» ← الشاشة دي | النتيجتين ← «رجوع إلى الزيارات» ← [تأكيد حجز الساعة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094)، وفيها «ادفع» | ❌ م-4 |
 
 ## الفروق
 
-- **م-1 (العاملة في الكارت): ✅ اتصلّح 2026-11-27 (م. سند).** في excp العميل بيشوف مين جاية في كل زيارة من غير ما يفتح الكارت. اللي اتعمل في [`visit_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-6048):
-  - [`upcoming/expanded`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-5866): اتضافت صورة العاملة [`worker_avatar`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9709-26468) (`profile_avatar_photo` 28px، نفس اللي في [`visit_worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9425-7013)) جنب الاسم في `worker_row`.
-  - [`upcoming/collapsed`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-12695): اتضاف نفس [`worker_row`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9709-26470) (صورة واسم و«عرض الملف»)، والكارت بقى 124 بدل 88.
-  - في [الشاشة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309): «عرض الملف» في الكروت المقفولة اتربط بنفس رابط الكارت المفتوح (overlay لـ [`view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713)).
-  - ما استخدمناش `visit_worker_card` نفسه لأنه كارت كامل بتاريخ، والمطلوب صف جوه `visit_details`، فاستخدمنا نفس الـ atoms ([قرار 0010](../../decisions/0010-reuse-components-first.md)). علم الجنسية مش موجود عندنا كـ component، فاتساب.
-  - **قاعدة م. سند:** العاملة تظهر في **الزيارات القادمة بس**، لأن فيها الاستبدال. **السابقة المقفولة مفيهاش عاملة.** excp بيعرضها في «المنتهية»، وده غلط فيه، وم. سند هيصلّحه في excp. السابقة المفتوحة فيها اسم العاملة للتقييم والتفضيل، وما اتغيّرتش.
-  - **اتأثر كمان:** [`orders/order_details/visits_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18272) بقى طوله 676، و«عرض الملف» فيه مش مربوط. و`offer_details` و`draft_screens` فيهم نسخ قديمة من الكارت.
-- **م-2 (ملف العاملة):** excp بيدّي طريق تاني للاستبدال من الملف. ممكن «عرض الملف» هنا يفتح [`current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015)، اللي فيه «استبدال العاملة». و`view` يفضل للزيارات السابقة.
+- **م-1 (العاملة في الكارت): ✅ اتصلّح 2026-11-27، ومعاه م-2 (م. سند).** في excp العميل بيشوف مين جاية في كل زيارة من غير ما يفتح الكارت.
+  - **أول محاولة (اتلغت):** صف `worker_row` تحت بيانات الزيارة في القادمة بس.
+  - **طلب م. سند بعدها:** نوحّد عرض العاملة على الزيارة **زي excp، في القادمة والسابقة**. الفرق الوحيد إن ملف العاملة من القادمة فيه استبدال، ومن السابقة مفيهوش. excp فيه استبدال من «المنتهية»، وده غلط فيه، وم. سند هيصلّحه هناك.
+  - **اللي اتعمل:**
+    - molecule جديد [`visit_worker_summary`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9717-6691) (مقابل `worker_count` في excp): صورة 24px، واسم، وجنسية، و«تفاصيل العاملة». اتعمل لأن [`visit_worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9425-7013) كارت كامل بتاريخ، و[`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185) كبير للقايمة ([قرار 0010](../../decisions/0010-reuse-components-first.md)). العلم emoji جوه نص الجنسية، لأن مفيش component للأعلام.
+    - [`visit_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-6048): في الـ 5 متغيرات اتعمل `visit_header`، وفيه `visit_worker_summary` على الشمال وبيانات الزيارة على اليمين، و`worker_row` القديم اتشال.
+    - «تفاصيل العاملة» في [القادمة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309) و[شيت الزيارات](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18272) بيفتح [`current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015)، وفيه «استبدال العاملة». وفي [السابقة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-30591) بيفتح [`view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713) من غير استبدال. الروابط على الـ instances في الشاشات، لأن Figma مش بيقبل رابط من component لشاشة في صفحة تانية.
+  - **فرق صغير عن excp:** سهم الفتح فاضل جنب العنوان، مش في أقصى الشمال.
+- **م-2 (ملف العاملة): ✅ اتقفل مع م-1.** «تفاصيل العاملة» من القادمة بقى يفتح `current_worker`، وفيه «استبدال العاملة».
 - **م-3 (التأجيل):** excp بيأكد للعميل إن التأجيل تم وبيرجّعه للزيارات. عندنا الشيت بيتقفل من غير أي تأكيد.
 - **م-4 (الرجوع بعد الاستبدال):** الشيتات اللي بعد `replace_worker` متشاركة مع رحلة قبل الدفع، فالرجوع اتظبط على تأكيد الحجز. من الشاشة دي لازم يرجع لها هي، زي excp. ده محتاج نسخة منفصلة من الشيتات لواحدة من الرحلتين.

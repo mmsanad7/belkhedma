@@ -4,14 +4,16 @@
 
 ## 2026-11-27
 
-### Figma: العاملة بقت ظاهرة في كارت الزيارة القادمة وهو مقفول (م-1، قرار م. سند)
+### Figma: توحيد عرض العاملة على كارت الزيارة زي excp (م-1 وم-2، قرار م. سند)
+- **molecule جديد:** [`visit_worker_summary`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9717-6691) (`state=default`، وفيه text props `worker_name` و`nationality`). فيه صورة واسم وجنسية و«تفاصيل العاملة»، ومقابله في excp `worker_count`.
 - [`visit_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-6048):
-  - `upcoming/expanded`: اتضافت صورة العاملة [`worker_avatar`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9709-26468) في `worker_row`.
-  - `upcoming/collapsed`: اتضاف [`worker_row`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9709-26470) (صورة واسم و«عرض الملف»). الكارت بقى 124 بدل 88.
-  - متغيرات `previous` ما اتغيّرتش: السابقة المقفولة مفيهاش عاملة (قاعدة م. سند، وexcp غلط فيها).
-- [`show_visits/upcoming`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309): «عرض الملف» في الـ 3 كروت المقفولة اتربط بـ overlay لـ [`view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713)، زي الكارت المفتوح.
-- اتأثر كمان [`visits_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18272) (طوله بقى 676).
-- التوثيق: [الـ audit](../design-system/audits/2026-11-26-upcoming-visits-vs-excp.md)، و[visits.md](../product/features/visits.md#كرت-الزيارة-visit_details)، والذاكرة.
+  - في الـ 5 متغيرات اتعمل `visit_header`، وفيه `visit_worker_summary` جنب بيانات الزيارة. chips الوقت والرقم بقت wrap.
+  - `worker_row` القديم اتشال، ومعاه الصف اللي كان اتضاف الصبح في القادمة بس، لأن م. سند طلب التوحيد في القادمة والسابقة.
+- **الروابط:** «تفاصيل العاملة» من القادمة بيفتح [`current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015)، وفيه استبدال. ومن السابقة بيفتح [`view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713)، من غير استبدال. اتطبق في:
+  - [`show_visits/upcoming`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309)
+  - [`show_visits/previous`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-30591)
+  - [`visits_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18272)
+- التوثيق: [الـ audit](../design-system/audits/2026-11-26-upcoming-visits-vs-excp.md)، و[visits.md](../product/features/visits.md#كرت-الزيارة-visit_details)، و[molecules.md](../design-system/mobile/molecules.md)، والذاكرة.
 
 ## 2026-11-26
 
