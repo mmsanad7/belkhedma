@@ -4,6 +4,11 @@
 
 ## 2026-11-26
 
+### القرارات: م. سند اعتمد 0007 و0013 و0014
+- [قرار 0007](../decisions/0007-worker-selection-from-offer-company.md): الحالة اتغيرت من «محل مراجعة» لـ «معتمد».
+- [قرار 0013](../decisions/0013-worker-selection-sheet-from-excp.md) و[قرار 0014](../decisions/0014-excp-replaces-mueen-as-reference.md): اتضاف إن م. سند اعتمدهم. كده excp بقى المرجع رسمي.
+- اتحدّث [فهرس القرارات](../decisions/README.md) و[الذاكرة](../memory/MEMORY.md).
+
 ### Figma: توحيد أنيميشن الـ bottom sheets على قرار 0009 (طلب منة)
 - **السبب:** جت ملاحظة على اختلاف الأنيميشن. «تأكيد التفضيل» في [`favorite_replaced_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26847) كان بيعمل Swap من غير أنيميشن (Instant)، و«هذه الزيارة فقط» في نفس الشيت كان بيعمل Move in. منة طلبت إن **أي** bottom sheet ياخد إعدادات [قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md).
 - **المراجعة:** في صفحة `screens` فيه 136 interaction بتفتح `_bottom_sheet` أو `_popup`، من غير الـ section `_iPhone Duo Adaptation – home` لأنه بيتجاهل. **60** منهم كانوا غلط واتصلّحوا لـ `Move in` ↑، `Ease in and out`، `300ms`:

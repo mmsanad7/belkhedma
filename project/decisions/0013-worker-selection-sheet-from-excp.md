@@ -4,7 +4,7 @@
 |---|---|
 | الحالة | معتمد |
 | التاريخ | 2026-11-24 |
-| صاحب القرار | منة (طلب مباشر) |
+| صاحب القرار | منة (طلب مباشر)، واعتمده م. سند في 2026-11-26 |
 
 ## السياق
 ملف [`excp_base_app_atomic`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=0-1) زي معين، بس متوضح أكتر والروابط فيه صح. منة طلبت ننقل منه شيت اختيار العاملة ([`how_select_worker_sheet_template`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=8693-54115)) بحالاته وروابطه، مكان شيت [قرار 0008](0008-monthly-worker-selection-flow.md) اللي كان فيه «أختارها بنفسي / تختارها الشركة» بس.

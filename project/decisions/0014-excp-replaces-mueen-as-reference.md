@@ -4,7 +4,7 @@
 |---|---|
 | الحالة | معتمد |
 | التاريخ | 2026-11-24 |
-| صاحب القرار | منة |
+| صاحب القرار | منة، واعتمده م. سند في 2026-11-26 |
 
 ## السياق
 كان المرجع لبيزنس العاملات هو تطبيق معين ([`Q0mFJNHw2R1hB37rQDVhAV`](https://www.figma.com/design/Q0mFJNHw2R1hB37rQDVhAV/Mueen_app_atomic_design_system?node-id=0-1))، والقاعدة إن أي اختلاف عنه محتاج قرار مشترك مع م. سند ([الذاكرة](../memory/MEMORY.md#قواعد-البيزنس)). ملف [`excp_base_app_atomic`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=0-1) فيه نفس البيزنس، بس متوضح أكتر والروابط فيه صح.
@@ -17,4 +17,4 @@
 ## الأثر
 - `AGENTS.md` (الـ Guideline)، و[الذاكرة](../memory/MEMORY.md) (قواعد البيزنس والتطبيقات المرجعية)، و[mueen-workers.md](../product/references/mueen-workers.md) (اتعلّم إنه مرجع قديم).
 - القرارات القديمة اللي اتقارنت بمعين ([0006](0006-worker-entity.md) لـ [0012](0012-hourly-workers.md)) لسه زي ما هي. لو excp طلع مختلف في حاجة، نراجعها بقرار جديد.
-- ⚠️ ده تغيير في قاعدة كتبها م. سند، فلازم يعرف بيه.
+- ~~⚠️ ده تغيير في قاعدة كتبها م. سند، فلازم يعرف بيه.~~ م. سند عرف واعتمده في 2026-11-26.
