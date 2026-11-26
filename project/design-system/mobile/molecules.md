@@ -56,7 +56,6 @@
 | [`process_result_container`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=6311-30180) | `state=` default · with_progress · without_bg | صندوق نتيجة العملية |
 | [`select_employee_from_branch_note`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1227-11972) | `state=` default | ملاحظة اختيار عاملة من فرع |
 | [`dashboard_statistics`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1926-18245) | `state=` default · state2 | رقم إحصائي في لوحة الحساب |
-| [`visit_worker_summary`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9717-6691) | `state=` default. Text: `worker_name`، `nationality` | ملخص العاملة على كارت الزيارة: صورة (`profile_avatar_photo` 24px)، واسم، وجنسية، و«تفاصيل العاملة» (`text_buttons` `card_button`). مقابل `worker_count` في excp. اتعمل لأن `visit_worker_card` كارت كامل بتاريخ و`worker_card` كبير للقايمة ([قرار 0010](../../decisions/0010-reuse-components-first.md)) |
 | [`worker_rating_criterion`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9080-1124) | `state=` rateable · rated | معيار واحد من تقييم العاملة: نجوم قابلة للاختيار، أو الرقم بعد التقييم |
 
 ## الحساب والمحتوى

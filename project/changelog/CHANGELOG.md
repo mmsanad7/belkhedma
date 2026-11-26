@@ -4,7 +4,11 @@
 
 ## 2026-11-27
 
-### Figma: توحيد عرض العاملة على كارت الزيارة زي excp (م-1 وم-2، قرار م. سند)
+### Figma: شكل العاملة على كارت الزيارة رجع لشكلنا، والبيزنس فضل زي excp (طلب م. سند)
+- م. سند وضّح إن «زي excp» كان قصده البيزنس وظهور العاملة في المقفول والمفتوح، مش الشكل. فالـ molecule `visit_worker_summary` و`visit_header` اتشالوا، وكل متغيرات [`visit_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-6048) الخمسة رجع فيها `worker_row` بشكلنا: صورة و«اسم العاملة :» و«عرض الملف».
+- الروابط فضلت زي ما هي: «عرض الملف» من القادمة بيفتح `current_worker` (فيه استبدال)، ومن السابقة بيفتح `view` (من غير استبدال).
+
+### Figma (اتلغى شكله في التعديل اللي فوق): توحيد عرض العاملة على كارت الزيارة زي excp (م-1 وم-2، قرار م. سند)
 - **molecule جديد:** [`visit_worker_summary`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9717-6691) (`state=default`، وفيه text props `worker_name` و`nationality`). فيه صورة واسم وجنسية و«تفاصيل العاملة»، ومقابله في excp `worker_count`.
 - [`visit_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-6048):
   - في الـ 5 متغيرات اتعمل `visit_header`، وفيه `visit_worker_summary` جنب بيانات الزيارة. chips الوقت والرقم بقت wrap.
