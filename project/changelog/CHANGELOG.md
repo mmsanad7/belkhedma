@@ -4,6 +4,12 @@
 
 ## 2026-11-26
 
+### Figma: زرار نتيجة الاستبدال بقى «رجوع إلى الزيارات» (قرار م. سند)
+- `button_label` اتغيّر من «تم» لـ «رجوع إلى الزيارات» في [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) و[`favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715). الوجهة ما اتغيّرتش.
+
+### مراجعة: الاستبدال بعد الدفع مقارنة بـ excp (طلب م. سند)
+- لقيت مشكلة كبيرة (ب-1): بعد الدفع، النتيجتين بيرجّعوا العميل لصفحة تأكيد الحجز اللي فيها «ادفع»، لأن الشيتات متشاركة مع رحلة قبل الدفع. وفيه كمان ب-2 وب-3 ([audit](../design-system/audits/2026-11-26-replace-worker-vs-excp.md#بعد-الدفع-مقارنة-بـ-excp-طلب-م-سند-2026-11-26)).
+
 ### مراجعة تانية لـ ف-1 (قبل الدفع بس، طلب م. سند)
 - **في Figma:** «تم» في [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) اتغيّر من Navigate لـ `replace_worker` لـ Navigate لـ [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) (Dissolve). ف-1 اتقفل لرحلة قبل الدفع.
 - **التوثيق:** التعديل اتعمل في Figma مباشرة من غير commit، فالتوثيق اتحدّث علشان يطابق Figma: [قرار 0019](../decisions/0019-replace-worker-before-payment.md)، و[visits.md](../product/features/visits.md)، و[status.md](../status/status.md)، والذاكرة.

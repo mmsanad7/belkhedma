@@ -88,6 +88,42 @@
 - **زرار زيادة:** فيه زرار «تواصل عبر واتساب» مش موجود في excp. غالباً جه من رحلة الزيارات، وده **(يحتاج تأكيد)**.
 - **اسم الزرار:** excp «العودة الي الزيارات»، وبالخدمة «تم».
 
+## تحديث: اسم زرار النتيجة (م. سند، 2026-11-26)
+- زرار النتيجة اسمه بقى **«رجوع إلى الزيارات»** بدل «تم»، بقرار من م. سند. excp كاتبه «العودة الي الزيارات».
+- اتغيّر كـ override على `button_label` في [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) و[`favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715).
+- الـ popup الأصلي [`favorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) (مسار الزيارات السابقة) ما اتغيّرش، وفضل «تم».
+
+## بعد الدفع: مقارنة بـ excp (طلب م. سند، 2026-11-26)
+
+### الرحلة في الملفين
+| # | excp | بالخدمة | التطابق |
+|---|---|---|---|
+| 1 | [`payment_success`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=5225-31674) (شاشة كاملة) ← «عرض الزيارات» | [`payment_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=851-5135) (شيت) ← «عرض تفاصيل الطلب» أو «العودة للرئيسية» | 🟡 (ب-2) |
+| 2 | ← [`my_visits/main/coming`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=1344-9574) على طول | ← [`hourly_order_details`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1626-30683) ← «عرض الزيارات» ([شيت](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=7239-18272)) ← «عرض كل الزيارات» ← [`show_visits/upcoming`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309) | 🟡 (ب-2) |
+| 3 | كارت الزيارة: «تفاصيل العاملة» و«تأجيل الزيارة» و«استبدال العاملة» | كارت الزيارة: «عرض الملف» و«تأجيل الزيارة» و«استبدال العاملة»، وفوقهم تنبيه التأجيل | ✅ |
+| 4 | «تفاصيل العاملة» ← [ملف فيه «استبدال العاملة»](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=5155-26743) وجملة «لست راض عن العاملة؟…» | «عرض الملف» ← [`worker_profile_bottom_sheet/view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713) فيه «تم» بس | 🟡 (ب-3) |
+| 5 | «استبدال العاملة» ← [`my_visits/replace_worker/list`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=1396-13641) | ← [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) (نفس الشاشة اللي في قبل الدفع) | 🟡 ف-3 (البحث و«المزيد») |
+| 6 | الملف ← التأكيد ← «تطبيق على باقي الزيارات؟» | نفس الشيتات اللي في قبل الدفع | ✅، وفيه ف-4 |
+| 7 | النتيجتين ← «العودة الي الزيارات» ← `my_visits/main/coming` | النتيجتين ← «رجوع إلى الزيارات» ← [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094) | ❌ (ب-1) |
+
+### ب-1: العميل اللي دفع بيرجع لصفحة الدفع ❌ أهم مشكلة
+- الرحلتين متشاركين في نفس `replace_worker` والشيتات. فلما «رجوع إلى الزيارات» اتظبط على تأكيد الحجز علشان رحلة قبل الدفع، رحلة بعد الدفع بقت بتودّي هناك هي كمان. وصفحة تأكيد الحجز فيها «ادفع 2000».
+- **excp:** كل رحلة ليها نسخة شيتات لوحدها، وبعد الدفع الرجوع بيكون للزيارات القادمة.
+- **التصليح المقترح:**
+  - نعمل نسخة من السلسلة لرحلة قبل الدفع (`replace_worker` والملف والتأكيد والتفضيل والنتيجتين)، باسم `hourly_offers/replace_worker/*` **(يحتاج تأكيد)**، ويتربط بيها شيت `current_worker`.
+  - النسخة الأصلية `orders/visits/*` تفضل لبعد الدفع، والنتيجتين فيها يرجّعوا لـ [`show_visits/upcoming`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309).
+
+### ب-2: الوصول للزيارات بعد الدفع أطول 🟡
+- **excp:** «عرض الزيارات» في شاشة نجاح الدفع بيودّي للزيارات القادمة على طول.
+- **بالخدمة:** محتاج 3 خطوات: تفاصيل الطلب، وبعدها شيت الزيارات، وبعدها «عرض كل الزيارات».
+- **الاقتراح:** نضيف «عرض الزيارات» في [`payment_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=851-5135) ويودّي على `show_visits/upcoming`. ده **(يحتاج قرار)**.
+- excp كمان فيه شاشة نجاح كاملة فيها عروض باقات تانية، وعندنا شيت. وصفحة «زياراتي» العامة لسه في الـ backlog (بند 7).
+
+### ب-3: ملف العاملة من كارت الزيارة مفيهوش «استبدال العاملة» 🟡
+- **excp:** ملف العاملة فيه زرار «استبدال العاملة» وجملة «لست راض عن العاملة؟…»، وده طريق تاني للاستبدال جنب زرار الكارت.
+- **بالخدمة:** [`view`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23713) فيه «تم» بس. ممكن نستخدم شيت [`current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015) اللي فيه الزرار.
+- **لاحظ:** نفس الشيت `view` بيتفتح من الزيارات السابقة كمان، وهناك الاستبدال مالوش معنى.
+
 ## حاجات برا الاستبدال لاحظتها
 - **مؤقت الدفع:** `success_contract` في excp فيه «الوقت المتبقي لإتمام الدفع 20:00» و«في انتظار الدفع لتأكيد العقد». صفحة التأكيد عندنا مفيهاش مؤقت.
 - **أكتر من عاملة على الزيارة:** excp فيه «5 عاملات» و[`workers_sheet`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=5225-29209). عندنا متأجل في [قرار 0012](../../decisions/0012-hourly-workers.md)، ولسه محتاج قرار مشترك.
