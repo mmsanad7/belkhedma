@@ -4,6 +4,11 @@
 
 ## 2026-11-27
 
+### Figma: Swap للتأجيل، وDissolve للاستبدال، ومزامنة نصوص (م. سند)
+- «تأكيد التأجيل» في [`reschedule_visit_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157) بقى `Swap overlay` لـ [شيت النتيجة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9722-26485).
+- **ف-5:** «استبدال العاملة» في [`current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015) و[نسخة الزيارات](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25891) بقى `Dissolve` (Ease in and out، 300ms) بدل Smart animate.
+- نصوص [`favorite_replaced_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26847) اللي م. سند عدّلها اتنقلت لـ [نسخة الزيارات](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25923): العنوان والسؤال والزرار «تأكيد الاستبدال». اتحدّث [visits.md](../product/features/visits.md).
+
 ### Figma: قرارات فروق الاستبدال ف-2 لـ ف-6 (م. سند)
 - **ف-4:** في السلسلتين ([الأصلية](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26768) و[نسخة الزيارات](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25917))، «اختيار العاملة» و«تأكيد الاستبدال» و«هذه الزيارة فقط» بقوا `Swap overlay` بدل `Open overlay`، و«إلغاء» في شيت التأكيد بقى `Back`.
 - **ف-6:** م. سند عدّل [`favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715) في Figma، والنص اتنقل لـ [نسخة الزيارات](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25931).
