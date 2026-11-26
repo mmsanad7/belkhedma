@@ -4,6 +4,10 @@
 
 ## 2026-11-26
 
+### مراجعة: خطوات الاستبدال قبل الدفع مقارنة بـ excp (طلب م. سند)
+- مراجعة قراءة بس، ومفيش تعديل في Figma: [2026-11-26-replace-worker-vs-excp.md](../design-system/audits/2026-11-26-replace-worker-vs-excp.md).
+- أهم فرق (ف-1): «تم» بعد «هذه الزيارة فقط» بيرجّع لـ `replace_worker`، وفي excp بيرجّع لصفحة التأكيد. ده محتاج قرار مشترك.
+
 ### القرارات: م. سند اعتمد 0007 و0013 و0014
 - [قرار 0007](../decisions/0007-worker-selection-from-offer-company.md): الحالة اتغيرت من «محل مراجعة» لـ «معتمد».
 - [قرار 0013](../decisions/0013-worker-selection-sheet-from-excp.md) و[قرار 0014](../decisions/0014-excp-replaces-mueen-as-reference.md): اتضاف إن م. سند اعتمدهم. كده excp بقى المرجع رسمي.
