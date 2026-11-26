@@ -9,7 +9,7 @@
 flowchart LR
     HD["orders/hourly_order_details"] --> U["show_visits/upcoming"]
     U <--> P["show_visits/previous"]
-    U --> RS["reschedule_visit_bottom_sheet"]
+    U --> RS["reschedule_visit_bottom_sheet"] -->|"تأكيد التأجيل"| RSR["reschedule_visit_result_bottom_sheet"] -->|"رجوع إلى الزيارات"| U
     P --> WR["worker_rating_bottom_sheet"]
     P --> FW["favorite_worker_popup"] --> FWR["favorite_worker_result_popup"]
     P -.->|"يحتاج تأكيد"| UFR["unfavorite_worker_result_popup"]
@@ -45,7 +45,8 @@ flowchart LR
 |---|---|
 | [`orders/hourly_order_details/show_visits/upcoming`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309) | ملخص الطلب + تبويب «القادمة». الكارت المفتوح فيه اسم العاملة، وزر «تأجيل الزيارة»، والتنبيه |
 | [`orders/hourly_order_details/show_visits/previous`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-30591) | تبويب «السابقة». الكارت المفتوح فيه «لا يوجد تقييم للعاملة» + زر «تقييم»، أو التقييم المسجَّل، وزرار «تفضيل العاملة» بعرض الكارت |
-| [`orders/visits/reschedule_visit_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157) | «اختيار تاريخ الزيارة»: تقويم شهري، و«تأكيد التأجيل» / «إلغاء» |
+| [`orders/visits/reschedule_visit_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157) | «اختيار تاريخ الزيارة»: تقويم شهري، و«تأكيد التأجيل» (بيفتح شيت النتيجة) / «إلغاء» |
+| [`orders/visits/reschedule_visit_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9722-26485) | «تم تأجيل الزيارة بنجاح» + «رجوع إلى الزيارات» بيرجّع لـ `show_visits/upcoming` (م-3، م. سند 2026-11-27). جملة «ستكون الزيارة رقم … يوم … الساعة …» مش مضافة لحد ما يتأكد نصها **(يحتاج تأكيد)** |
 | [`orders/visits/worker_rating_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31316) | «تقييم العاملة»: اسم العاملة، 4 معايير بالنجوم، «ملاحظاتك على العاملة» (اختياري)، و«إرسال التقييم» |
 | [`orders/visits/favorite_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31414) | تأكيد تفضيل العاملة |
 | [`orders/visits/favorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) | «تم تفضيل العاملة في 4 زيارات من أصل 50 زيارة، لعدم توفر إتاحيتها في باقي الزيارات» + «تم» / «تواصل عبر واتساب». «تم» بيقفل الـ popup. بتتفتح من الزيارات السابقة |

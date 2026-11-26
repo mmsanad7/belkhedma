@@ -1,6 +1,6 @@
 # فهرس الشاشات (Mobile)
 
-كل الإطارات في صفحة `screens` في Figma (129 إطاراً). الملف مولَّد من [`project/data/screens.json`](../../data/screens.json) بالسكريبت [`generate-screens.ps1`](../../../shared/scripts/generate-screens.ps1)، فلو تغيّرت الشاشات شغّل السكريبت تاني.
+كل الإطارات في صفحة `screens` في Figma (130 إطاراً). الملف مولَّد من [`project/data/screens.json`](../../data/screens.json) بالسكريبت [`generate-screens.ps1`](../../../shared/scripts/generate-screens.ps1)، فلو تغيّرت الشاشات شغّل السكريبت تاني.
 
 - **شاشة:** إطار كامل `393×852`.
 - **Bottom sheet:** إطار أقصر يمثّل نافذة منبثقة من الأسفل فوق شاشة أخرى.
@@ -163,6 +163,7 @@
 | `orders/visits/replace_worker_bottom_sheet` | Bottom sheet | 393×252 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26768) |
 | `orders/visits/replace_worker_result_bottom_sheet` | Bottom sheet | 393×262 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) |
 | `orders/visits/reschedule_visit_bottom_sheet` | Bottom sheet | 393×488 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157) |
+| `orders/visits/reschedule_visit_result_bottom_sheet` | Bottom sheet | 393×240 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9722-26485) |
 | `orders/visits/unfavorite_worker_result_popup` | Bottom sheet | 393×276 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9308-24382) |
 | `orders/visits/worker_rating_bottom_sheet` | Bottom sheet | 393×440 | [فتح](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31316) |
 
