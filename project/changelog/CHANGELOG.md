@@ -12,7 +12,7 @@
   - الأصلية [`favorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) ما اتغيّرتش، وفضلت بتقفل في مسار الزيارات السابقة.
 - **[`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926):** «تم» كان بيقفل الشيت بس، ودلوقتي بيعمل Navigate لـ `replace_worker` (Dissolve، 300ms). ده صح في الرحلتين، لأنهم الاتنين بيبدأوا من `replace_worker`.
 - **علامة X:** فضلت بتقفل الشيت بس في الاتنين.
-- **تعديل من منة بعد كده:** [«تم»](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25721) في `favorite_worker_result_popup/replace_worker` بقى بيعمل Navigate لـ [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094)، يعني تأكيد حجز الساعة، بدل `replace_worker`. أما «تم» في `replace_worker_result_bottom_sheet` فلسه بيرجّع لـ `replace_worker`.
+- **تعديل من منة بعد كده:** [«تم»](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25721) في `favorite_worker_result_popup/replace_worker` بقى بيعمل Navigate لـ [`hourly_offers/reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094)، يعني تأكيد حجز الساعة، بدل `replace_worker`. أما «تم» في `replace_worker_result_bottom_sheet` فلسه بيرجّع لـ `replace_worker`. منة أكّدت إن الاختلاف ده مقصود ويفضل كده.
 - **فهرس الشاشات:** اتولّد من Figma تاني، وبقى 122 إطار. ومع الإطار الجديد اتحدّثت مقاسات 4 شيتات اتغيّرت في Figma قبل كده: `hourly_offers/filters_bottom_sheet/with_selected_filters`، والحالتين بتوع `worker_selection_method_bottom_sheet`، و`replace_worker_bottom_sheet`.
 
 ### Figma: الفلترة في «استبدال العاملة» (طلب منة)

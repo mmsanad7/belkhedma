@@ -67,6 +67,11 @@
 > قواعد ثابتة، منها اللي قاله صاحب المشروع ومنها اللي طلع من شغل Menna وبقى نمط متّبع.
 
 - **2026-11-26 (منة):** في [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) مفيش «تصفية». «المفضلة» و«سبق التعامل معها» بقوا chips فلترة، وجنب كل واحدة عدد العاملات، وموجودين على اليمين تحت البحث. و«رتب بـ» على الشمال في نفس الصف. الـ chips دي معمولة من [`chips`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=41-354): الحالة `not_active_with_count`، ولما تتضغط بتبقى `active_with_count`، وبالعكس. منة هي اللي ضافت الحالتين دول. منة أكّدت إن تبويب «الكل» يتشال: لو مفيش chip مختارة بتظهر كل العاملات. وفي الشاشة «المفضلة» معروضة active ([CHANGELOG](../changelog/CHANGELOG.md#2026-11-26)).
+- **2026-11-26 (منة):** «تم» في نتيجتي الاستبدال **مختلفين بقصد، ويفضلوا كده**:
+  - **بعد التفضيل:** [`favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715) بيودّي على تأكيد حجز الساعة [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094).
+  - **«هذه الزيارة فقط»:** [`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926) بيرجّع لـ [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874).
+
+  متوحّدهمش في أي مراجعة.
 - **2026-11-24 (قرار م. منة):** الريبو يتحدّث أول بأول. أي تعديل يترفع على طول، زي [قرار 0001](../decisions/0001-push-every-change.md) و[قرار 0011](../decisions/0011-document-everything-with-links.md).
 - **2026-11-24 (منة):** الروابط اللي على الشاشة نفسها بـ `After delay` (زي فتح الفلتر لوحده بعد 0.2 ثانية في قوائم العروض) **مقصودة**، ومتتشالش على إنها أخطاء.
 - **2026-11-24 (منة):** في بيزنس بالخدمة مفيش صفحة «تفاصيل التعاقد» (`contract_details`) ولا شيت «الشروط والأحكام» في الأفراد. «تأكيد الحجز» بيروح لصفحة تأكيد الحجز على طول ([قرار 0015](../decisions/0015-monthly-flow-aligned-with-excp.md#تحديث-2026-11-24-منة)). الفريمين اتمسحوا نهائي بطلبها، كاستثناء. قاعدة «اللي يتلغي يتحط قبل اسمه `_`» لسه سارية على أي حاجة تانية.
