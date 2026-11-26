@@ -16,7 +16,7 @@ flowchart LR
     U -->|"استبدال العاملة"| RW["replace_worker"] --> RWP["replace_worker_bottom_sheet"] --> FRP["favorite_replaced_worker_bottom_sheet"]
     FRP -->|"تأكيد التفضيل"| FWRR["favorite_worker_result_popup/replace_worker"]
     FRP -->|"هذه الزيارة فقط"| RWR["replace_worker_result_bottom_sheet"]
-    FWRR -->|"تم"| RW
+    FWRR -->|"تم"| RSV["hourly_offers/reservation_successfully"]
     RWR -->|"تم"| RW
     U -->|"عرض الملف"| PV["workers/worker_profile_bottom_sheet/view"]
     P -->|"عرض الملف"| PV
@@ -34,7 +34,7 @@ flowchart LR
 | [`orders/visits/worker_rating_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31316) | «تقييم العاملة»: اسم العاملة، 4 معايير بالنجوم، «ملاحظاتك على العاملة» (اختياري)، و«إرسال التقييم» |
 | [`orders/visits/favorite_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31414) | تأكيد تفضيل العاملة |
 | [`orders/visits/favorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) | «تم تفضيل العاملة في 4 زيارات من أصل 50 زيارة، لعدم توفر إتاحيتها في باقي الزيارات» + «تم» / «تواصل عبر واتساب». «تم» بيقفل الـ popup. بتتفتح من الزيارات السابقة |
-| [`orders/visits/favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715) | نفس الـ popup، بس في مسار الاستبدال: «تم» بيرجّع لـ `replace_worker` (2026-11-26، طلب منة) |
+| [`orders/visits/favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715) | نفس الـ popup، بس في مسار الاستبدال: «تم» بيودّي على تأكيد حجز الساعة `hourly_offers/reservation_successfully` (2026-11-26، منة) |
 | [`orders/visits/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) | «استبدال العاملة»: «العاملة الحالية في الزيارة» (`worker_card` من غير مهارات)، و«اختيار عاملة جديدة»: بحث (`input_fields` `type=search`)، وتحت البحث صف واحد: على اليمين chips فلترة «المفضلة» و«سبق التعامل معها» وجنب كل واحدة عدد العاملات (`chips` `state=not_active_with_count`، والضغط بيحوّلها لـ `active_with_count` وبيرجّعها)، وعلى الشمال «رتب بـ» (`sorting_dropdown`). مفيش «تصفية» ولا تبويب «الكل»: لو مفيش chip مختارة بتظهر كل العاملات (2026-11-26، طلب منة وأكّدته). في الشاشة «المفضلة» معروضة active. وبعدها قائمة `worker_card` فيها 4 كروت، و«Lakshmi Devi» متكررة فيها بقصد. الضغط على الكارت بيفتح `workers/worker_profile_bottom_sheet/replace_worker` ([قرار 0016](../../decisions/0016-no-buttons-in-worker-cards.md)) |
 | [`orders/visits/replace_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26768) | «سيتم استبدال العاملة في الزيارة رقم 2 كالتالي:» + العاملة الحالية والجديدة (`contract_information_chip` `full_width`)، و«تأكيد الاستبدال» / «إلغاء» |
 | [`orders/visits/favorite_replaced_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26847) | «هل تريد تفضيل العاملة …؟ سيتم ترشيحها لباقي زيارات الطلب حسب الإتاحة.»، و«تأكيد التفضيل» (يروح لـ `favorite_worker_result_popup/replace_worker`) / «هذه الزيارة فقط» |
