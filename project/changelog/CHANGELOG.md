@@ -5,6 +5,7 @@
 ## 2026-11-27
 
 ### Figma: Swap للتأجيل، وDissolve للاستبدال، ومزامنة نصوص (م. سند)
+- شيلنا المسافة الزيادة من العنوان «استبدال العاملة على باقي الزيارات» في الشيتين (طلب م. سند).
 - «تأكيد التأجيل» في [`reschedule_visit_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157) بقى `Swap overlay` لـ [شيت النتيجة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9722-26485).
 - **ف-5:** «استبدال العاملة» في [`current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015) و[نسخة الزيارات](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25891) بقى `Dissolve` (Ease in and out، 300ms) بدل Smart animate.
 - نصوص [`favorite_replaced_worker_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26847) اللي م. سند عدّلها اتنقلت لـ [نسخة الزيارات](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25923): العنوان والسؤال والزرار «تأكيد الاستبدال». اتحدّث [visits.md](../product/features/visits.md).
