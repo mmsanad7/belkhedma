@@ -28,6 +28,37 @@
 - منة عملت كده بقصد في 2026-11-26 ([CHANGELOG](../../changelog/CHANGELOG.md#2026-11-26)). بس ده اختلاف عن المرجع، فمحتاج قرار مشترك مع م. سند ([قرار 0014](../../decisions/0014-excp-replaces-mueen-as-reference.md)).
 - **مشكلة تانية في نفس النقطة:** في البروتوتايب، العاملة اللي ظاهرة في `replace_worker` بعد الرجوع هي العاملة القديمة، فالعميل هيحس إن الاستبدال ما حصلش.
 
+#### مراجعة ف-1 بالتفصيل (طلب م. سند، 2026-11-26)
+**القاعدة في excp:** كل رحلة استبدال بترجّع العميل **للشاشة اللي بدأ منها**، في النتيجتين، بزرار «العودة الي الزيارات». ولكل رحلة نسخة منفصلة من الشيتات:
+
+| الرحلة في excp | بتبدأ من | النتيجتين بيرجّعوا لـ |
+|---|---|---|
+| قبل الدفع (`hourly_flow/replace_sheet/*`) | [`success_contract`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=733-3717) | `success_contract` |
+| بعد الحجز (`my_visits/replace_sheet/*`) | [`my_visits/main/coming`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=1344-9574) | [`pin_success`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=5164-21393) و[`replace_success`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=5164-21484) ← `my_visits/main/coming` |
+
+**في بالخدمة الرحلتين متشاركين في نفس الشاشة ونفس الشيتات:** [`replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9329-23874) بيتفتح من مكانين:
+- قبل الدفع: من [`reservation_successfully`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1728-14094)، عن طريق شيت `current_worker`.
+- بعد الحجز: من [`orders/hourly_order_details/show_visits/upcoming`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309).
+
+وبعده كل الشيتات واحدة، فالوجهة اللي متحطة على «تم» بتشتغل في الرحلتين:
+
+| النتيجة | الوجهة دلوقتي | قبل الدفع | بعد الحجز |
+|---|---|---|---|
+| بعد التفضيل ([`favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715)) | `reservation_successfully` | ✅ زي excp | ❌ **غلط:** العميل اللي دفع خلاص بيتودّى لصفحة تأكيد حجز جديد فيها زرار «ادفع» |
+| «هذه الزيارة فقط» ([`replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26926)) | `replace_worker` | ❌ مختلف عن excp | ❌ مختلف عن excp (excp بيرجّع للزيارات القادمة) |
+
+**إزاي وصلنا هنا (من الـ git log):**
+- في [`55acad8`](https://github.com/mmsanad7/belkhedma/commit/55acad8) الاتنين اتعملوا يرجّعوا لـ `replace_worker`.
+- بعدها في [`2859325`](https://github.com/mmsanad7/belkhedma/commit/2859325) منة غيّرت وجهة نتيجة التفضيل بس لتأكيد الحجز.
+- وفي [`2bff7db`](https://github.com/mmsanad7/belkhedma/commit/2bff7db) اتسجّل إن الاختلاف «مقصود».
+- الوجهة اتحددت على أساس رحلة قبل الدفع بس، ورحلة بعد الحجز ما اتراجعتش.
+
+**التوصية:** نمشي على قاعدة excp ونفصل الرحلتين:
+- **قبل الدفع:** النتيجتين يرجّعوا لـ `reservation_successfully`.
+- **بعد الحجز:** النتيجتين يرجّعوا لـ `show_visits/upcoming`.
+- **التنفيذ:** Figma مش بيقدر يغيّر وجهة الرابط حسب الشاشة اللي العميل جه منها. علشان كده نعمل نسخة من `replace_worker` وشيتاته لرحلة قبل الدفع بس (زي excp)، والنسخة الحالية تفضل لبعد الحجز. والنسخ تتبني بالكومبوننتس الموجودة ([قرار 0010](../../decisions/0010-reuse-components-first.md)).
+- **الأسماء المقترحة:** `hourly_offers/replace_worker/*` **(يحتاج تأكيد م. سند)**.
+
 ### ف-2: ملف العاملة الحالية ناقصه سطر التوضيح 🟡
 - في [excp](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=5225-29576) فوق الزرار جملة «لست راض عن العاملة؟ يمكنك استبدال هذه العاملة بعاملة أخرى من اختيارك الآن».
 - في [`current_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9442-26015) الزرار لوحده من غير الجملة دي.
