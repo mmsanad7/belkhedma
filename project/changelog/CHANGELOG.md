@@ -4,6 +4,11 @@
 
 ## 2026-11-27
 
+### Figma: قرارات فروق الاستبدال ف-2 لـ ف-6 (م. سند)
+- **ف-4:** في السلسلتين ([الأصلية](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9354-26768) و[نسخة الزيارات](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25917))، «اختيار العاملة» و«تأكيد الاستبدال» و«هذه الزيارة فقط» بقوا `Swap overlay` بدل `Open overlay`، و«إلغاء» في شيت التأكيد بقى `Back`.
+- **ف-6:** م. سند عدّل [`favorite_worker_result_popup/replace_worker`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9663-25715) في Figma، والنص اتنقل لـ [نسخة الزيارات](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25931).
+- **ف-2** مش هتتنفذ، و**ف-3** مؤجلة ([audit](../design-system/audits/2026-11-26-replace-worker-vs-excp.md)).
+
 ### Figma: نتيجة تأجيل الزيارة (م-3، قرار م. سند)
 - جديد: [`orders/visits/reschedule_visit_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9722-26485)، منسوخ من [`show_visits/replace_worker_result_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25927). العنوان «تأجيل الزيارة»، والرسالة «تم تأجيل الزيارة بنجاح»، و«رجوع إلى الزيارات» بيرجّع لـ [`show_visits/upcoming`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=1587-13309). سطر الوصف مخفي، لأن جملة الموعد الجديد مستنية تأكيد النص.
 - «تأكيد التأجيل» في [`reschedule_visit_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157) كان بيقفل الشيت، ودلوقتي بيفتح النتيجة (Overlay، Move in، 300ms، [قرار 0009](../decisions/0009-bottom-sheet-overlay-interaction.md)).
