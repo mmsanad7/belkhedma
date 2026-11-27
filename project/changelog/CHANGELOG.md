@@ -4,6 +4,10 @@
 
 ## 2026-11-27
 
+### Figma: تراجع عن س-2، والرقم المنطقي في النتايج (م. سند)
+- س-2 اتراجعنا عنها: [`favorite_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31414) رجع نص بس، من غير `worker_card`.
+- «3 زيارات من أصل 4 زيارات متبقية» بدل «4 من 50»، في [نتيجة التفضيل](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) و[نتيجة الاستبدال بعد الحجز](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9720-25931).
+
 ### Figma: قرارات س-1 لـ س-3 في الزيارات السابقة (م. سند)
 - س-1 اتقفلت: مفيش توصيل في خدمة الساعة لحد دلوقتي، فمفيش تقييم سائق ([audit](../design-system/audits/2026-11-27-previous-visits-vs-excp.md#الفروق)).
 - س-2: [`favorite_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31414) بقى زي excp: شرح فايدة التفضيل، وتحته [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185).
