@@ -4,6 +4,11 @@
 
 ## 2026-11-27
 
+### Figma: قرارات س-1 لـ س-3 في الزيارات السابقة (م. سند)
+- س-1 اتقفلت: مفيش توصيل في خدمة الساعة لحد دلوقتي، فمفيش تقييم سائق ([audit](../design-system/audits/2026-11-27-previous-visits-vs-excp.md#الفروق)).
+- س-2: [`favorite_worker_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31414) بقى زي excp: شرح فايدة التفضيل، وتحته [`worker_card`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9311-24185).
+- س-3: زرار «تم» في [`favorite_worker_result_popup`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31496) بقى «موافق». واقترحنا رقم منطقي، ومستنيين الموافقة عليه.
+
 ### مراجعة: شاشة الزيارات السابقة مقارنة بـ excp (طلب م. سند)
 - مراجعة مركّزة على [`show_visits/previous`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-30591) قدام [`my_visits/main/past`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=1344-10216): [audit](../design-system/audits/2026-11-27-previous-visits-vs-excp.md). طلع فيها 3 فروق (س-1 لـ س-3).
 
