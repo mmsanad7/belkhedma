@@ -4,6 +4,9 @@
 
 ## 2026-11-27
 
+### مراجعة: شاشة الزيارات السابقة مقارنة بـ excp (طلب م. سند)
+- مراجعة مركّزة على [`show_visits/previous`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-30591) قدام [`my_visits/main/past`](https://www.figma.com/design/4PK0AGuoHmfsLkvN3kVTJC/excp_base_app_atomic?node-id=1344-10216): [audit](../design-system/audits/2026-11-27-previous-visits-vs-excp.md). طلع فيها 3 فروق (س-1 لـ س-3).
+
 ### Figma: Swap للتأجيل، وDissolve للاستبدال، ومزامنة نصوص (م. سند)
 - شيلنا المسافة الزيادة من العنوان «استبدال العاملة على باقي الزيارات» في الشيتين (طلب م. سند).
 - «تأكيد التأجيل» في [`reschedule_visit_bottom_sheet`](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9081-31157) بقى `Swap overlay` لـ [شيت النتيجة](https://www.figma.com/design/mCPCipJETTjSW7GD8vsrzY/Belkhedma-App?node-id=9722-26485).
